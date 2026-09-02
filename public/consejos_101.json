@@ -1,0 +1,608 @@
+[
+  {
+    "id": 1,
+    "title": "HAZ LO QUE QUIERAS",
+    "category": "vida",
+    "shortText": "Haz lo que quieras en medida de tus posibilidades, pero no te limites. Si teniendo en cuenta las consecuencias estás dispuesto a asumirlas y te sientes bien con ello, haz lo que quieras. Uno se arrepiente más de lo que no hizo que de lo que sí."
+  },
+  {
+    "id": 2,
+    "title": "NUNCA HIERAS",
+    "category": "caracter",
+    "shortText": "Nunca hieras a conciencia. La defensa no es ofensa: nunca tires el primer golpe, mas asegúrate de tirar el último. Y emocionalmente: tú eres responsable de lo que dices, los demás de cómo lo toman."
+  },
+  {
+    "id": 3,
+    "title": "EL SENTIDO DE LA VIDA",
+    "category": "mentalidad",
+    "shortText": "La vida no tiene sentido. Pero eso no quiere decir que tú no puedas darle ese sentido y hacer que tu vida valga algo para ti y para los demás."
+  },
+  {
+    "id": 4,
+    "title": "LADRÓN DE CULPAS",
+    "category": "mentalidad",
+    "shortText": "No tomes cosas que no te pertenezcan y eso incluye las culpas: no cargues con culpas ajenas ni te disculpes jamás por algo que no lamentes. No seas un ladrón de culpas."
+  },
+  {
+    "id": 5,
+    "title": "ANÉCDOTA DE LOS ERRORES",
+    "category": "vida",
+    "shortText": "Los accidentes pasan y los errores se cometen, pero existen consecuencias. Porque las cosas tienen consecuencias, las hayamos querido cometer o no."
+  },
+  {
+    "id": 6,
+    "title": "LA ESCUELA Y LA VIDA",
+    "category": "vida",
+    "shortText": "La escuela te enseña una lección y luego te pone a prueba; pero la vida primero te pone a prueba y luego de ello… aprenderás una lección."
+  },
+  {
+    "id": 7,
+    "title": "LA VIDA Y LA PUERTA",
+    "category": "mentalidad",
+    "shortText": "Cuando la vida te cierre una puerta, intenta abrirla otra vez; tal vez ya no tenga seguro o busca otra puerta abierta. Para eso están las puertas: para abrirse y cerrarse."
+  },
+  {
+    "id": 8,
+    "title": "PERTENECER A UN GRUPO",
+    "category": "relaciones",
+    "shortText": "Querer pertenecer a un grupo es normal, pero que nunca sea a costa tuya ni de lo que eres. No ocultes tu persona, o quienes valen la pena no podrán encontrarte."
+  },
+  {
+    "id": 9,
+    "title": "LO QUE POSEES TE POSEE",
+    "category": "dinero",
+    "shortText": "Toda cosa que obtengas también te hará responsable de ella. Por lo tanto, debes entenderlo bien: todo aquello que tienes también, a final de cuentas, te tiene a ti."
+  },
+  {
+    "id": 10,
+    "title": "EL MUNDO NO ESTÁ DISEÑADO PARA TI",
+    "category": "vida",
+    "shortText": "El mundo no está diseñado para que seas feliz ni tiene tu misma noción de justicia. Cuando aceptes eso, podrás ver lo maravilloso que es el mundo, aunque no esté diseñado para ti."
+  },
+  {
+    "id": 11,
+    "title": "SI PIDES, OFRECES",
+    "category": "dinero",
+    "shortText": "Siempre que solicites algo, debes estar dispuesto a ofrecer y aportar algo a cambio: tiempo, esfuerzo, dinero o conocimiento. Saca provecho de las situaciones, jamás de las personas."
+  },
+  {
+    "id": 12,
+    "title": "ALGO PARA TI",
+    "category": "caracter",
+    "shortText": "Da todo el amor, la confianza y la lealtad que puedas. Pero siempre guarda algo para ti: porque cuando se acaben, no quedará nada que repartir, ni siquiera para ti mismo."
+  },
+  {
+    "id": 13,
+    "title": "EL SABOR DEL JARABE",
+    "category": "vida",
+    "shortText": "Ten cariño a quienes te den lo que quieres, pues buscan tu felicidad. Mas ten gran respeto y amor a quienes te den lo que necesitas, pues buscan tu bienestar."
+  },
+  {
+    "id": 14,
+    "title": "LUCHANDO CONTRA LO INJUSTO",
+    "category": "caracter",
+    "shortText": "Si ante una situación que consideras injusta clamas '¡yo no merezco esto!', pero no haces nada por cambiarlo, detenerlo o salirte, entonces sí te lo mereces."
+  },
+  {
+    "id": 15,
+    "title": "COMO UN CABALLERO",
+    "category": "relaciones",
+    "shortText": "Todo acto de consideración, gentileza y caballerosidad debe ser recíproco o al menos agradecido. De lo contrario, no tienes por qué seguir haciéndolo con esa persona."
+  },
+  {
+    "id": 16,
+    "title": "AFILA TUS DIENTES",
+    "category": "caracter",
+    "shortText": "La paz debe ser en ti una opción y no ser pacifista por simple resignación. Es mejor aprender a ser violento y no tener necesidad de serlo, que necesitarlo y no estar preparado para luchar."
+  },
+  {
+    "id": 17,
+    "title": "QUIEN NO PUEDE SER CRITICADO…",
+    "category": "mentalidad",
+    "shortText": "Aquella persona que no acepta ser criticada no puede ser ayudada. Acepta que te digan que te equivocaste y hazte responsable. Quien no acepte críticas, no gastes tu tiempo allí."
+  },
+  {
+    "id": 18,
+    "title": "DATE A CONOCER",
+    "category": "relaciones",
+    "shortText": "Haz que la gente hable de ti, que te extrañen en tu ausencia y te quieran en tu presencia. Pero que hablen con cariño, admiración y alegría; si no es así, mejor no te des a conocer."
+  },
+  {
+    "id": 19,
+    "title": "CUANDO ME ENOJO CONTIGO",
+    "category": "relaciones",
+    "shortText": "La gente que se quiere también se enoja entre sí. Dame tiempo y espacio, que haré lo mismo contigo: cuando me enojo contigo no significa de ninguna manera que te haya dejado de querer."
+  },
+  {
+    "id": 20,
+    "title": "EL UNICO RESPONSABLE",
+    "category": "mentalidad",
+    "shortText": "Nadie te hace enojar, nadie te pone triste. Si dices que otros te sacan de tus casillas, les das poder sobre ti. Tú eres el único responsable de cómo te sientes por lo que hagan los demás."
+  },
+  {
+    "id": 21,
+    "title": "BUSCANDO SEÑALES",
+    "category": "vida",
+    "shortText": "Cuando alguien señala una estrella, muchas personas se pasan el tiempo observando el dedo. Las señales solo cobran importancia cuando haces algo con ellas: ponte en acción."
+  },
+  {
+    "id": 22,
+    "title": "PERMITETE SER SUPERFICIAL",
+    "category": "vida",
+    "shortText": "De vez en cuando, y sobre todo en tu juventud, permítete ser superficial. Uno aprende a nadar en el chapoteadero antes de meterse a la alberca profunda: descansa en la superficie y diviértete."
+  },
+  {
+    "id": 23,
+    "title": "AUNQUE NO LO DECIMOS",
+    "category": "relaciones",
+    "shortText": "Muchas veces los padres callamos cosas porque creemos que nuestros actos hablan. Si no te lo he dicho lo suficiente: quiero que sepas que te amo y que estoy muy orgulloso de ti."
+  },
+  {
+    "id": 24,
+    "title": "LA VERDADERA LEALTAD",
+    "category": "relaciones",
+    "shortText": "La lealtad no está en guardar todo tipo de secreto; está en ayudar a esa persona que no sabe ser amiga de sí misma, buscando a quien pueda intervenir para salvarla."
+  },
+  {
+    "id": 25,
+    "title": "EL QUÉ Y EL PARA QUÉ",
+    "category": "mentalidad",
+    "shortText": "Por cada 'qué' debes tener un 'para qué'. Saber qué quieres es bueno, pero más importante es saber para qué lo quieres. Si no tiene un 'para qué', seguro no lo necesitas."
+  },
+  {
+    "id": 26,
+    "title": "LA VOZ DE LA CONSCIENCIA",
+    "category": "mentalidad",
+    "shortText": "La voz de la conciencia es la voz de tus padres que se grabó en tu mente. Escúchala, pero evalúa por ti mismo: los padres también nos equivocamos; toma tu propia decisión."
+  },
+  {
+    "id": 27,
+    "title": "ELIJE TUS BATALLAS",
+    "category": "caracter",
+    "shortText": "No pelees por pelear. Con las personas que sabes que nunca cambiarán de opinión, simplemente dales por su lado: es muy probable que su lado sea lo único que tengan."
+  },
+  {
+    "id": 28,
+    "title": "CRECER Y AMAR TU MOMENTO",
+    "category": "vida",
+    "shortText": "La nostalgia es un buen lugar al cual regresar, pero el mejor momento siempre será el que estás viviendo hoy. Haz momentos que puedas recordar con felicidad."
+  },
+  {
+    "id": 29,
+    "title": "LOS AMIGOS Y LOS PRINCIPIOS",
+    "category": "caracter",
+    "shortText": "Nunca renuncies a tus principios y mucho menos por un amigo. Porque un verdadero amigo jamás te pediría que renunciaras a ellos; y si te lo pide, no es tu amigo."
+  },
+  {
+    "id": 30,
+    "title": "LA LUNA Y TU RODILLA",
+    "category": "vida",
+    "shortText": "Ibas caminando mirando embobado una luna hermosa, tropezaste y te raspaste la rodilla. Que te sirva de lección: no por estar siguiendo tus sueños, dejes de ver por dónde pisas."
+  },
+  {
+    "id": 31,
+    "title": "NO CAMBIES POR UNA PAREJA",
+    "category": "relaciones",
+    "shortText": "Nunca cambies tu esencia solo para satisfacer a otra persona. Si lo haces, no eres tú quien está con ella, sino una máscara; y te estará engañando con alguien que no eres tú."
+  },
+  {
+    "id": 32,
+    "title": "DEFIENDE TUS IDEAS O CAMBIALAS",
+    "category": "mentalidad",
+    "shortText": "Defiende con argumentos y evidencias las ideas justas. Pero nunca las defiendas solo porque las dijo alguien a quien quieras: las ideas valen por sí mismas, no por quien las expresa."
+  },
+  {
+    "id": 33,
+    "title": "SÉ AUTÓNOMO",
+    "category": "vida",
+    "shortText": "No necesitas ser sastre, pero aprende a pegar un botón. No chef, pero prepara tu comida. No mecánico, pero cambia una llanta. No seas experto en todo, pero sé autosuficiente."
+  },
+  {
+    "id": 34,
+    "title": "NO SIEMPRE COMO PLANEAS",
+    "category": "mentalidad",
+    "shortText": "Cuando los planes fallen, detente y observa: a veces ese desvío fortuito te lleva a algo mejor, aunque la frustración inicial no te deje apreciarlo."
+  },
+  {
+    "id": 35,
+    "title": "HACER COSAS DIFERENTES",
+    "category": "vida",
+    "shortText": "Experimenta y haz cosas nuevas, pero pon tus propios límites. No hagas algo solo por presión social: no comas estiércol creyendo que millones de moscas no pueden equivocarse."
+  },
+  {
+    "id": 36,
+    "title": "LA GRATITUD",
+    "category": "relaciones",
+    "shortText": "La gratitud termina con el 'gracias'. Cuando hagas algo lindo por alguien, no esperes nada más: con el agradecimiento la deuda queda saldada."
+  },
+  {
+    "id": 37,
+    "title": "SÉ ATRACTIVO",
+    "category": "mentalidad",
+    "shortText": "Nosotros no 'tenemos un cuerpo', nosotros 'somos' ese cuerpo. Aprende a quererte y aceptarte tal como eres; una vez que lo hagas, harás que los demás te quieran."
+  },
+  {
+    "id": 38,
+    "title": "NO CUIDES TUS PALABRAS",
+    "category": "caracter",
+    "shortText": "No necesitas andar cuidando tus palabras, solo asegúrate de que sean lo suficientemente grandecitas para cuidarse solas."
+  },
+  {
+    "id": 39,
+    "title": "CONFESION DE UN PADRE",
+    "category": "relaciones",
+    "shortText": "A veces te he visto a punto de caer y lo he permitido para que sientas el dolor y aprendas a levantarte por ti mismo. Si te protejo en exceso, te haré frágil."
+  },
+  {
+    "id": 40,
+    "title": "COSAS INELUDIBLES",
+    "category": "mentalidad",
+    "shortText": "Hay cosas en la vida que no puedes evitar y que no son tu decisión. Lo que sí puedes decidir siempre es la actitud con la cual las recibes y enfrentas."
+  },
+  {
+    "id": 41,
+    "title": "LA LLUVIA",
+    "category": "vida",
+    "shortText": "La vida no es justa; la sensación de justicia la inventamos los humanos. El cielo no llueve por ti: pon tus cubetas, sácale provecho a lo que hay y aprende a ser feliz."
+  },
+  {
+    "id": 42,
+    "title": "LA IGNORANCIA",
+    "category": "mentalidad",
+    "shortText": "La ignorancia no es pecado ni virtud, pero es bella cuando se acepta como punto de partida. Si ignoras algo, di con orgullo 'no lo sé' y disponte a aprender."
+  },
+  {
+    "id": 43,
+    "title": "EL CONSEJO DE UN AMIGO",
+    "category": "mentalidad",
+    "shortText": "Cuando no sepas qué decisión tomar, pregúntate qué le recomendarías a tu mejor amigo si estuviera en tu lugar. Muchas de las respuestas ya viven en ti: confía en ti."
+  },
+  {
+    "id": 44,
+    "title": "NO ME MEREZCO ESTO",
+    "category": "caracter",
+    "shortText": "Ante una injusticia no basta con lamentarte '¡yo no me merezco esto!'. Si no actúas para cambiarlo, detenerlo o apartarte y te quedas pasivo, entonces sí te lo mereces."
+  },
+  {
+    "id": 45,
+    "title": "USA PALABRAS SUAVES",
+    "category": "relaciones",
+    "shortText": "Critica situaciones y hechos, jamás a personas. Y si vas a hacer una crítica muy dura, usa palabras suaves y dulces, porque al final es probable que debas tragártelas."
+  },
+  {
+    "id": 46,
+    "title": "LIMITA TUS QUEJAS",
+    "category": "mentalidad",
+    "shortText": "Deja de quejarte: la queja no resuelve nada. Si puedes cambiarlo, muévete; si no puedes cambiarlo, adáptate. Reclama con quien corresponda, pero no vivas quejándote."
+  },
+  {
+    "id": 47,
+    "title": "DI QUE NO",
+    "category": "caracter",
+    "shortText": "Aprende a decir 'no' sin culpa. El primer acto de responsabilidad es saber negarse a una responsabilidad a tiempo. El 'no' es el primer acto de libertad de una persona."
+  },
+  {
+    "id": 48,
+    "title": "PEREZA CREATIVA",
+    "category": "mentalidad",
+    "shortText": "Cultiva la pereza de forma inteligente. Haz las cosas bien desde la primera vez para no tener que repetirlas. No dejes que el trabajo se acumule: sé flojo pero listo."
+  },
+  {
+    "id": 49,
+    "title": "SÁLVATE TÚ PRIMERO",
+    "category": "vida",
+    "shortText": "Olvídate de los martirios. Si alguien se está ahogando y te lanzas sin base, se hundirán los dos: pisa suelo firme primero. Para ayudar a otros debes estar a salvo tú."
+  },
+  {
+    "id": 50,
+    "title": "LA FELICIDAD Y SU BÚSQUEDA",
+    "category": "vida",
+    "shortText": "Buscarás la felicidad como un espejismo creyendo que es una meta lejana. Pero cuando mires atrás y veas todo lo que caminaste, verás que la felicidad era el trayecto."
+  },
+  {
+    "id": 51,
+    "title": "LA VIRTUD Y LA ADMIRACIÓN",
+    "category": "caracter",
+    "shortText": "No tengas ídolos ni intentes calcar vidas ajenas: imita solamente las virtudes, la disciplina y la bondad de quienes admires. Tómalo como modelo de virtud y nada más."
+  },
+  {
+    "id": 52,
+    "title": "ESCUCHA ACTIVAMENTE",
+    "category": "relaciones",
+    "shortText": "Cuando alguien te comparta un pesar, escúchalo primero y pregúntale si busca consuelo o soluciones. Entre lo que se dice y lo que se interpreta hay un mar de distancia."
+  },
+  {
+    "id": 53,
+    "title": "DE MAGIA Y FANTASÍA",
+    "category": "mentalidad",
+    "shortText": "La vida ya es bastante compleja para inventarse enemigos o soluciones mágicas. Aléjate de charlatanes: es como llegar a un hermoso bosque y perdértelo por estar buscando hadas."
+  },
+  {
+    "id": 54,
+    "title": "ES NORMAL",
+    "category": "relaciones",
+    "shortText": "Es normal que cuestiones lo que pienso y descubras que me equivoco. Solo recuerda una cosa: pase lo que pase, también es normal que yo siempre esté a tu lado defendiéndote."
+  },
+  {
+    "id": 55,
+    "title": "LA DECISIÓN FELIZ",
+    "category": "mentalidad",
+    "shortText": "Elige un camino y no mires atrás con reproches estériles. Decidiste con lo que sabías en ese instante: si el resultado no te agrada, cámbialo en tu presente. Toma la decisión feliz."
+  },
+  {
+    "id": 56,
+    "title": "ROPERO DE EXPECTATIVAS",
+    "category": "vida",
+    "shortText": "De niños llenamos el ropero con disfraces de astronauta o médico. Con los años renunciamos a unos para abrazar lo que pudimos construir: madurar es saber renunciar con sabiduría."
+  },
+  {
+    "id": 57,
+    "title": "ANÉCDOTA DE LA IGNORANCIA Y LA SOBERBIA",
+    "category": "caracter",
+    "shortText": "Sentí lástima por un hombre que no sabía leer mi libro favorito; minutos después vi a un joven llorar conmovido leyendo partituras musicales. Todos somos ignorantes en algo: la soberbia no sirve."
+  },
+  {
+    "id": 58,
+    "title": "¿SIN PEDIR NADA A CAMBIO?",
+    "category": "relaciones",
+    "shortText": "Desconfía de quien afirme hacer todo en tu beneficio 'sin pedir nada a cambio'. O te ve como un desvalido a quien rescatar para cobrarte luego el favor, o está sacando una ventaja encubierta."
+  },
+  {
+    "id": 59,
+    "title": "EL HUMOR ES HUMOR",
+    "category": "mentalidad",
+    "shortText": "Ríete de ti mismo, de tus convicciones y de tus penas. El humor es catarsis y bálsamo contra la amargura. Si te ofendes por un chiste, el problema es tuyo: aprende a reír."
+  },
+  {
+    "id": 60,
+    "title": "APRENDE A NEGOCIAR",
+    "category": "dinero",
+    "shortText": "Negociar bien es lograr que ambos queden contentos y deseen seguir colaborando. Pide un poco más para tener margen, pero ten clarísimo tu límite no negociable."
+  },
+  {
+    "id": 61,
+    "title": "EL TRINOMIO CUADRADO PERFECTO",
+    "category": "mentalidad",
+    "shortText": "Aprender matemáticas, ciencia o historia amplía las dimensiones de tu universo mental y te protege de ser engañado. Aprende cosas aunque no las apliques hoy, o creerás que la Tierra es plana."
+  },
+  {
+    "id": 62,
+    "title": "INVIERTIENDO EN TU FELICIDAD",
+    "category": "relaciones",
+    "shortText": "Un padre no se sacrifica por sus hijos: invierte en su felicidad y su futuro. No me debes nada; algún día tú pagarás las pizzas y los suéteres a tus propios hijos con orgullo."
+  },
+  {
+    "id": 63,
+    "title": "CONTIGO",
+    "category": "relaciones",
+    "shortText": "Quien no comparta mis gustos pero te ame y sea bueno para ti, tendrá un lugar en mi corazón. Pero quien te trate mal se habrá ganado mi desprecio para siempre."
+  },
+  {
+    "id": 64,
+    "title": "LAS GROSERÍAS",
+    "category": "caracter",
+    "shortText": "Las groserías alivian el dolor físico y dan fuerza cuando se requiere. Como decía Freud: quien insultó a su vecino en vez de arrojarle una piedra fue el que fundó la civilización."
+  },
+  {
+    "id": 65,
+    "title": "APRENDE REALMENTE A RESPETAR",
+    "category": "caracter",
+    "shortText": "Respeta la integridad y derechos de las personas, pero las ideas y creencias no merecen respeto ciego: es tu deber criticar y refutar aquellas ideas que sean dañinas o falsas."
+  },
+  {
+    "id": 66,
+    "title": "EL PERDÓN POR ACERTAR",
+    "category": "relaciones",
+    "shortText": "Prepárate: a la gente le cuesta mucho más perdonarte cuando tuviste la razón que cuando te equivocaste. A nadie le gusta admitir su error frente a tu acierto."
+  },
+  {
+    "id": 67,
+    "title": "NO TODO TIENE QUE VER CONTIGO",
+    "category": "mentalidad",
+    "shortText": "El mundo no gira en torno a tu ombligo. La gente no vive lanzándote indirectas; cada quien vive su vida. No te desgastes luchando contra todo: la vida no se trata solo de ti."
+  },
+  {
+    "id": 68,
+    "title": "NO NEGOCIAMOS CON TERRORISTAS",
+    "category": "caracter",
+    "shortText": "En esta familia no negociamos con manipuladores. Si te retan para obligarte a hacer algo que no deseas, responde sereno: 'No es que no pueda, es que no quiero'."
+  },
+  {
+    "id": 69,
+    "title": "DE TU MADRE Y DE TU PADRE",
+    "category": "relaciones",
+    "shortText": "Tendrás la sonrisa de tu padre y los ojos de tu madre, pero no eres ninguno de los dos. Tu destino y tus decisiones te pertenecen: es un orgullo verte forjar tu propio camino."
+  },
+  {
+    "id": 70,
+    "title": "UN NUEVO HERMANO MAYOR",
+    "category": "relaciones",
+    "shortText": "Cuando nazca un hermanito en una familia, saluda y juega primero con el hermano mayor: reconócelo como el guardián más fuerte para que lo reciba con amor y sin celos."
+  },
+  {
+    "id": 71,
+    "title": "LA AUTOCRÍTICA",
+    "category": "caracter",
+    "shortText": "Sé tu crítico más implacable, pero nunca cruel: criticar es reconocer con rigor los errores tanto como los aciertos. El crítico justo termina siendo tu mayor admirador."
+  },
+  {
+    "id": 72,
+    "title": "LA DISCULPA Y EL PERDÓN",
+    "category": "caracter",
+    "shortText": "Una disculpa expresa que lamentas el agravio, pero no te pone a mano: si derramas un vaso con agua, no basta con pedir disculpas, tomas el trapo y te pones a limpiar."
+  },
+  {
+    "id": 73,
+    "title": "VERDADES Y MENTIRAS",
+    "category": "relaciones",
+    "shortText": "Si hablan verdades de ti, acéptalas y mejóralas. Si son mentiras, que no te quiten el sueño. Y recuerda: la misma distancia hay de aquí para allá que de allá para acá."
+  },
+  {
+    "id": 74,
+    "title": "LAS PERSONAS NO SON IGUALES",
+    "category": "vida",
+    "shortText": "Las personas no somos iguales, y eso es lo hermoso: festeja la diferencia. El único motivo para apartar a alguien de tu vida es que sea una persona dañina."
+  },
+  {
+    "id": 75,
+    "title": "APRENDE A GANAR Y APRENDE A PERDER",
+    "category": "caracter",
+    "shortText": "Cuando ganes, celebra sin humillar a tu rival y dale las gracias. Cuando pierdas, felicita al ganador con la frente en alto y aprende de la lección para volver más fuerte."
+  },
+  {
+    "id": 76,
+    "title": "ESCUCHA MÁS ALLÁ DE TU VOZ",
+    "category": "relaciones",
+    "shortText": "Calla la voz en tu mente que ya está preparando réplicas mientras el otro habla: esa voz solo hace ruido. Para escuchar de verdad, deja que la otra persona guarde silencio primero."
+  },
+  {
+    "id": 77,
+    "title": "PENSAMIENTO NEGATIVO",
+    "category": "mentalidad",
+    "shortText": "En un mundo que exige optimismo ciego, permítete ser pesimista de vez en cuando: recuerda que fue el pensamiento negativo el que inventó los cinturones de seguridad."
+  },
+  {
+    "id": 78,
+    "title": "SÉ UN CONVENENCIERO",
+    "category": "vida",
+    "shortText": "Actúa a tu entera conveniencia y saca el mejor partido, pero jamás pisoteando o traicionando. Beneficiarte haciendo el bien a los demás es sabiduría pura."
+  },
+  {
+    "id": 79,
+    "title": "EL PROBLEMA DE LA INMEDIATEZ",
+    "category": "mentalidad",
+    "shortText": "Mi generación erró al creer que si no costaba sufrimiento, no valía; la tuya sufre al querer todo en segundos. La sabiduría es esforzarse con inteligencia y sencillez."
+  },
+  {
+    "id": 80,
+    "title": "MIRAR, ESCUCHAR Y HABLAR",
+    "category": "vida",
+    "shortText": "Tenemos dos ojos, dos orejas y una sola voz. La sabiduría de la naturaleza nos enseña que debemos observar y escuchar el doble de lo que hablamos."
+  },
+  {
+    "id": 81,
+    "title": "APUESTA CORRECTAMENTE",
+    "category": "vida",
+    "shortText": "Cuando tomes una gran decisión, no apuestes tu felicidad a lo que otros hagan; apuesta a dar lo mejor de ti, amar y ser noble. Así pase lo que pase, habrás ganado la apuesta."
+  },
+  {
+    "id": 82,
+    "title": "NO ES SU OBLIGACIÓN",
+    "category": "relaciones",
+    "shortText": "Nadie está obligado a quererte, escucharte ni cuidarte. Por eso, cuando alguien lo hace de corazón sin tener obligación alguna, valóralo: te has ganado ese amor con creces."
+  },
+  {
+    "id": 83,
+    "title": "MI SEGUNDA PERSONA FAVORITA",
+    "category": "relaciones",
+    "shortText": "Tú eres mi segunda persona favorita en el mundo: la primera siempre será tu madre. Tú harás tu vida, y tu pareja elegida deberá ser siempre tu mayor prioridad."
+  },
+  {
+    "id": 84,
+    "title": "NO SOY TU GUIA",
+    "category": "vida",
+    "shortText": "No puedo ser tu guía porque tú recorrerás tus propias montañas y veredas, distintas a las mías. Seré tu acompañante fiel para compartirte mis vivencias y sostenerte."
+  },
+  {
+    "id": 85,
+    "title": "INTELIGENCIA Y EXPERIENCIA",
+    "category": "mentalidad",
+    "shortText": "Haber nacido antes no me hace más inteligente que tú; me da experiencia y cicatrices. Escucha lo que te comparto: tal vez me equivoque, pero te doy la mirada de mi camino."
+  },
+  {
+    "id": 86,
+    "title": "DOS TIPOS DE PROBLEMAS",
+    "category": "mentalidad",
+    "shortText": "Hay dos tipos de problemas: los que podemos resolver y los que no. Con los primeros, ponte a actuar; con los segundos no te angusties. La sabiduría es distinguir la diferencia."
+  },
+  {
+    "id": 87,
+    "title": "APRENDE A HUIR",
+    "category": "vida",
+    "shortText": "Ubica siempre la salida de emergencia en un cine, en un trabajo o en una relación que te lastime. Aprende a huir y a renunciar: nunca olvides que siempre puedes regresar a casa."
+  },
+  {
+    "id": 88,
+    "title": "LAS GALLETAS",
+    "category": "mentalidad",
+    "shortText": "Si esperas galletas sencillas y te tocan de chocolate, la alegría será enorme; si esperas las de chocolate y recibes simples, sufrirás. De la vida y de los demás, espera lo simple."
+  },
+  {
+    "id": 89,
+    "title": "LAGRIMAS Y DIAMANTES",
+    "category": "caracter",
+    "shortText": "Siente tus emociones pero sé prudente: las minas no sueltan todos sus diamantes para no devaluar su precio. Que tus lágrimas y tu enojo sean diamantes escasos y valiosos."
+  },
+  {
+    "id": 90,
+    "title": "TRABAJO BAJO PRESIÓN",
+    "category": "vida",
+    "shortText": "Trabajar bajo presión no es una virtud para presumir; es el síntoma de una pésima planeación. Quien deja todo al último momento vive prisionero de la prisa."
+  },
+  {
+    "id": 91,
+    "title": "LO QUE SUCEDE",
+    "category": "vida",
+    "shortText": "La vida es aquello que sucede mientras te estás lamentando de lo que no sucedió. No pierdas tiempo llorando por lo que no fue: mira a tu alrededor y agradece tu fortuna."
+  },
+  {
+    "id": 92,
+    "title": "CUANDO NO LO LOGRAS",
+    "category": "mentalidad",
+    "shortText": "Habrá veces que pondrás todo tu corazón y fallarás, sintiendo que no eres suficiente. Tal vez hoy no lo fuiste y está bien: date permiso de descansar y retomar fuerzas."
+  },
+  {
+    "id": 93,
+    "title": "POR RESPETO",
+    "category": "relaciones",
+    "shortText": "De niño le hablé de usted a mi padre por 'respeto'; él me dijo: 'Háblame de tú y trátame de usted. Con confianza y respeto'. Esa misma regla vive entre nosotros."
+  },
+  {
+    "id": 94,
+    "title": "LA LEY DEL 8",
+    "category": "vida",
+    "shortText": "Si para sacar un 10 tienes que desangrarte la salud y la paz, mejor opta por el 8. Calibra tus esfuerzos: da el máximo en lo trascendente y en lo demás no te desgastes."
+  },
+  {
+    "id": 95,
+    "title": "EL DÍA EN QUE TÚ NACISTE",
+    "category": "caracter",
+    "shortText": "Cuando naciste no se detuvo el mundo ni hubo profecías: eras solo otro niño con el amor de sus padres. No naciste especial, pero puedes llegar a serlo si te esfuerzas por ello."
+  },
+  {
+    "id": 96,
+    "title": "SIN HACER PREGUNTAS",
+    "category": "relaciones",
+    "shortText": "Si estás en peligro o en apuros y temes un regaño, llámame y dime: 'Papá, sin hacer preguntas'. Iré por ti donde estés, te pondré a salvo y jamás te recriminaré nada."
+  },
+  {
+    "id": 97,
+    "title": "ELIJE TU DIFICULTAD",
+    "category": "vida",
+    "shortText": "El matrimonio es difícil y el divorcio es difícil. Estar sano cuesta y estar enfermo cuesta. Ser honesto cuesta y mentir cuesta. La vida no es sencilla: elige qué dificultad enfrentar."
+  },
+  {
+    "id": 98,
+    "title": "SÉ INVULNERABLE A LAS PALABRAS",
+    "category": "caracter",
+    "shortText": "Las palabras solo tienen filo si tú les das permiso. Sé invulnerable ante insultos y apodos: si no les otorgas poder, se quedarán ahogadas en la garganta de quien las dijo."
+  },
+  {
+    "id": 99,
+    "title": "AUTOCONCEPTO",
+    "category": "mentalidad",
+    "shortText": "Para tus padres eres y serás el más hermoso e inteligente, pero afuera habrá personas más capaces. Mantén la autoestima alta para valorarte, y el autoconcepto razonable para no desilusionarte."
+  },
+  {
+    "id": 100,
+    "title": "NO LE TEMO A LA MUERTE",
+    "category": "vida",
+    "shortText": "No le temo a la muerte porque es parte natural de la vida, pero todavía no: quiero acompañarte hasta verte convertido en un hombre pleno que camine con paso firme sin mi mano."
+  },
+  {
+    "id": 101,
+    "title": "ALGÚN DÍA MORIRE",
+    "category": "vida",
+    "shortText": "Algún día moriré, pero la muerte no es lo contrario de la vida: es parte de ella. Estaré en cada consejo que te di, en cada recuerdo y en cada célula de tu cuerpo. Fue un honor compartir mi vida contigo. Te amo."
+  }
+]

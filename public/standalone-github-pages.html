@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buenos Malos Consejos para mi Hijo - Robert Pacheco | Web Oficial</title>
+  <meta name="description" content="Página web oficial de la marca Buenos Malos Consejos para mi Hijo de Robert Pacheco. Los 101 consejos, audiolibro oficial en Google Play y lecciones sin filtros para el mundo real." />
+  
+  <!-- Tailwind CSS vía CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandPurple: "#8A2BE2",
+            brandDarkPurple: "#2E1065",
+            skyLight: "#E8F4FD",
+            skyBlue: "#9BCBF5"
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "Georgia", "serif"],
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+            handwriting: ["Caveat", "cursive"]
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts: Serif clásica ruda, Sans moderna y Caligrafía manuscrita -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: "Plus Jakarta Sans", sans-serif; }
+    .font-serif { font-family: "Playfair Display", Georgia, serif; }
+    .font-handwriting { font-family: "Caveat", cursive; }
+
+    @keyframes bounce-x {
+      0%, 100% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      }
+      50% {
+        transform: translateX(6px);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      }
+    }
+    .animate-bounce-x {
+      animation: bounce-x 1s infinite;
+    }
+    
+    /* El icónico número 101 en morado vibrante (#8A2BE2) con doble contorno (violeta oscuro #2E1065 y blanco) */
+    .brand-101-title {
+      color: #8A2BE2;
+      -webkit-text-stroke: 8px #2E1065;
+      paint-order: stroke fill;
+      text-shadow: 
+        -4px -4px 0 #FFFFFF,
+         4px -4px 0 #FFFFFF,
+        -4px  4px 0 #FFFFFF,
+         4px  4px 0 #FFFFFF,
+        -6px  0   0 #FFFFFF,
+         6px  0   0 #FFFFFF,
+         0   -6px 0 #FFFFFF,
+         0    6px 0 #FFFFFF,
+         0 16px 35px rgba(46, 16, 101, 0.45);
+    }
+    @media (max-width: 640px) {
+      .brand-101-title {
+        -webkit-text-stroke: 5px #2E1065;
+        text-shadow: 
+          -2px -2px 0 #FFFFFF,
+           2px -2px 0 #FFFFFF,
+          -2px  2px 0 #FFFFFF,
+           2px  2px 0 #FFFFFF,
+           0 10px 20px rgba(46, 16, 101, 0.45);
+      }
+    }
+
+    /* Fondo degradado suave de azul cielo a blanco */
+    .bg-sky-canvas {
+      background: linear-gradient(180deg, #9BCBF5 0%, #D2E8FA 25%, #F0F7FD 60%, #FFFFFF 100%);
+    }
+
+    /* Scrollbar personalizada */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #e2f0fb; }
+    ::-webkit-scrollbar-thumb { background: #8A2BE2; border-radius: 4px; }
+  </style>
+</head>
+<body class="bg-sky-canvas text-slate-900 min-h-screen antialiased selection:bg-purple-200 selection:text-purple-900 relative overflow-x-hidden">
+
+  <!-- Círculos decorativos y siluetas translúcidas de fondo -->
+  <div class="fixed top-20 left-[-10%] w-96 h-96 rounded-full bg-blue-300/20 blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed top-[40%] right-[-10%] w-[450px] h-[450px] rounded-full bg-purple-300/15 blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 left-[20%] w-80 h-80 rounded-full bg-sky-200/30 blur-2xl pointer-events-none -z-10"></div>
+
+  <!-- 1. ENCABEZADO (HEADER) FIJO MÁS LLAMATIVO CON EFECTO DE BOTÓN -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-purple-200/80 shadow-[0_4px_25px_-5px_rgba(138,43,226,0.15)] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Marca y Nombre (Llamativo) -->
+      <a href="#" class="flex items-center gap-3 group shrink-0">
+        <div class="relative">
+          <div class="absolute -inset-1 bg-gradient-to-r from-[#8A2BE2] to-pink-500 rounded-full blur-xs opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-[#8A2BE2] to-[#2E1065] flex items-center justify-center text-white font-serif font-black text-base sm:text-lg shadow-md border-2 border-white group-hover:scale-105 transition-transform duration-200">
+            RP
+          </div>
+        </div>
+        <div>
+          <span class="font-serif font-black text-lg sm:text-2xl tracking-tight text-slate-950 block leading-none drop-shadow-xs">
+            ROBERT PACHECO
+          </span>
+          <span class="text-[10px] sm:text-[11px] uppercase tracking-widest text-[#8A2BE2] font-black block mt-0.5">
+            Buenos Malos Consejos
+          </span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación con EFECTO DE BOTÓN LLAMATIVO Y COLORIDO en cada sección (Desktop XL) -->
+      <nav class="hidden xl:flex items-center gap-2">
+        <a href="#hero" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-sky-400/60 bg-gradient-to-r from-sky-500 to-blue-600 text-white hover:from-sky-400 hover:to-blue-500 shadow-sm shadow-sky-500/25 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <span>Inicio</span>
+        </a>
+        <a href="#sobre-robert" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-indigo-400/60 bg-gradient-to-r from-indigo-500 to-blue-700 text-white hover:from-indigo-400 hover:to-blue-600 shadow-sm shadow-indigo-500/25 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          <span>Sobre Robert</span>
+        </a>
+        <a href="#adquiere-tu-libro" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-emerald-400/60 bg-gradient-to-r from-emerald-500 to-teal-600 text-white hover:from-emerald-400 hover:to-teal-500 shadow-sm shadow-emerald-500/30 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          <span>Adquiere tu libro</span>
+        </a>
+        <a href="#comics" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wide border border-pink-400/60 bg-gradient-to-r from-pink-500 to-rose-600 text-white hover:from-pink-400 hover:to-rose-500 shadow-sm shadow-pink-500/30 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
+          <span>Comic Online</span>
+        </a>
+        <a href="#consejo-dia" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-amber-400/60 bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-400 hover:to-orange-400 shadow-sm shadow-amber-500/30 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          <span>Consejo Viral</span>
+        </a>
+        <a href="#los-101" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-purple-400/60 bg-gradient-to-r from-violet-600 to-purple-700 text-white hover:from-violet-500 hover:to-purple-600 shadow-sm shadow-purple-600/30 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <span>Los 101 Consejos</span>
+        </a>
+        <a href="#redes-sociales" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-teal-400/60 bg-gradient-to-r from-teal-500 to-cyan-600 text-white hover:from-teal-400 hover:to-cyan-500 shadow-sm shadow-teal-500/25 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          <span>Redes Sociales</span>
+        </a>
+        <a href="#videos-personalizados" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wide border border-fuchsia-300/80 bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 text-white hover:from-purple-500 hover:via-fuchsia-500 hover:to-pink-500 shadow-md shadow-fuchsia-500/35 ring-1 ring-white/30 transform hover:-translate-y-0.5 hover:scale-[1.04] active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          <span>Videos Personalizados</span>
+        </a>
+      </nav>
+
+      <!-- Menú Compacto con Botones Coloridos (lg a xl) -->
+      <nav class="hidden lg:flex xl:hidden items-center gap-1.5">
+        <a href="#hero" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-sky-500 to-blue-600 text-white border border-sky-400/60 shadow-xs transition-all hover:scale-105">Inicio</a>
+        <a href="#sobre-robert" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-indigo-500 to-blue-700 text-white border border-indigo-400/60 shadow-xs transition-all hover:scale-105">Sobre Robert</a>
+        <a href="#adquiere-tu-libro" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-emerald-500 to-teal-600 text-white border border-emerald-400/60 shadow-xs transition-all hover:scale-105">Libro</a>
+        <a href="#comics" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-pink-500 to-rose-600 text-white border border-pink-400/60 shadow-xs transition-all hover:scale-105">Comic</a>
+        <a href="#consejo-dia" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-amber-500 to-orange-500 text-white border border-amber-400/60 shadow-xs transition-all hover:scale-105">Viral</a>
+        <a href="#los-101" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-violet-600 to-purple-700 text-white border border-purple-400/60 shadow-xs transition-all hover:scale-105">101 Consejos</a>
+        <a href="#redes-sociales" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-teal-500 to-cyan-600 text-white border border-teal-400/60 shadow-xs transition-all hover:scale-105">Redes</a>
+        <a href="#videos-personalizados" class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 text-white shadow-sm transition-all hover:scale-105">Videos</a>
+      </nav>
+
+      <!-- Botón Menú Móvil Llamativo con Flecha de Invitación Animada -->
+      <div class="flex lg:hidden items-center">
+        <button id="mobile-arrow-invite" aria-label="Toca para abrir el menú" class="flex items-center gap-1 sm:gap-1.5 mr-2 group cursor-pointer active:scale-95 transition-all select-none">
+          <span class="text-[10px] sm:text-xs font-black uppercase tracking-wider text-purple-950 bg-gradient-to-r from-amber-300 via-yellow-300 to-amber-400 px-2 sm:px-2.5 py-1 rounded-full shadow-sm border border-amber-400/90 whitespace-nowrap flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping shrink-0"></span>
+            <span>Menú</span>
+          </span>
+          <div class="animate-bounce-x flex items-center text-purple-800 shrink-0">
+            <svg class="w-5 h-5 text-purple-800" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </div>
+        </button>
+
+        <button id="mobile-menu-btn" aria-label="Abrir menú" class="relative p-2.5 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-500 hover:to-pink-500 border border-white/40 shadow-md shadow-purple-600/30 transition-all active:scale-95">
+          <span id="mobile-menu-ping" class="absolute -top-1 -right-1 flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-400 border border-white"></span>
+          </span>
+          <svg id="mobile-menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Menú Desplegable Móvil con Botones Coloridos y Llamativos -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden bg-white/95 backdrop-blur-2xl border-b border-purple-200 px-5 py-6 shadow-2xl">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <a href="#hero" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-sky-400/60 bg-gradient-to-r from-sky-500 to-blue-600 text-white shadow-sm">
+          <span>Inicio</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#sobre-robert" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-indigo-400/60 bg-gradient-to-r from-indigo-500 to-blue-700 text-white shadow-sm">
+          <span>Sobre Robert</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#adquiere-tu-libro" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-emerald-400/60 bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-sm">
+          <span>Adquiere tu libro</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#comics" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-pink-400/60 bg-gradient-to-r from-pink-500 to-rose-600 text-white shadow-sm">
+          <span>Comic Online</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#consejo-dia" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-amber-400/60 bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-sm">
+          <span>Consejo Viral</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#los-101" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-purple-400/60 bg-gradient-to-r from-violet-600 to-purple-700 text-white shadow-sm">
+          <span>Los 101 Consejos</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#redes-sociales" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-teal-400/60 bg-gradient-to-r from-teal-500 to-cyan-600 text-white shadow-sm">
+          <span>Redes Sociales</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#videos-personalizados" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-black uppercase tracking-wide border border-fuchsia-300/80 bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 text-white shadow-md">
+          <span>Videos Personalizados</span>
+          <span class="text-white">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. SECCIÓN HERO DE ALTO IMPACTO (ENFOQUE REDES) -->
+  <section id="hero" class="pt-28 sm:pt-36 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- Columna Izquierda: Gran 101 y Título de la Marca -->
+      <div class="lg:col-span-7 text-center lg:text-left">
+        
+        <div class="inline-flex items-center gap-2 bg-white/80 border border-purple-200 shadow-sm px-4 py-1.5 rounded-full mb-4">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-900 font-mono">
+            Fenómeno Viral • +30M Vistas en Redes
+          </span>
+        </div>
+
+        <!-- El icónico 101 estilizado con los colores de la marca (#8A2BE2) y doble contorno -->
+        <div class="select-none my-1 sm:my-2">
+          <span class="brand-101-title font-serif font-black text-7xl sm:text-8xl md:text-9xl lg:text-[130px] leading-none block tracking-tight">
+            101
+          </span>
+        </div>
+
+        <!-- Título Principal Debajo -->
+        <h1 class="font-serif font-black text-3xl sm:text-4xl md:text-5xl lg:text-[50px] uppercase text-slate-950 tracking-tight leading-[1.1] mb-2">
+          BUENOS MALOS CONSEJOS <br class="hidden sm:inline"/>
+          <span class="text-[#8A2BE2]">PARA MI HIJO</span>
+        </h1>
+        
+        <p class="font-serif font-bold text-lg sm:text-xl text-purple-950/80 mb-6 italic">
+          Por Robert Pacheco
+        </p>
+
+        <p class="text-slate-700 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
+          Lecciones de vida sin filtros edulcorados ni recetas mágicas. La sabiduría callejera, cruda y con humor que todo padre quisiera dejarle a su hijo para que aprenda a defenderse y prosperar en el mundo real.
+        </p>
+
+        <!-- Botones CTA Directos -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 justify-center lg:justify-start">
+          <a href="#los-101" class="bg-[#8A2BE2] hover:bg-[#2E1065] text-white px-7 py-4 rounded-2xl font-bold uppercase tracking-wider shadow-lg shadow-purple-900/25 flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95 text-center">
+            <span class="text-sm font-black">Explorar los 101 Consejos</span>
+          </a>
+          <a href="#consejo-dia" class="bg-white hover:bg-purple-50 text-[#2E1065] border-2 border-[#8A2BE2] px-7 py-4 rounded-2xl font-bold uppercase tracking-wider shadow-md flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95 text-center">
+            <span class="text-sm font-black">Consejo del Día</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Columna Derecha: Reproductor Reel/TikTok con la Marioneta con Lentes y Barba -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-[300px] sm:w-[330px] h-[580px] sm:h-[610px] bg-slate-950 rounded-[44px] p-3 shadow-2xl border-[6px] border-slate-900 shadow-purple-950/30 select-none">
+          
+          <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-40 flex items-center justify-end px-3">
+            <div class="w-2.5 h-2.5 rounded-full bg-slate-800 border border-slate-700"></div>
+          </div>
+
+          <!-- Pantalla Interna Reel -->
+          <div class="relative w-full h-full rounded-[34px] overflow-hidden bg-[#2D4564] flex flex-col justify-between">
+            
+            <!-- Video Oficial GIFROB.mp4 -->
+            <div class="absolute inset-0 z-0 bg-black cursor-pointer overflow-hidden" id="tiktok-video-wrapper">
+              <video
+                id="tiktok-video"
+                src="GIFROB.mp4"
+                playsinline
+                loop
+                preload="auto"
+                class="w-full h-full object-cover object-center"
+              ></video>
+            </div>
+
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/85 z-10 pointer-events-none"></div>
+
+            <!-- Header Superior Reel -->
+            <div class="relative z-20 p-4 pt-6 flex items-center justify-between text-white text-xs font-bold">
+              <span class="bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] border border-white/20">
+                Siguiendo | <span class="text-white underline">Para ti</span>
+              </span>
+              <div class="w-7 h-7 rounded-full bg-black/40 flex items-center justify-center border border-white/20">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+              </div>
+            </div>
+
+            <!-- Botón Reproducir / Pausar -->
+            <div class="relative z-20 flex-1 flex items-center justify-center">
+              <button id="tiktok-play-btn" class="w-14 h-14 rounded-full bg-[#8A2BE2]/90 hover:bg-[#8A2BE2] text-white flex items-center justify-center shadow-xl backdrop-blur-md transition-all hover:scale-110 active:scale-90 border-2 border-white/80">
+                <svg id="play-icon" class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+
+            <!-- Barra Lateral Derecha de Interacciones -->
+            <div class="absolute right-2 bottom-20 z-20 flex flex-col items-center gap-4 text-white">
+              <div class="w-10 h-10 rounded-full border-2 border-white bg-[#8A2BE2] flex items-center justify-center font-bold text-xs shadow-md">
+                RP
+              </div>
+
+              <button id="tiktok-like-btn" class="flex flex-col items-center group">
+                <div class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg id="like-icon" class="w-5 h-5 fill-current text-white transition-colors" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </div>
+                <span id="like-count" class="text-[10px] font-bold mt-1">248.5K</span>
+              </button>
+
+              <a href="#redes-sociales" class="flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/></svg>
+                </div>
+                <span class="text-[10px] font-bold mt-1">3.4K</span>
+              </a>
+
+              <button onclick="compartirWeb()" class="flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/></svg>
+                </div>
+                <span class="text-[10px] font-bold mt-1">Share</span>
+              </button>
+            </div>
+
+            <!-- Parte Inferior del Teléfono -->
+            <div class="relative z-20 w-full mt-auto">
+              <div class="p-4 pr-14 pb-3 text-white text-left">
+                <div class="flex items-center gap-1.5 mb-1">
+                  <span class="font-bold text-sm text-white drop-shadow">@consejosparamihijo</span>
+                  <span class="bg-sky-400 text-black rounded-full p-0.5">
+                    <svg class="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  </span>
+                </div>
+
+                <p class="text-xs text-slate-100 font-medium line-clamp-3 mb-2 drop-shadow leading-snug">
+                  <span class="font-bold text-yellow-300">Consejo #101:</span> "Algún día moriré, algún día morirá mamá y los abuelos, y tus mascotas e incluso tú..." 🔥
+                </p>
+
+                <div class="flex items-center gap-2 text-[11px] text-slate-300 font-mono">
+                  <svg class="w-3 h-3 fill-current text-yellow-400 animate-spin" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                  <span class="truncate">Sonido Original - Robert Pacheco (101 Consejos)</span>
+                </div>
+              </div>
+
+              <div class="w-full bg-white/20 h-1">
+                <div id="reel-progress" class="bg-[#8A2BE2] h-full w-[35%] transition-all duration-300"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. SECCIÓN SOBRE ROBERT PACHECO -->
+  <section id="sobre-robert" class="py-20 bg-white/50 backdrop-blur-md border-y border-white/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Biografía Fiel, Humana y Sincera -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#8A2BE2] font-mono block mb-2">
+            El Hombre Detrás de la Voz
+          </span>
+          <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight mb-6">
+            Sobre <span class="text-[#8A2BE2]">Robert Pacheco</span>
+          </h2>
+
+          <div class="space-y-3.5 text-slate-800 text-base sm:text-lg leading-relaxed font-serif" style="font-family: Georgia, serif;">
+            <p>Robert Pacheco nació un día par, mes non, año bisiesto.</p>
+            <p>Nieto de Robert Pacheco.</p>
+            <p>Hijo de Robert Pacheco.</p>
+            <p>Padre de Aldebarán y esposo de Paulina.</p>
+            <p>Director de teatro.</p>
+            <p>
+              Instructor de temas en Desarrollo Humano y Sensibilización en la Seguridad industrial a través de personajes y espectáculos y un largo etcétera de trabajos y oficios que ha tenido a lo largo de su vida.
+            </p>
+            <p class="pt-2 font-medium">
+              Mas, citando a su esposa Paulina:
+            </p>
+            <blockquote class="text-xl sm:text-2xl font-bold italic text-[#2E1065] py-1 border-l-4 border-[#8A2BE2] pl-4 my-2">
+              “Robert, tu mejor rol, la mejor parte de ti, es ser padre”
+            </blockquote>
+            <p class="pt-2 text-slate-950 font-bold text-lg sm:text-xl">
+              Así que, simplemente, Robert Pacheco es solo un padre que ama a su hijo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Fotografía Oficial / Familiar -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center">
+          <div class="w-full max-w-md rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-slate-900">
+            <img 
+              src="familia.jpeg" 
+              alt="Robert Pacheco con su familia" 
+              onerror="this.onerror=null; this.src='robert.jpeg';"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="text-center mt-3">
+            <span class="font-serif font-bold text-base text-slate-900 block">
+              Robert, Paulina y Aldebarán
+            </span>
+            <span class="text-xs text-[#8A2BE2] font-mono uppercase tracking-wider font-bold">
+              Familia Pacheco
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SECCIÓN ADQUIERE TU LIBRO -->
+  <section id="adquiere-tu-libro" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#8A2BE2] font-mono block mb-2">
+        Formatos Oficiales
+      </span>
+      <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight">
+        Adquiere tu libro
+      </h2>
+      <div class="w-16 h-1 bg-[#8A2BE2] mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- Las 3 Tarjetas Limpias, Modernas y Responsivas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+      
+      <!-- Tarjeta 1: Libro Digital -->
+      <div class="bg-white/85 backdrop-blur-md rounded-3xl p-8 border border-white shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+        <div>
+          <div class="w-full h-52 flex items-center justify-center mb-6 overflow-hidden">
+            <img src="./librorobb.png" alt="Libro Digital Completo" class="max-h-52 w-auto max-w-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-serif font-black text-2xl text-slate-950 mb-3">
+            Libro Digital Completo
+          </h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            Los 101 capítulos con explicaciones profundas, anécdotas inéditas y reflexiones directas al grano.
+          </p>
+        </div>
+
+        <a href="https://play.google.com/store/books/details?id=rD-yEQAAQBAJ" target="_blank" rel="noopener noreferrer" class="w-full py-4 bg-[#8A2BE2] hover:bg-[#2E1065] text-white font-bold text-center rounded-2xl uppercase text-xs tracking-wider shadow-md hover:shadow-lg transition-all active:scale-95 block">
+          Adquirir en Google Play
+        </a>
+      </div>
+
+      <!-- Tarjeta 2: Audiolibro -->
+      <div class="bg-gradient-to-b from-white to-purple-50/70 backdrop-blur-md rounded-3xl p-8 border-2 border-[#8A2BE2] shadow-2xl flex flex-col justify-between hover:shadow-purple-900/20 hover:-translate-y-1 transition-all duration-300 relative group">
+        <div>
+          <div class="w-full h-52 flex items-center justify-center mb-6 overflow-hidden">
+            <img src="./audiorobb.png" alt="Audiolibro Oficial" class="max-h-52 w-auto max-w-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-serif font-black text-2xl text-slate-950 mb-3">
+            Audiolibro Oficial
+          </h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            Narrado en voz propia por Robert Pacheco. Escucha cada consejo con la entonación y humor auténtico.
+          </p>
+        </div>
+
+        <a href="https://play.google.com/store/audiobooks/details?id=AQAAAEAaxl6GVM" target="_blank" rel="noopener noreferrer" class="w-full py-4 bg-[#2E1065] hover:bg-[#8A2BE2] text-white font-bold text-center rounded-2xl uppercase text-xs tracking-wider shadow-lg transition-all active:scale-95 block">
+          Escuchar Audiolibro
+        </a>
+      </div>
+
+      <!-- Tarjeta 3: Próximamente App -->
+      <div class="bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-white/60 shadow-lg flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 relative group">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#2E1065] text-white text-[11px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow-md z-10">
+          PRÓXIMAMENTE
+        </div>
+
+        <div>
+          <div class="w-full h-52 flex items-center justify-center mb-6 mt-2 overflow-hidden">
+            <img src="./approbb.png" alt="101 Buenos Malos Consejos, La App" class="max-h-52 w-auto max-w-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-serif font-black text-2xl text-slate-950 mb-3">
+            101 Buenos Malos Consejos, La App
+          </h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            La experiencia interactiva que estás esperando para llevar todos los consejos en tu bolsillo.
+          </p>
+        </div>
+
+        <button type="button" disabled class="w-full py-4 bg-slate-200 text-slate-500 font-bold text-center rounded-2xl uppercase text-xs tracking-wider cursor-not-allowed select-none">
+          Muy Pronto Disponible
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. SECCIÓN CÓMICS (BUENOS MALOS CONSEJOS. EL CÓMIC) -->
+  <section id="comics" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-purple-900 text-xs font-black uppercase tracking-widest mb-4 shadow-sm">
+        <svg class="w-3.5 h-3.5 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/></svg>
+        Nueva Sección Ilustrada
+      </div>
+
+      <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight flex items-center justify-center gap-3 flex-wrap">
+        <span>Buenos Malos Consejos.</span>
+        <span class="relative inline-block px-3 py-0.5 rounded-2xl bg-[#8A2BE2] text-white shadow-lg transform -rotate-1">
+          <span class="relative z-10 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+            Cómics en línea
+          </span>
+        </span>
+      </h2>
+      <div class="w-20 h-1.5 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 mx-auto mt-4 rounded-full"></div>
+      <p class="mt-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Las reflexiones callejeras de Robert Pacheco adaptadas en viñetas directas, crudas y cargadas de humor auténtico.
+      </p>
+    </div>
+
+    <!-- Portada del Cómic -->
+    <div class="max-w-4xl mx-auto">
+      <div class="relative bg-gradient-to-br from-slate-900 via-purple-950 to-slate-900 rounded-[32px] p-6 sm:p-12 shadow-2xl border-4 border-purple-400/30 overflow-hidden group">
+        
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 16px 16px;"></div>
+        <div class="absolute -top-24 -left-24 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Vista previa de la portada -->
+          <div class="md:col-span-5 flex justify-center">
+            <div onclick="openComic(0)" class="relative cursor-pointer transition-transform duration-500 group-hover:scale-105" title="Haz clic para abrir el cómic">
+              <div class="absolute -inset-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl transform rotate-6 opacity-75 blur-[1px]"></div>
+              <div class="absolute -inset-1 bg-amber-400 rounded-2xl transform -rotate-3 opacity-90"></div>
+              
+              <div class="relative w-56 sm:w-64 aspect-[3/4] bg-white rounded-2xl overflow-hidden shadow-2xl border-4 border-white flex flex-col justify-between">
+                <img src="comic/7.jpg" alt="Portada del Cómic" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
+                  <span class="text-[11px] font-black uppercase tracking-widest bg-pink-600 text-white px-2.5 py-1 rounded-md w-fit mb-1 shadow">
+                    Edición 101
+                  </span>
+                  <h4 class="font-serif font-black text-lg leading-tight drop-shadow">
+                    Buenos Malos Consejos
+                  </h4>
+                  <p class="text-[11px] text-purple-200">25 tiras cómicas completas</p>
+                </div>
+              </div>
+
+              <div class="absolute -bottom-3 -right-3 bg-amber-400 text-slate-950 font-black text-xs px-3 py-1.5 rounded-full shadow-lg border-2 border-slate-900 transform group-hover:scale-110 transition-transform flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                <span>¡25 Tiras!</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenido y Llamados a la Acción -->
+          <div class="md:col-span-7 text-center md:text-left flex flex-col justify-center">
+            <div class="inline-flex items-center gap-2 text-pink-400 font-mono text-xs font-bold uppercase tracking-wider mb-2">
+              <span class="w-2 h-2 rounded-full bg-pink-400 animate-ping"></span>
+              Disponible ahora en formato interactivo
+            </div>
+
+            <h3 class="font-serif font-black text-2xl sm:text-4xl text-white mb-4 leading-tight">
+              Buenos Malos Consejos. <br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-amber-300">
+                Cómics en línea
+              </span>
+            </h3>
+
+            <p class="text-purple-100/90 text-sm sm:text-base leading-relaxed mb-8">
+              Hojéalo de forma cómoda desde tu móvil o computadora. Disfruta de cada viñeta en alta resolución con controles intuitivos de cambio de página.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+              <button
+                type="button"
+                onclick="openComic(0)"
+                class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 hover:from-pink-500 hover:to-purple-500 text-white font-black text-sm uppercase tracking-wider rounded-2xl shadow-xl shadow-pink-900/40 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 border-2 border-white/20 cursor-pointer"
+              >
+                <svg class="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                <span>Comenzar a hojear</span>
+              </button>
+
+              <button
+                type="button"
+                onclick="openComicVertical()"
+                class="w-full sm:w-auto px-6 py-4 bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white font-bold text-xs uppercase tracking-wider rounded-2xl backdrop-blur-sm border border-white/10 transition-all flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <span>Ver en tira vertical</span>
+              </button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-center md:justify-start gap-2 text-xs text-purple-300 font-medium">
+              <span>Colección completa:</span>
+              <span class="bg-purple-800/80 px-2.5 py-0.5 rounded-full text-white font-bold text-[11px] border border-purple-500/30">
+                25 páginas ilustradas
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECCIÓN EL CONSEJO DEL DÍA (VIRALIZABLES) -->
+  <section id="consejo-dia" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <div class="bg-gradient-to-b from-white via-[#FFFDF9] to-[#F8F5EE] rounded-[36px] p-8 sm:p-14 shadow-2xl border-2 border-[#E7DFCF] text-center relative overflow-hidden">
+      
+      <span class="text-xs font-bold uppercase tracking-widest text-[#8A2BE2] font-mono block mb-2">
+        Dosis Diaria de Realidad
+      </span>
+      <h2 class="font-serif font-black text-3xl sm:text-4xl text-slate-950 uppercase tracking-tight mb-2">
+        El Consejo del Día
+      </h2>
+      <p class="text-slate-600 text-sm mb-8">
+        Reflexiones sin filtro para compartir con tu hijo o recordar en tus momentos difíciles.
+      </p>
+
+      <!-- Tarjeta del Consejo con Tipografía Manuscrita -->
+      <div class="bg-[#FFFBF2] rounded-3xl p-6 sm:p-10 border border-[#E9E1D2] shadow-inner text-left max-w-2xl mx-auto relative mb-8">
+        <div class="flex items-center justify-between mb-3 border-b border-amber-900/10 pb-2">
+          <span id="daily-badge" class="font-mono text-xs font-bold uppercase tracking-wider text-[#8A2BE2]">
+            Consejo #101 • Lección Crucial
+          </span>
+          <span class="text-[11px] font-mono text-slate-600 uppercase">Robert Pacheco</span>
+        </div>
+
+        <h3 id="daily-title" class="font-serif font-black text-xl sm:text-2xl text-slate-950 uppercase mb-4">
+          ALGÚN DÍA MORIRÉ
+        </h3>
+
+        <p id="daily-text" class="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-slate-800 leading-snug italic font-medium">
+          «Algún día moriré, algún día morirá mamá y los abuelos, y tus mascotas e incluso tú. Por eso no pierdas el tiempo en pequeñeces y honra tu vida mientras la tengas.»
+        </p>
+      </div>
+
+      <!-- Botones de Acción Viral -->
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        
+        <button id="btn-next-consejo" class="bg-[#8A2BE2] hover:bg-[#2E1065] text-white px-6 py-3.5 rounded-2xl font-bold uppercase text-xs tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+          <span>Otro Consejo Aleatorio</span>
+        </button>
+
+        <button id="btn-copy-consejo" class="bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-6 py-3.5 rounded-2xl font-bold uppercase text-xs tracking-wider shadow-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current text-purple-700" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          <span id="copy-btn-text">Copiar Consejo</span>
+        </button>
+
+        <button id="btn-share-whatsapp" class="bg-[#25D366] hover:bg-[#1EBE5D] text-white px-6 py-3.5 rounded-2xl font-bold uppercase text-xs tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.28c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.1.11-1.78-.11-.42-.14-.97-.32-1.68-.62-2.98-1.29-4.93-4.32-5.08-4.52-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.04-2.5.27-.3.59-.38.79-.38.2 0 .4 0 .57.01.19.01.44-.07.69.53.25.61.86 2.1.94 2.25.08.15.13.33.03.53-.1.2-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.62.18.3.8 1.32 1.72 2.14 1.18 1.05 2.17 1.38 2.48 1.53.31.15.49.13.67-.08.19-.21.79-.92 1-1.24.21-.31.42-.26.71-.15.29.11 1.84.87 2.16 1.02.31.16.52.24.6.37.08.13.08.76-.16 1.44z"/></svg>
+          <span>Compartir en WhatsApp</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SECCIÓN LOS 101 CONSEJOS (EL LIBRO COMPLETO CON BUSCADOR) -->
+  <!-- 6. SECCIÓN LOS 101 CONSEJOS (FORMATO POST-IT INTERACTIVO & OJEABLE) -->
+  <section id="los-101" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto scroll-mt-20">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100/90 border border-purple-200 text-purple-950 font-bold text-xs uppercase tracking-widest mb-3 shadow-sm">
+        <svg class="w-3.5 h-3.5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        Notas & Consejos Ojeables
+      </div>
+
+      <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight">
+        Los 101 <span class="text-[#8A2BE2]">Consejos</span>
+      </h2>
+      <p class="text-slate-700 text-base sm:text-lg mt-3 leading-relaxed">
+        Hojéalos en formato de <strong>notas adhesivas interactivas</strong>. Pasa de uno en uno con fluidez, copia tus favoritos al portapapeles o compártelos directamente en tus redes.
+      </p>
+      
+      <!-- Leyenda Requerida -->
+      <div class="mt-4 inline-block bg-purple-100/90 border border-purple-300 px-6 py-2 rounded-full shadow-sm">
+        <p class="font-bold text-xs sm:text-sm tracking-wide text-[#2E1065] uppercase">
+          ★ LEE LOS CONSEJOS COMPLETOS ADQUIRIENDO EL LIBRO ★
+        </p>
+      </div>
+    </div>
+
+    <!-- Filtros y Búsqueda para el visor -->
+    <div class="max-w-3xl mx-auto mb-8 space-y-4">
+      
+      <!-- Buscador en tiempo real -->
+      <div class="relative">
+        <input 
+          type="text" 
+          id="search-consejos"
+          placeholder="Buscar por número (ej. 101) o palabra clave (ej. dinero, miedo, morir)..."
+          class="w-full px-5 py-3.5 pl-11 rounded-2xl bg-white/90 border border-purple-200 focus:border-[#8A2BE2] focus:outline-none shadow-sm text-xs sm:text-sm text-slate-800 transition-all placeholder:text-slate-400"
+        />
+        <svg class="w-4 h-4 text-purple-700 absolute left-4 top-1/2 -translate-y-1/2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <button id="btn-reset-search" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 hidden text-sm font-bold">✕</button>
+      </div>
+
+      <!-- Filtros por Categoría en Chips -->
+      <div id="category-chips" class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none justify-start sm:justify-center">
+        <!-- Generado dinámicamente -->
+      </div>
+
+      <!-- Selector de color de nota adhesiva y contador -->
+      <div class="flex items-center justify-between text-xs text-slate-600 pt-1 px-1">
+        <div class="flex items-center gap-2">
+          <span class="text-[11px] font-semibold text-slate-500">Color del Post-it:</span>
+          <div class="flex items-center gap-1.5" id="color-picker-container">
+            <button type="button" onclick="setPostItTheme('yellow')" title="Amarillo Clásico" class="postit-color-btn w-5 h-5 rounded-full bg-amber-300 border border-amber-400 ring-2 ring-purple-600 scale-110 transition-all"></button>
+            <button type="button" onclick="setPostItTheme('purple')" title="Morado Firma" class="postit-color-btn w-5 h-5 rounded-full bg-purple-300 border border-purple-400 opacity-70 hover:opacity-100 transition-all"></button>
+            <button type="button" onclick="setPostItTheme('mint')" title="Menta Fresca" class="postit-color-btn w-5 h-5 rounded-full bg-emerald-300 border border-emerald-400 opacity-70 hover:opacity-100 transition-all"></button>
+            <button type="button" onclick="setPostItTheme('peach')" title="Melocotón Cálido" class="postit-color-btn w-5 h-5 rounded-full bg-rose-300 border border-rose-400 opacity-70 hover:opacity-100 transition-all"></button>
+          </div>
+        </div>
+
+        <div class="font-mono text-xs font-semibold" id="search-count">
+          Consejo <strong id="postit-current-num">1</strong> de <span id="postit-total-num">101</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COMPONENTE POST-IT INTERACTIVO PRINCIPAL -->
+    <div class="max-w-2xl mx-auto relative select-none" id="postit-container">
+      
+      <!-- Hojas apiladas de fondo simulando un taco / bloc de notas adhesivas -->
+      <div id="postit-stack-2" class="absolute inset-0 translate-y-3 translate-x-2 bg-amber-100/60 rounded-3xl -rotate-1 border border-amber-200/40 pointer-events-none transition-all"></div>
+      <div id="postit-stack-1" class="absolute inset-0 translate-y-1.5 -translate-x-1 bg-white/70 rounded-3xl rotate-1 border border-slate-200/60 pointer-events-none transition-all"></div>
+
+      <!-- Tarjeta Post-it Activa -->
+      <div 
+        id="postit-card" 
+        class="relative z-10 rounded-3xl p-6 sm:p-10 border-2 bg-gradient-to-br from-amber-50 via-yellow-100 to-amber-100/90 border-amber-300/80 shadow-[0_22px_45px_-12px_rgba(180,120,20,0.28)] transition-all duration-300 flex flex-col justify-between min-h-[440px] sm:min-h-[480px]"
+      >
+        <!-- Cinta Adhesiva (Washi Tape) realista arriba -->
+        <div id="postit-tape" class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-28 sm:w-36 h-7 bg-white/40 backdrop-blur-md border border-white/60 rounded-sm shadow-sm rotate-[-0.5deg] pointer-events-none"></div>
+
+        <!-- Cabecera del Post-it -->
+        <div>
+          <div class="flex items-center justify-between border-b border-black/10 pb-3 mb-5">
+            <div class="flex items-center gap-2">
+              <span id="postit-pin" class="w-2.5 h-2.5 rounded-full bg-purple-700 shadow-sm"></span>
+              <span id="postit-header-badge" class="font-mono text-xs sm:text-sm font-black tracking-wider uppercase text-purple-950">
+                Consejo #1 de 101
+              </span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <span id="postit-viral-tag" class="hidden bg-amber-400/90 text-amber-950 font-bold text-[11px] px-2.5 py-0.5 rounded-full items-center gap-1 shadow-sm">
+                <svg class="w-3 h-3 fill-current text-amber-950" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Viral
+              </span>
+              <span id="postit-cat-badge" class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-200/80 text-amber-900">
+                Vida
+              </span>
+            </div>
+          </div>
+
+          <!-- Título del Consejo -->
+          <h3 
+            id="postit-title" 
+            class="font-sans font-extrabold text-xl sm:text-2xl lg:text-3xl text-amber-950 uppercase tracking-tight mb-4 leading-snug"
+          >
+            1.- HAZ LO QUE QUIERAS
+          </h3>
+
+          <!-- Texto con Tipografía Limpia, Nítida y Altamente Legible -->
+          <div class="my-6">
+            <p 
+              id="postit-text" 
+              class="font-sans font-medium sm:font-semibold text-lg sm:text-xl lg:text-2xl text-slate-900 leading-relaxed tracking-normal"
+            >
+              «Haz lo que quieras en medida de tus posibilidades, pero no te limites...»
+            </p>
+          </div>
+        </div>
+
+        <!-- Pie de la Tarjeta con Autor y Acciones de Copiar y Compartir -->
+        <div class="pt-4 border-t border-black/10 mt-auto">
+          <div class="flex items-center justify-between text-xs text-slate-700 mb-4 font-mono font-medium">
+            <span>— Robert Pacheco</span>
+            <span class="italic text-[11px] opacity-80">«101 Buenos Malos Consejos»</span>
+          </div>
+
+          <!-- Botones de Acción Obligatorios -->
+          <div class="grid grid-cols-2 gap-3">
+            
+            <!-- Botón 1: Copiar Consejo (con Alerta Visual de Éxito) -->
+            <button
+              type="button"
+              id="btn-postit-copy"
+              onclick="copyCurrentPostIt()"
+              class="py-3 px-4 rounded-2xl bg-white hover:bg-slate-50 text-purple-950 border border-purple-200 hover:border-purple-400 font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 cursor-pointer"
+              title="Copiar texto al portapapeles"
+            >
+              <svg id="icon-copy-default" class="w-4 h-4 text-purple-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <svg id="icon-copy-success" class="w-4 h-4 text-emerald-300 stroke-[3] hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span id="text-copy-btn">Copiar Consejo</span>
+            </button>
+
+            <!-- Botón 2: Compartir Consejo -->
+            <button
+              type="button"
+              id="btn-postit-share"
+              onclick="shareCurrentPostIt()"
+              class="py-3 px-4 rounded-2xl bg-[#8A2BE2] hover:bg-purple-800 text-white font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md shadow-purple-900/20 active:scale-95 hover:scale-[1.02] cursor-pointer"
+              title="Compartir consejo en redes"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              <span>Compartir</span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTONES FLOTANTES ANTERIOR / SIGUIENTE A LOS LADOS -->
+      <button
+        type="button"
+        onclick="prevPostIt()"
+        class="absolute -left-3 sm:-left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-purple-700 text-slate-800 hover:text-white border border-purple-200 shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
+        title="Consejo Anterior (Tecla Flecha Izquierda)"
+        aria-label="Consejo Anterior"
+      >
+        <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <button
+        type="button"
+        onclick="nextPostIt()"
+        class="absolute -right-3 sm:-right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-purple-700 text-slate-800 hover:text-white border border-purple-200 shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95 cursor-pointer"
+        title="Siguiente Consejo (Tecla Flecha Derecha)"
+        aria-label="Siguiente Consejo"
+      >
+        <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <!-- BARRA DE CONTROL INFERIOR CON NAVEGACIÓN Y SLIDER -->
+      <div class="mt-8 bg-white/80 backdrop-blur-md rounded-2xl p-4 border border-purple-200/80 shadow-md flex flex-wrap items-center justify-between gap-4">
+        
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            onclick="prevPostIt()"
+            class="px-4 py-2 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-900 font-bold text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            <span>Anterior</span>
+          </button>
+
+          <button
+            type="button"
+            onclick="nextPostIt()"
+            class="px-4 py-2 rounded-xl bg-purple-50 hover:bg-purple-100 text-purple-900 font-bold text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+          >
+            <span>Siguiente</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <button
+            type="button"
+            onclick="randomPostIt()"
+            class="px-3.5 py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 font-bold text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+            title="Elegir consejo al azar"
+          >
+            <svg class="w-3.5 h-3.5 text-amber-600 fill-current" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+            <span class="hidden sm:inline">Aleatorio</span>
+          </button>
+        </div>
+
+        <!-- Slider de salto rápido a cualquier consejo -->
+        <div class="flex items-center gap-3 flex-1 max-w-xs justify-end">
+          <span class="text-[11px] font-mono text-slate-500 hidden sm:inline">Saltar a:</span>
+          <input
+            type="range"
+            id="postit-slider"
+            min="0"
+            max="100"
+            value="0"
+            oninput="jumpToPostIt(Number(this.value))"
+            class="w-full accent-purple-600 cursor-pointer h-2 bg-slate-200 rounded-lg"
+            aria-label="Selector de posición de consejo"
+          />
+          <span id="postit-slider-label" class="font-mono text-xs font-bold text-purple-900 min-w-[3rem] text-right">
+            #1
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Fallback si la búsqueda no arroja resultados -->
+    <div id="postit-empty" class="hidden text-center py-16 bg-white/80 rounded-3xl border border-dashed border-slate-300 max-w-xl mx-auto shadow-sm">
+      <svg class="w-12 h-12 text-slate-400 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <h4 class="font-serif font-bold text-lg text-slate-800 mb-1">
+        No encontramos ningún consejo con esa búsqueda
+      </h4>
+      <p class="text-xs text-slate-500 mb-4">
+        Prueba buscando por otra palabra clave o restablece los filtros para hojear los 101.
+      </p>
+      <button
+        onclick="resetPostItFilters()"
+        class="bg-purple-700 hover:bg-purple-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all"
+      >
+        Restablecer Filtros
+      </button>
+    </div>
+
+  </section>
+
+  <!-- MODAL DE COMPARTIR ALTERNATIVO (SI NO HAY WEB SHARE API) -->
+  <div id="modal-share" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-purple-200 relative text-left">
+      <button onclick="closeShareModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center font-bold">✕</button>
+      
+      <span class="text-xs font-mono font-bold text-[#8A2BE2] uppercase block mb-1">Compartir Consejo</span>
+      <h3 id="modal-share-title" class="font-serif font-black text-xl text-slate-950 uppercase mb-4">Título</h3>
+
+      <div class="space-y-3">
+        <button
+          type="button"
+          onclick="sharePostItToWhatsApp()"
+          class="w-full py-3.5 px-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
+        >
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Compartir en WhatsApp</span>
+        </button>
+
+        <button
+          type="button"
+          onclick="sharePostItToTwitter()"
+          class="w-full py-3.5 px-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span>Compartir en X (Twitter)</span>
+        </button>
+
+        <button
+          type="button"
+          onclick="copyCurrentPostIt(); closeShareModal();"
+          class="w-full py-3.5 px-4 rounded-2xl bg-purple-50 hover:bg-purple-100 text-purple-900 font-bold text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all border border-purple-200"
+        >
+          <svg class="w-4 h-4 text-purple-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span>Copiar texto del consejo</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. SECCIÓN REDES SOCIALES -->
+  <section id="redes-sociales" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+    <!-- Encabezado de Sección -->
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100/90 border border-purple-200 text-purple-900 text-xs font-black uppercase tracking-widest mb-4 shadow-sm">
+        <svg class="w-3.5 h-3.5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+        Conexión Directa
+      </div>
+
+      <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight flex items-center justify-center gap-3 flex-wrap">
+        <span>Sigue a Robert en</span>
+        <span class="relative inline-block px-3 py-0.5 rounded-2xl bg-[#8A2BE2] text-white shadow-lg shadow-purple-900/20 transform -rotate-1">
+          <span class="relative z-10 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+            Redes Sociales
+          </span>
+        </span>
+      </h2>
+
+      <div class="w-20 h-1.5 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 mx-auto mt-4 rounded-full"></div>
+      
+      <p class="mt-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Encuentra contenido nuevo cada día: videos de la marioneta, viñetas inéditas, debates abiertos y los consejos que no alcanzaron a entrar en el libro.
+      </p>
+    </div>
+
+    <!-- Grid de Redes Sociales (4 Redes Oficiales) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- TikTok -->
+      <div class="relative bg-gradient-to-b from-pink-500/10 via-purple-500/10 to-transparent bg-white/95 rounded-3xl p-6 border-2 border-pink-200/80 hover:border-pink-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center text-pink-600 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.68a6.34 6.34 0 0 0 10.82 4.47 6.3 6.3 0 0 0 1.9-4.47V8.6a8.28 8.28 0 0 0 4.87 1.57v-3.48z"/></svg>
+            </div>
+            <span class="inline-block px-2.5 py-1 rounded-full bg-white/90 border border-slate-200/80 text-[10px] font-bold text-slate-700 shadow-sm">
+              Canal Oficial
+            </span>
+          </div>
+          <h3 class="font-serif font-black text-lg text-slate-900 leading-tight">TikTok</h3>
+          <p class="font-mono text-xs font-bold text-purple-700 mt-0.5 mb-2.5 break-all">@consejosparamihijo</p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Videos cortos, reflexiones directas de la marioneta, dinámicas urbanas y los mejores consejos sin filtro.</p>
+        </div>
+        <a href="https://www.tiktok.com/@consejosparamihijo?_r=1&_t=ZS-99P9qIBErZv" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3.5 rounded-2xl font-bold text-xs uppercase tracking-wider bg-black hover:bg-slate-900 text-white shadow-md flex items-center justify-center gap-2 transition-all duration-200 group-hover:shadow-lg">
+          <span>Seguir en TikTok</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+      <!-- Instagram -->
+      <div class="relative bg-gradient-to-b from-amber-500/10 via-pink-500/10 to-purple-500/10 bg-white/95 rounded-3xl p-6 border-2 border-purple-200/80 hover:border-purple-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center text-purple-600 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <span class="inline-block px-2.5 py-1 rounded-full bg-white/90 border border-slate-200/80 text-[10px] font-bold text-slate-700 shadow-sm">
+              Frases & Viñetas
+            </span>
+          </div>
+          <h3 class="font-serif font-black text-lg text-slate-900 leading-tight">Instagram</h3>
+          <p class="font-mono text-xs font-bold text-purple-700 mt-0.5 mb-2.5 break-all">@buenos_malos_consejos</p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Frases del día, fragmentos del libro, viñetas de los cómics y contenido visual oficial para compartir.</p>
+        </div>
+        <a href="https://www.instagram.com/buenos_malos_consejos?igsi=MWtjc3NkbzBtbWM2Mg==" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3.5 rounded-2xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-pink-600 via-purple-600 to-amber-500 hover:opacity-90 text-white shadow-md flex items-center justify-center gap-2 transition-all duration-200 group-hover:shadow-lg">
+          <span>Seguir en Instagram</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="relative bg-gradient-to-b from-red-500/10 via-rose-500/10 to-transparent bg-white/95 rounded-3xl p-6 border-2 border-red-200/80 hover:border-red-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center text-red-600 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <span class="inline-block px-2.5 py-1 rounded-full bg-white/90 border border-slate-200/80 text-[10px] font-bold text-slate-700 shadow-sm">
+              Episodios & Charlas
+            </span>
+          </div>
+          <h3 class="font-serif font-black text-lg text-slate-900 leading-tight">YouTube</h3>
+          <p class="font-mono text-xs font-bold text-purple-700 mt-0.5 mb-2.5 break-all">@buenosmalosconsejos</p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Reflexiones extensas, análisis crudos de la cotidianidad y entrevistas sobre el proceso creativo.</p>
+        </div>
+        <a href="https://youtube.com/@buenosmalosconsejos?si=AejlXcKObZXpDJmm" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3.5 rounded-2xl font-bold text-xs uppercase tracking-wider bg-red-600 hover:bg-red-700 text-white shadow-md flex items-center justify-center gap-2 transition-all duration-200 group-hover:shadow-lg">
+          <span>Seguir en YouTube</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="relative bg-gradient-to-b from-blue-500/10 via-indigo-500/10 to-transparent bg-white/95 rounded-3xl p-6 border-2 border-blue-200/80 hover:border-blue-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-white shadow-md border border-slate-100 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.667 5H18V0h-3.889C10.667 0 9 1.667 9 4.667V8z"/></svg>
+            </div>
+            <span class="inline-block px-2.5 py-1 rounded-full bg-white/90 border border-slate-200/80 text-[10px] font-bold text-slate-700 shadow-sm">
+              Comunidad Oficial
+            </span>
+          </div>
+          <h3 class="font-serif font-black text-lg text-slate-900 leading-tight">Facebook</h3>
+          <p class="font-mono text-xs font-bold text-purple-700 mt-0.5 mb-2.5 break-all">Buenos Malos Consejos</p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Debates con los lectores, dinámicas de preguntas y respuestas, y avisos de eventos oficiales.</p>
+        </div>
+        <a href="https://www.facebook.com/share/1BmBHofMHy/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3.5 rounded-2xl font-bold text-xs uppercase tracking-wider bg-[#1877F2] hover:bg-blue-600 text-white shadow-md flex items-center justify-center gap-2 transition-all duration-200 group-hover:shadow-lg">
+          <span>Seguir en Facebook</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Banner de contacto y colaboraciones -->
+    <div class="mt-12 bg-gradient-to-r from-slate-900 via-purple-950 to-slate-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-purple-500/20 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/></svg>
+          Contacto Oficial & Colaboraciones
+        </div>
+        <h4 class="font-serif font-black text-xl sm:text-2xl text-white">
+          Prensa, firmas de libros, entrevistas o eventos
+        </h4>
+        <p class="text-purple-200/80 text-sm mt-1 max-w-xl">
+          Escríbenos directamente al correo electrónico oficial: <strong class="text-amber-300">thaelous@gmail.com</strong> o menciónanos con el hashtag <strong>#101BuenosMalosConsejos</strong>.
+        </p>
+      </div>
+
+      <a
+        href="mailto:thaelous@gmail.com"
+        class="flex-shrink-0 px-6 py-3.5 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-black text-xs uppercase tracking-wider rounded-2xl shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-2 border border-white/20"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <span>Escribir a thaelous@gmail.com</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN VIDEOS PERSONALIZADOS (DESPUÉS DE REDES SOCIALES) -->
+  <section id="videos-personalizados" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 bg-white/80 border border-purple-200 shadow-sm px-4 py-1.5 rounded-full mb-4">
+        <svg class="w-4 h-4 text-[#8A2BE2]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+        <span class="text-xs font-bold uppercase tracking-wider text-purple-900 font-mono">
+          Dedicatorias y Palabras con Propósito
+        </span>
+      </div>
+      <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight">
+        VIDEOS <span class="text-[#8A2BE2]">PERSONALIZADOS</span>
+      </h2>
+      <div class="w-16 h-1 bg-[#8A2BE2] mx-auto mt-4 rounded-full"></div>
+      <p class="mt-4 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto">
+        Un mensaje exclusivo y memorable, grabado con la autenticidad, calidez y el estilo inconfundible de Robert Pacheco.
+      </p>
+    </div>
+
+    <!-- 4 Tarjetas de Información Clave -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      
+      <!-- 1. ¿Para quién son? -->
+      <div class="bg-white/85 backdrop-blur-md rounded-3xl p-6 border border-white shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center mb-5 group-hover:bg-[#8A2BE2] group-hover:text-white transition-colors shadow-sm">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#8A2BE2] block mb-1">
+            Destinatarios
+          </span>
+          <h3 class="font-serif font-black text-xl text-slate-900 mb-2">
+            ¿Para quién son?
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Para <strong class="text-slate-900">cualquier persona</strong>: hijos, padres, pareja, amigos, hermanos, compañeros de trabajo o quien tú desees.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-purple-100/60 text-xs font-bold text-purple-900 flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          <span>100% Personalizado</span>
+        </div>
+      </div>
+
+      <!-- 2. ¿Para qué ocasión? -->
+      <div class="bg-white/85 backdrop-blur-md rounded-3xl p-6 border border-white shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-700 flex items-center justify-center mb-5 group-hover:bg-pink-600 group-hover:text-white transition-colors shadow-sm">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <span class="text-[11px] font-extrabold uppercase tracking-widest text-pink-700 block mb-1">
+            Motivos
+          </span>
+          <h3 class="font-serif font-black text-xl text-slate-900 mb-2">
+            ¿Para qué ocasión?
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Ideales para dar un <strong class="text-slate-900">consejo directo</strong>, una <strong class="text-slate-900">felicitación</strong>, una <strong class="text-slate-900">disculpa</strong> franca, un <strong class="text-slate-900">agradecimiento</strong> o lo que tú busques.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-pink-100/60 text-xs font-bold text-pink-800 flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-pink-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          <span>Tú defines la dedicatoria</span>
+        </div>
+      </div>
+
+      <!-- 3. Duración -->
+      <div class="bg-white/85 backdrop-blur-md rounded-3xl p-6 border border-white shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center mb-5 group-hover:bg-[#8A2BE2] group-hover:text-white transition-colors shadow-sm">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#8A2BE2] block mb-1">
+            Formato & Tiempo
+          </span>
+          <h3 class="font-serif font-black text-xl text-slate-900 mb-2">
+            Duración
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Los videos tienen una duración de entre <strong class="text-slate-900">2.5 y 3.5 minutos</strong>, tiempo suficiente para transmitir un mensaje profundo y cercano.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-purple-100/60 text-xs font-bold text-purple-900 flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          <span>Entre 2.5 y 3.5 minutos</span>
+        </div>
+      </div>
+
+      <!-- 4. Costo y donativo -->
+      <div class="bg-white/85 backdrop-blur-md rounded-3xl p-6 border border-white shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-colors shadow-sm">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <span class="text-[11px] font-extrabold uppercase tracking-widest text-emerald-700 block mb-1">
+            Sin Costo Fijo
+          </span>
+          <h3 class="font-serif font-black text-xl text-slate-900 mb-2">
+            Donativo Voluntario
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            <strong class="text-slate-900">No tienen un costo fijo</strong>; funcionan por donativos a consideración del interesado <strong class="text-slate-900">después</strong> de recibido el video.
+          </p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-emerald-100/60 text-xs font-bold text-emerald-800 flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          <span>Donativo posterior a la entrega</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Banner Central de Llamado a la Acción por WhatsApp con Imagen Oficial -->
+    <div class="bg-gradient-to-r from-purple-950 via-indigo-950 to-slate-950 rounded-3xl p-8 sm:p-10 lg:p-12 text-white shadow-2xl relative overflow-hidden border border-purple-500/20">
+      <!-- Decorativos de fondo -->
+      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-10 -top-10 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        
+        <!-- Imagen Oficial VIDEOSROB.png de la carpeta public -->
+        <div class="shrink-0 flex justify-center">
+          <div class="relative group">
+            <div class="absolute -inset-2 bg-gradient-to-tr from-[#8A2BE2] via-pink-500 to-purple-400 rounded-3xl blur-xl opacity-60 group-hover:opacity-85 transition-opacity duration-300 pointer-events-none"></div>
+            <img 
+              src="./VIDEOSROB.png" 
+              alt="Robert Pacheco - Videos Personalizados" 
+              class="relative w-48 sm:w-56 md:w-64 lg:w-72 max-h-80 object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.6)] rounded-2xl group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+
+        <div class="flex-1 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Contacto Directo & Registro de Solicitudes
+          </div>
+          <h3 class="font-serif font-black text-2xl sm:text-3xl lg:text-4xl text-white mb-3">
+            Solicita tu video personalizado por WhatsApp
+          </h3>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-5">
+            La información detallada y el registro de solicitudes se realizan directamente a través de WhatsApp en el número:
+          </p>
+          
+          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <div class="inline-flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 text-white font-mono text-lg sm:text-xl font-bold tracking-wider">
+              <svg class="w-5 h-5 text-emerald-400 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>+52 462 621 64 28</span>
+            </div>
+
+            <a
+              href="https://wa.me/524626216428?text=Hola%20Robert,%20me%20gustar%C3%ADa%20solicitar%20un%20Video%20Personalizado."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-base flex items-center justify-center gap-3 shadow-lg hover:shadow-emerald-500/30 hover:scale-105 active:scale-95 transition-all duration-200"
+            >
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Escribir a WhatsApp</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. PIE DE PÁGINA (FOOTER) -->
+  <footer class="bg-slate-950 text-slate-400 py-14 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-slate-800 text-center md:text-left">
+        
+        <div>
+          <span class="font-serif font-black text-2xl text-white tracking-wider block">
+            ROBERT PACHECO
+          </span>
+          <span class="text-xs uppercase tracking-widest text-[#8A2BE2] font-bold block mt-1">
+            Buenos Malos Consejos para mi Hijo
+          </span>
+          <p class="text-xs text-slate-600 max-w-sm mt-2">
+            La obra literaria y audiovisual que le habla de frente a las nuevas generaciones sin rodeos.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-slate-300">
+          <a href="#hero" class="hover:text-white transition-colors">Inicio</a>
+          <a href="#sobre-robert" class="hover:text-white transition-colors">Sobre Robert</a>
+          <a href="#adquiere-tu-libro" class="hover:text-white transition-colors">Adquiere tu libro</a>
+          <a href="#comics" class="hover:text-pink-400 font-bold text-pink-300 transition-colors">Comic Online</a>
+          <a href="#consejo-dia" class="hover:text-white transition-colors">Consejo Viral</a>
+          <a href="#los-101" class="hover:text-white transition-colors">Los 101 Consejos</a>
+          <a href="#redes-sociales" class="hover:text-white transition-colors">Redes Sociales</a>
+          <a href="#videos-personalizados" class="hover:text-purple-300 transition-colors text-purple-200 font-bold">Videos Personalizados</a>
+        </div>
+
+        <!-- Contacto & Redes Sociales en Footer -->
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <a href="mailto:thaelous@gmail.com" class="text-xs text-purple-300 hover:text-white flex items-center gap-1.5 font-mono">
+            <svg class="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>thaelous@gmail.com</span>
+          </a>
+          <div class="flex items-center gap-2.5">
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@consejosparamihijo?_r=1&_t=ZS-99P9qIBErZv" target="_blank" title="TikTok @consejosparamihijo" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-white hover:text-black text-slate-400 flex items-center justify-center transition-all">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/buenos_malos_consejos?igsi=MWtjc3NkbzBtbWM2Mg==" target="_blank" title="Instagram @buenos_malos_consejos" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-white hover:text-black text-slate-400 flex items-center justify-center transition-all">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/1BmBHofMHy/" target="_blank" title="Facebook Oficial" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-white hover:text-black text-slate-400 flex items-center justify-center transition-all">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.667 5H18V0h-3.889C10.667 0 9 1.667 9 4.667V8z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com/@buenosmalosconsejos?si=AejlXcKObZXpDJmm" target="_blank" title="YouTube @buenosmalosconsejos" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-white hover:text-black text-slate-400 flex items-center justify-center transition-all">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+        <p>Copyright © Robert Pacheco — <em>Buenos Malos Consejos para mi Hijo</em>. Todos los derechos reservados.</p>
+        <a href="#hero" class="text-xs text-slate-500 hover:text-white transition-colors">Volver arriba ↑</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT COMPLETO CON LOS 101 CONSEJOS EMBEBIDOS (100% INDEPENDIENTE Y LISTO PARA GITHUB PAGES) -->
+  <script>
+    const CONSEJOS = [{"id":1,"title":"HAZ LO QUE QUIERAS","category":"vida","shortText":"Haz lo que quieras en medida de tus posibilidades, pero no te limites. Si teniendo en cuenta las consecuencias estás dispuesto a asumirlas y te sientes bien con ello, haz lo que quieras. Uno se arrepiente más de lo que no hizo que de lo que sí."},{"id":2,"title":"NUNCA HIERAS","category":"caracter","shortText":"Nunca hieras a conciencia. La defensa no es ofensa: nunca tires el primer golpe, mas asegúrate de tirar el último. Y emocionalmente: tú eres responsable de lo que dices, los demás de cómo lo toman."},{"id":3,"title":"EL SENTIDO DE LA VIDA","category":"mentalidad","shortText":"La vida no tiene sentido. Pero eso no quiere decir que tú no puedas darle ese sentido y hacer que tu vida valga algo para ti y para los demás."},{"id":4,"title":"LADRÓN DE CULPAS","category":"mentalidad","shortText":"No tomes cosas que no te pertenezcan y eso incluye las culpas: no cargues con culpas ajenas ni te disculpes jamás por algo que no lamentes. No seas un ladrón de culpas."},{"id":5,"title":"ANÉCDOTA DE LOS ERRORES","category":"vida","shortText":"Los accidentes pasan y los errores se cometen, pero existen consecuencias. Porque las cosas tienen consecuencias, las hayamos querido cometer o no."},{"id":6,"title":"LA ESCUELA Y LA VIDA","category":"vida","shortText":"La escuela te enseña una lección y luego te pone a prueba; pero la vida primero te pone a prueba y luego de ello… aprenderás una lección."},{"id":7,"title":"LA VIDA Y LA PUERTA","category":"mentalidad","shortText":"Cuando la vida te cierre una puerta, intenta abrirla otra vez; tal vez ya no tenga seguro o busca otra puerta abierta. Para eso están las puertas: para abrirse y cerrarse."},{"id":8,"title":"PERTENECER A UN GRUPO","category":"relaciones","shortText":"Querer pertenecer a un grupo es normal, pero que nunca sea a costa tuya ni de lo que eres. No ocultes tu persona, o quienes valen la pena no podrán encontrarte."},{"id":9,"title":"LO QUE POSEES TE POSEE","category":"dinero","shortText":"Toda cosa que obtengas también te hará responsable de ella. Por lo tanto, debes entenderlo bien: todo aquello que tienes también, a final de cuentas, te tiene a ti."},{"id":10,"title":"EL MUNDO NO ESTÁ DISEÑADO PARA TI","category":"vida","shortText":"El mundo no está diseñado para que seas feliz ni tiene tu misma noción de justicia. Cuando aceptes eso, podrás ver lo maravilloso que es el mundo, aunque no esté diseñado para ti."},{"id":11,"title":"SI PIDES, OFRECES","category":"dinero","shortText":"Siempre que solicites algo, debes estar dispuesto a ofrecer y aportar algo a cambio: tiempo, esfuerzo, dinero o conocimiento. Saca provecho de las situaciones, jamás de las personas."},{"id":12,"title":"ALGO PARA TI","category":"caracter","shortText":"Da todo el amor, la confianza y la lealtad que puedas. Pero siempre guarda algo para ti: porque cuando se acaben, no quedará nada que repartir, ni siquiera para ti mismo."},{"id":13,"title":"EL SABOR DEL JARABE","category":"vida","shortText":"Ten cariño a quienes te den lo que quieres, pues buscan tu felicidad. Mas ten gran respeto y amor a quienes te den lo que necesitas, pues buscan tu bienestar."},{"id":14,"title":"LUCHANDO CONTRA LO INJUSTO","category":"caracter","shortText":"Si ante una situación que consideras injusta clamas '¡yo no merezco esto!', pero no haces nada por cambiarlo, detenerlo o salirte, entonces sí te lo mereces."},{"id":15,"title":"COMO UN CABALLERO","category":"relaciones","shortText":"Todo acto de consideración, gentileza y caballerosidad debe ser recíproco o al menos agradecido. De lo contrario, no tienes por qué seguir haciéndolo con esa persona."},{"id":16,"title":"AFILA TUS DIENTES","category":"caracter","shortText":"La paz debe ser en ti una opción y no ser pacifista por simple resignación. Es mejor aprender a ser violento y no tener necesidad de serlo, que necesitarlo y no estar preparado para luchar."},{"id":17,"title":"QUIEN NO PUEDE SER CRITICADO…","category":"mentalidad","shortText":"Aquella persona que no acepta ser criticada no puede ser ayudada. Acepta que te digan que te equivocaste y hazte responsable. Quien no acepte críticas, no gastes tu tiempo allí."},{"id":18,"title":"DATE A CONOCER","category":"relaciones","shortText":"Haz que la gente hable de ti, que te extrañen en tu ausencia y te quieran en tu presencia. Pero que hablen con cariño, admiración y alegría; si no es así, mejor no te des a conocer."},{"id":19,"title":"CUANDO ME ENOJO CONTIGO","category":"relaciones","shortText":"La gente que se quiere también se enoja entre sí. Dame tiempo y espacio, que haré lo mismo contigo: cuando me enojo contigo no significa de ninguna manera que te haya dejado de querer."},{"id":20,"title":"EL UNICO RESPONSABLE","category":"mentalidad","shortText":"Nadie te hace enojar, nadie te pone triste. Si dices que otros te sacan de tus casillas, les das poder sobre ti. Tú eres el único responsable de cómo te sientes por lo que hagan los demás."},{"id":21,"title":"BUSCANDO SEÑALES","category":"vida","shortText":"Cuando alguien señala una estrella, muchas personas se pasan el tiempo observando el dedo. Las señales solo cobran importancia cuando haces algo con ellas: ponte en acción."},{"id":22,"title":"PERMITETE SER SUPERFICIAL","category":"vida","shortText":"De vez en cuando, y sobre todo en tu juventud, permítete ser superficial. Uno aprende a nadar en el chapoteadero antes de meterse a la alberca profunda: descansa en la superficie y diviértete."},{"id":23,"title":"AUNQUE NO LO DECIMOS","category":"relaciones","shortText":"Muchas veces los padres callamos cosas porque creemos que nuestros actos hablan. Si no te lo he dicho lo suficiente: quiero que sepas que te amo y que estoy muy orgulloso de ti."},{"id":24,"title":"LA VERDADERA LEALTAD","category":"relaciones","shortText":"La lealtad no está en guardar todo tipo de secreto; está en ayudar a esa persona que no sabe ser amiga de sí misma, buscando a quien pueda intervenir para salvarla."},{"id":25,"title":"EL QUÉ Y EL PARA QUÉ","category":"mentalidad","shortText":"Por cada 'qué' debes tener un 'para qué'. Saber qué quieres es bueno, pero más importante es saber para qué lo quieres. Si no tiene un 'para qué', seguro no lo necesitas."},{"id":26,"title":"LA VOZ DE LA CONSCIENCIA","category":"mentalidad","shortText":"La voz de la conciencia es la voz de tus padres que se grabó en tu mente. Escúchala, pero evalúa por ti mismo: los padres también nos equivocamos; toma tu propia decisión."},{"id":27,"title":"ELIJE TUS BATALLAS","category":"caracter","shortText":"No pelees por pelear. Con las personas que sabes que nunca cambiarán de opinión, simplemente dales por su lado: es muy probable que su lado sea lo único que tengan."},{"id":28,"title":"CRECER Y AMAR TU MOMENTO","category":"vida","shortText":"La nostalgia es un buen lugar al cual regresar, pero el mejor momento siempre será el que estás viviendo hoy. Haz momentos que puedas recordar con felicidad."},{"id":29,"title":"LOS AMIGOS Y LOS PRINCIPIOS","category":"caracter","shortText":"Nunca renuncies a tus principios y mucho menos por un amigo. Porque un verdadero amigo jamás te pediría que renunciaras a ellos; y si te lo pide, no es tu amigo."},{"id":30,"title":"LA LUNA Y TU RODILLA","category":"vida","shortText":"Ibas caminando mirando embobado una luna hermosa, tropezaste y te raspaste la rodilla. Que te sirva de lección: no por estar siguiendo tus sueños, dejes de ver por dónde pisas."},{"id":31,"title":"NO CAMBIES POR UNA PAREJA","category":"relaciones","shortText":"Nunca cambies tu esencia solo para satisfacer a otra persona. Si lo haces, no eres tú quien está con ella, sino una máscara; y te estará engañando con alguien que no eres tú."},{"id":32,"title":"DEFIENDE TUS IDEAS O CAMBIALAS","category":"mentalidad","shortText":"Defiende con argumentos y evidencias las ideas justas. Pero nunca las defiendas solo porque las dijo alguien a quien quieras: las ideas valen por sí mismas, no por quien las expresa."},{"id":33,"title":"SÉ AUTÓNOMO","category":"vida","shortText":"No necesitas ser sastre, pero aprende a pegar un botón. No chef, pero prepara tu comida. No mecánico, pero cambia una llanta. No seas experto en todo, pero sé autosuficiente."},{"id":34,"title":"NO SIEMPRE COMO PLANEAS","category":"mentalidad","shortText":"Cuando los planes fallen, detente y observa: a veces ese desvío fortuito te lleva a algo mejor, aunque la frustración inicial no te deje apreciarlo."},{"id":35,"title":"HACER COSAS DIFERENTES","category":"vida","shortText":"Experimenta y haz cosas nuevas, pero pon tus propios límites. No hagas algo solo por presión social: no comas estiércol creyendo que millones de moscas no pueden equivocarse."},{"id":36,"title":"LA GRATITUD","category":"relaciones","shortText":"La gratitud termina con el 'gracias'. Cuando hagas algo lindo por alguien, no esperes nada más: con el agradecimiento la deuda queda saldada."},{"id":37,"title":"SÉ ATRACTIVO","category":"mentalidad","shortText":"Nosotros no 'tenemos un cuerpo', nosotros 'somos' ese cuerpo. Aprende a quererte y aceptarte tal como eres; una vez que lo hagas, harás que los demás te quieran."},{"id":38,"title":"NO CUIDES TUS PALABRAS","category":"caracter","shortText":"No necesitas andar cuidando tus palabras, solo asegúrate de que sean lo suficientemente grandecitas para cuidarse solas."},{"id":39,"title":"CONFESION DE UN PADRE","category":"relaciones","shortText":"A veces te he visto a punto de caer y lo he permitido para que sientas el dolor y aprendas a levantarte por ti mismo. Si te protejo en exceso, te haré frágil."},{"id":40,"title":"COSAS INELUDIBLES","category":"mentalidad","shortText":"Hay cosas en la vida que no puedes evitar y que no son tu decisión. Lo que sí puedes decidir siempre es la actitud con la cual las recibes y enfrentas."},{"id":41,"title":"LA LLUVIA","category":"vida","shortText":"La vida no es justa; la sensación de justicia la inventamos los humanos. El cielo no llueve por ti: pon tus cubetas, sácale provecho a lo que hay y aprende a ser feliz."},{"id":42,"title":"LA IGNORANCIA","category":"mentalidad","shortText":"La ignorancia no es pecado ni virtud, pero es bella cuando se acepta como punto de partida. Si ignoras algo, di con orgullo 'no lo sé' y disponte a aprender."},{"id":43,"title":"EL CONSEJO DE UN AMIGO","category":"mentalidad","shortText":"Cuando no sepas qué decisión tomar, pregúntate qué le recomendarías a tu mejor amigo si estuviera en tu lugar. Muchas de las respuestas ya viven en ti: confía en ti."},{"id":44,"title":"NO ME MEREZCO ESTO","category":"caracter","shortText":"Ante una injusticia no basta con lamentarte '¡yo no me merezco esto!'. Si no actúas para cambiarlo, detenerlo o apartarte y te quedas pasivo, entonces sí te lo mereces."},{"id":45,"title":"USA PALABRAS SUAVES","category":"relaciones","shortText":"Critica situaciones y hechos, jamás a personas. Y si vas a hacer una crítica muy dura, usa palabras suaves y dulces, porque al final es probable que debas tragártelas."},{"id":46,"title":"LIMITA TUS QUEJAS","category":"mentalidad","shortText":"Deja de quejarte: la queja no resuelve nada. Si puedes cambiarlo, muévete; si no puedes cambiarlo, adáptate. Reclama con quien corresponda, pero no vivas quejándote."},{"id":47,"title":"DI QUE NO","category":"caracter","shortText":"Aprende a decir 'no' sin culpa. El primer acto de responsabilidad es saber negarse a una responsabilidad a tiempo. El 'no' es el primer acto de libertad de una persona."},{"id":48,"title":"PEREZA CREATIVA","category":"mentalidad","shortText":"Cultiva la pereza de forma inteligente. Haz las cosas bien desde la primera vez para no tener que repetirlas. No dejes que el trabajo se acumule: sé flojo pero listo."},{"id":49,"title":"SÁLVATE TÚ PRIMERO","category":"vida","shortText":"Olvídate de los martirios. Si alguien se está ahogando y te lanzas sin base, se hundirán los dos: pisa suelo firme primero. Para ayudar a otros debes estar a salvo tú."},{"id":50,"title":"LA FELICIDAD Y SU BÚSQUEDA","category":"vida","shortText":"Buscarás la felicidad como un espejismo creyendo que es una meta lejana. Pero cuando mires atrás y veas todo lo que caminaste, verás que la felicidad era el trayecto."},{"id":51,"title":"LA VIRTUD Y LA ADMIRACIÓN","category":"caracter","shortText":"No tengas ídolos ni intentes calcar vidas ajenas: imita solamente las virtudes, la disciplina y la bondad de quienes admires. Tómalo como modelo de virtud y nada más."},{"id":52,"title":"ESCUCHA ACTIVAMENTE","category":"relaciones","shortText":"Cuando alguien te comparta un pesar, escúchalo primero y pregúntale si busca consuelo o soluciones. Entre lo que se dice y lo que se interpreta hay un mar de distancia."},{"id":53,"title":"DE MAGIA Y FANTASÍA","category":"mentalidad","shortText":"La vida ya es bastante compleja para inventarse enemigos o soluciones mágicas. Aléjate de charlatanes: es como llegar a un hermoso bosque y perdértelo por estar buscando hadas."},{"id":54,"title":"ES NORMAL","category":"relaciones","shortText":"Es normal que cuestiones lo que pienso y descubras que me equivoco. Solo recuerda una cosa: pase lo que pase, también es normal que yo siempre esté a tu lado defendiéndote."},{"id":55,"title":"LA DECISIÓN FELIZ","category":"mentalidad","shortText":"Elige un camino y no mires atrás con reproches estériles. Decidiste con lo que sabías en ese instante: si el resultado no te agrada, cámbialo en tu presente. Toma la decisión feliz."},{"id":56,"title":"ROPERO DE EXPECTATIVAS","category":"vida","shortText":"De niños llenamos el ropero con disfraces de astronauta o médico. Con los años renunciamos a unos para abrazar lo que pudimos construir: madurar es saber renunciar con sabiduría."},{"id":57,"title":"ANÉCDOTA DE LA IGNORANCIA Y LA SOBERBIA","category":"caracter","shortText":"Sentí lástima por un hombre que no sabía leer mi libro favorito; minutos después vi a un joven llorar conmovido leyendo partituras musicales. Todos somos ignorantes en algo: la soberbia no sirve."},{"id":58,"title":"¿SIN PEDIR NADA A CAMBIO?","category":"relaciones","shortText":"Desconfía de quien afirme hacer todo en tu beneficio 'sin pedir nada a cambio'. O te ve como un desvalido a quien rescatar para cobrarte luego el favor, o está sacando una ventaja encubierta."},{"id":59,"title":"EL HUMOR ES HUMOR","category":"mentalidad","shortText":"Ríete de ti mismo, de tus convicciones y de tus penas. El humor es catarsis y bálsamo contra la amargura. Si te ofendes por un chiste, el problema es tuyo: aprende a reír."},{"id":60,"title":"APRENDE A NEGOCIAR","category":"dinero","shortText":"Negociar bien es lograr que ambos queden contentos y deseen seguir colaborando. Pide un poco más para tener margen, pero ten clarísimo tu límite no negociable."},{"id":61,"title":"EL TRINOMIO CUADRADO PERFECTO","category":"mentalidad","shortText":"Aprender matemáticas, ciencia o historia amplía las dimensiones de tu universo mental y te protege de ser engañado. Aprende cosas aunque no las apliques hoy, o creerás que la Tierra es plana."},{"id":62,"title":"INVIERTIENDO EN TU FELICIDAD","category":"relaciones","shortText":"Un padre no se sacrifica por sus hijos: invierte en su felicidad y su futuro. No me debes nada; algún día tú pagarás las pizzas y los suéteres a tus propios hijos con orgullo."},{"id":63,"title":"CONTIGO","category":"relaciones","shortText":"Quien no comparta mis gustos pero te ame y sea bueno para ti, tendrá un lugar en mi corazón. Pero quien te trate mal se habrá ganado mi desprecio para siempre."},{"id":64,"title":"LAS GROSERÍAS","category":"caracter","shortText":"Las groserías alivian el dolor físico y dan fuerza cuando se requiere. Como decía Freud: quien insultó a su vecino en vez de arrojarle una piedra fue el que fundó la civilización."},{"id":65,"title":"APRENDE REALMENTE A RESPETAR","category":"caracter","shortText":"Respeta la integridad y derechos de las personas, pero las ideas y creencias no merecen respeto ciego: es tu deber criticar y refutar aquellas ideas que sean dañinas o falsas."},{"id":66,"title":"EL PERDÓN POR ACERTAR","category":"relaciones","shortText":"Prepárate: a la gente le cuesta mucho más perdonarte cuando tuviste la razón que cuando te equivocaste. A nadie le gusta admitir su error frente a tu acierto."},{"id":67,"title":"NO TODO TIENE QUE VER CONTIGO","category":"mentalidad","shortText":"El mundo no gira en torno a tu ombligo. La gente no vive lanzándote indirectas; cada quien vive su vida. No te desgastes luchando contra todo: la vida no se trata solo de ti."},{"id":68,"title":"NO NEGOCIAMOS CON TERRORISTAS","category":"caracter","shortText":"En esta familia no negociamos con manipuladores. Si te retan para obligarte a hacer algo que no deseas, responde sereno: 'No es que no pueda, es que no quiero'."},{"id":69,"title":"DE TU MADRE Y DE TU PADRE","category":"relaciones","shortText":"Tendrás la sonrisa de tu padre y los ojos de tu madre, pero no eres ninguno de los dos. Tu destino y tus decisiones te pertenecen: es un orgullo verte forjar tu propio camino."},{"id":70,"title":"UN NUEVO HERMANO MAYOR","category":"relaciones","shortText":"Cuando nazca un hermanito en una familia, saluda y juega primero con el hermano mayor: reconócelo como el guardián más fuerte para que lo reciba con amor y sin celos."},{"id":71,"title":"LA AUTOCRÍTICA","category":"caracter","shortText":"Sé tu crítico más implacable, pero nunca cruel: criticar es reconocer con rigor los errores tanto como los aciertos. El crítico justo termina siendo tu mayor admirador."},{"id":72,"title":"LA DISCULPA Y EL PERDÓN","category":"caracter","shortText":"Una disculpa expresa que lamentas el agravio, pero no te pone a mano: si derramas un vaso con agua, no basta con pedir disculpas, tomas el trapo y te pones a limpiar."},{"id":73,"title":"VERDADES Y MENTIRAS","category":"relaciones","shortText":"Si hablan verdades de ti, acéptalas y mejóralas. Si son mentiras, que no te quiten el sueño. Y recuerda: la misma distancia hay de aquí para allá que de allá para acá."},{"id":74,"title":"LAS PERSONAS NO SON IGUALES","category":"vida","shortText":"Las personas no somos iguales, y eso es lo hermoso: festeja la diferencia. El único motivo para apartar a alguien de tu vida es que sea una persona dañina."},{"id":75,"title":"APRENDE A GANAR Y APRENDE A PERDER","category":"caracter","shortText":"Cuando ganes, celebra sin humillar a tu rival y dale las gracias. Cuando pierdas, felicita al ganador con la frente en alto y aprende de la lección para volver más fuerte."},{"id":76,"title":"ESCUCHA MÁS ALLÁ DE TU VOZ","category":"relaciones","shortText":"Calla la voz en tu mente que ya está preparando réplicas mientras el otro habla: esa voz solo hace ruido. Para escuchar de verdad, deja que la otra persona guarde silencio primero."},{"id":77,"title":"PENSAMIENTO NEGATIVO","category":"mentalidad","shortText":"En un mundo que exige optimismo ciego, permítete ser pesimista de vez en cuando: recuerda que fue el pensamiento negativo el que inventó los cinturones de seguridad."},{"id":78,"title":"SÉ UN CONVENENCIERO","category":"vida","shortText":"Actúa a tu entera conveniencia y saca el mejor partido, pero jamás pisoteando o traicionando. Beneficiarte haciendo el bien a los demás es sabiduría pura."},{"id":79,"title":"EL PROBLEMA DE LA INMEDIATEZ","category":"mentalidad","shortText":"Mi generación erró al creer que si no costaba sufrimiento, no valía; la tuya sufre al querer todo en segundos. La sabiduría es esforzarse con inteligencia y sencillez."},{"id":80,"title":"MIRAR, ESCUCHAR Y HABLAR","category":"vida","shortText":"Tenemos dos ojos, dos orejas y una sola voz. La sabiduría de la naturaleza nos enseña que debemos observar y escuchar el doble de lo que hablamos."},{"id":81,"title":"APUESTA CORRECTAMENTE","category":"vida","shortText":"Cuando tomes una gran decisión, no apuestes tu felicidad a lo que otros hagan; apuesta a dar lo mejor de ti, amar y ser noble. Así pase lo que pase, habrás ganado la apuesta."},{"id":82,"title":"NO ES SU OBLIGACIÓN","category":"relaciones","shortText":"Nadie está obligado a quererte, escucharte ni cuidarte. Por eso, cuando alguien lo hace de corazón sin tener obligación alguna, valóralo: te has ganado ese amor con creces."},{"id":83,"title":"MI SEGUNDA PERSONA FAVORITA","category":"relaciones","shortText":"Tú eres mi segunda persona favorita en el mundo: la primera siempre será tu madre. Tú harás tu vida, y tu pareja elegida deberá ser siempre tu mayor prioridad."},{"id":84,"title":"NO SOY TU GUIA","category":"vida","shortText":"No puedo ser tu guía porque tú recorrerás tus propias montañas y veredas, distintas a las mías. Seré tu acompañante fiel para compartirte mis vivencias y sostenerte."},{"id":85,"title":"INTELIGENCIA Y EXPERIENCIA","category":"mentalidad","shortText":"Haber nacido antes no me hace más inteligente que tú; me da experiencia y cicatrices. Escucha lo que te comparto: tal vez me equivoque, pero te doy la mirada de mi camino."},{"id":86,"title":"DOS TIPOS DE PROBLEMAS","category":"mentalidad","shortText":"Hay dos tipos de problemas: los que podemos resolver y los que no. Con los primeros, ponte a actuar; con los segundos no te angusties. La sabiduría es distinguir la diferencia."},{"id":87,"title":"APRENDE A HUIR","category":"vida","shortText":"Ubica siempre la salida de emergencia en un cine, en un trabajo o en una relación que te lastime. Aprende a huir y a renunciar: nunca olvides que siempre puedes regresar a casa."},{"id":88,"title":"LAS GALLETAS","category":"mentalidad","shortText":"Si esperas galletas sencillas y te tocan de chocolate, la alegría será enorme; si esperas las de chocolate y recibes simples, sufrirás. De la vida y de los demás, espera lo simple."},{"id":89,"title":"LAGRIMAS Y DIAMANTES","category":"caracter","shortText":"Siente tus emociones pero sé prudente: las minas no sueltan todos sus diamantes para no devaluar su precio. Que tus lágrimas y tu enojo sean diamantes escasos y valiosos."},{"id":90,"title":"TRABAJO BAJO PRESIÓN","category":"vida","shortText":"Trabajar bajo presión no es una virtud para presumir; es el síntoma de una pésima planeación. Quien deja todo al último momento vive prisionero de la prisa."},{"id":91,"title":"LO QUE SUCEDE","category":"vida","shortText":"La vida es aquello que sucede mientras te estás lamentando de lo que no sucedió. No pierdas tiempo llorando por lo que no fue: mira a tu alrededor y agradece tu fortuna."},{"id":92,"title":"CUANDO NO LO LOGRAS","category":"mentalidad","shortText":"Habrá veces que pondrás todo tu corazón y fallarás, sintiendo que no eres suficiente. Tal vez hoy no lo fuiste y está bien: date permiso de descansar y retomar fuerzas."},{"id":93,"title":"POR RESPETO","category":"relaciones","shortText":"De niño le hablé de usted a mi padre por 'respeto'; él me dijo: 'Háblame de tú y trátame de usted. Con confianza y respeto'. Esa misma regla vive entre nosotros."},{"id":94,"title":"LA LEY DEL 8","category":"vida","shortText":"Si para sacar un 10 tienes que desangrarte la salud y la paz, mejor opta por el 8. Calibra tus esfuerzos: da el máximo en lo trascendente y en lo demás no te desgastes."},{"id":95,"title":"EL DÍA EN QUE TÚ NACISTE","category":"caracter","shortText":"Cuando naciste no se detuvo el mundo ni hubo profecías: eras solo otro niño con el amor de sus padres. No naciste especial, pero puedes llegar a serlo si te esfuerzas por ello."},{"id":96,"title":"SIN HACER PREGUNTAS","category":"relaciones","shortText":"Si estás en peligro o en apuros y temes un regaño, llámame y dime: 'Papá, sin hacer preguntas'. Iré por ti donde estés, te pondré a salvo y jamás te recriminaré nada."},{"id":97,"title":"ELIJE TU DIFICULTAD","category":"vida","shortText":"El matrimonio es difícil y el divorcio es difícil. Estar sano cuesta y estar enfermo cuesta. Ser honesto cuesta y mentir cuesta. La vida no es sencilla: elige qué dificultad enfrentar."},{"id":98,"title":"SÉ INVULNERABLE A LAS PALABRAS","category":"caracter","shortText":"Las palabras solo tienen filo si tú les das permiso. Sé invulnerable ante insultos y apodos: si no les otorgas poder, se quedarán ahogadas en la garganta de quien las dijo."},{"id":99,"title":"AUTOCONCEPTO","category":"mentalidad","shortText":"Para tus padres eres y serás el más hermoso e inteligente, pero afuera habrá personas más capaces. Mantén la autoestima alta para valorarte, y el autoconcepto razonable para no desilusionarte."},{"id":100,"title":"NO LE TEMO A LA MUERTE","category":"vida","shortText":"No le temo a la muerte porque es parte natural de la vida, pero todavía no: quiero acompañarte hasta verte convertido en un hombre pleno que camine con paso firme sin mi mano."},{"id":101,"title":"ALGÚN DÍA MORIRE","category":"vida","shortText":"Algún día moriré, pero la muerte no es lo contrario de la vida: es parte de ella. Estaré en cada consejo que te di, en cada recuerdo y en cada célula de tu cuerpo. Fue un honor compartir mi vida contigo. Te amo."}];
+
+    // ==========================================
+    // 1. VISOR DE POST-ITS INTERACTIVOS (101 CONSEJOS)
+    // ==========================================
+    let currentPostItIndex = 0;
+    let currentPostItCategory = 'all';
+    let currentPostItSearch = '';
+    let filteredConsejos = [...CONSEJOS];
+    let currentPostItTheme = 'yellow';
+
+    // Paletas para los Post-its
+    const THEMES = {
+      yellow: {
+        bg: "bg-gradient-to-br from-amber-50 via-yellow-100 to-amber-100/90",
+        border: "border-amber-300/80",
+        shadow: "shadow-[0_22px_45px_-12px_rgba(180,120,20,0.28)]",
+        title: "text-amber-950",
+        badge: "bg-amber-200/80 text-amber-900",
+        stack1: "bg-white/70 border-slate-200/60",
+        stack2: "bg-amber-100/60 border-amber-200/40",
+        tape: "bg-white/40 border-white/60"
+      },
+      purple: {
+        bg: "bg-gradient-to-br from-purple-50 via-purple-100 to-fuchsia-50",
+        border: "border-purple-300/80",
+        shadow: "shadow-[0_22px_45px_-12px_rgba(138,43,226,0.25)]",
+        title: "text-purple-950",
+        badge: "bg-purple-200/80 text-purple-900",
+        stack1: "bg-white/70 border-slate-200/60",
+        stack2: "bg-purple-100/60 border-purple-200/40",
+        tape: "bg-purple-100/50 border-white/70"
+      },
+      mint: {
+        bg: "bg-gradient-to-br from-emerald-50 via-teal-100/70 to-emerald-100/80",
+        border: "border-emerald-300/80",
+        shadow: "shadow-[0_22px_45px_-12px_rgba(16,185,129,0.22)]",
+        title: "text-emerald-950",
+        badge: "bg-emerald-200/80 text-emerald-900",
+        stack1: "bg-white/70 border-slate-200/60",
+        stack2: "bg-emerald-100/60 border-emerald-200/40",
+        tape: "bg-emerald-50/50 border-white/70"
+      },
+      peach: {
+        bg: "bg-gradient-to-br from-rose-50 via-orange-100/70 to-rose-100/80",
+        border: "border-rose-300/80",
+        shadow: "shadow-[0_22px_45px_-12px_rgba(244,63,94,0.22)]",
+        title: "text-rose-950",
+        badge: "bg-rose-200/80 text-rose-900",
+        stack1: "bg-white/70 border-slate-200/60",
+        stack2: "bg-rose-100/60 border-rose-200/40",
+        tape: "bg-rose-50/50 border-white/70"
+      }
+    };
+
+    const VIRAL_IDS = [1, 2, 9, 16, 20, 23, 27, 41, 47, 50, 68, 83, 89, 96, 101];
+
+    // Elementos DOM
+    const postitCard = document.getElementById("postit-card");
+    const postitContainer = document.getElementById("postit-container");
+    const postitEmpty = document.getElementById("postit-empty");
+    const postitHeaderBadge = document.getElementById("postit-header-badge");
+    const postitViralTag = document.getElementById("postit-viral-tag");
+    const postitCatBadge = document.getElementById("postit-cat-badge");
+    const postitTitle = document.getElementById("postit-title");
+    const postitText = document.getElementById("postit-text");
+    const postitCurrentNum = document.getElementById("postit-current-num");
+    const postitTotalNum = document.getElementById("postit-total-num");
+    const postitSlider = document.getElementById("postit-slider");
+    const postitSliderLabel = document.getElementById("postit-slider-label");
+    const searchInput = document.getElementById("search-consejos");
+    const resetSearchBtn = document.getElementById("btn-reset-search");
+    const categoryChipsContainer = document.getElementById("category-chips");
+    const postitStack1 = document.getElementById("postit-stack-1");
+    const postitStack2 = document.getElementById("postit-stack-2");
+    const postitTape = document.getElementById("postit-tape");
+
+    // Renderizar Chips de Categoría
+    const CATEGORIES = [
+      { id: 'all', label: 'Todos (101)' },
+      { id: 'vida', label: 'Vida' },
+      { id: 'relaciones', label: 'Relaciones' },
+      { id: 'mentalidad', label: 'Mentalidad' },
+      { id: 'caracter', label: 'Carácter' },
+      { id: 'dinero', label: 'Dinero' }
+    ];
+
+    function renderCategoryChips() {
+      categoryChipsContainer.innerHTML = '';
+      CATEGORIES.forEach(cat => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        const isActive = currentPostItCategory === cat.id;
+        btn.className = `px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+          isActive 
+            ? 'bg-[#8A2BE2] text-white shadow-md shadow-purple-900/20' 
+            : 'bg-white/80 text-slate-700 hover:bg-purple-100 hover:text-purple-900 border border-purple-100'
+        }`;
+        btn.textContent = cat.label;
+        btn.onclick = () => selectCategory(cat.id);
+        categoryChipsContainer.appendChild(btn);
+      });
+    }
+
+    function selectCategory(catId) {
+      currentPostItCategory = catId;
+      applyFilters();
+      renderCategoryChips();
+    }
+
+    function applyFilters() {
+      const q = currentPostItSearch.toLowerCase().trim();
+      filteredConsejos = CONSEJOS.filter(c => {
+        const matchesCat = currentPostItCategory === 'all' || c.category === currentPostItCategory;
+        const matchesQuery = !q || (
+          c.id.toString() === q ||
+          c.title.toLowerCase().includes(q) ||
+          c.shortText.toLowerCase().includes(q) ||
+          c.category.toLowerCase().includes(q)
+        );
+        return matchesCat && matchesQuery;
+      });
+
+      if (currentPostItIndex >= filteredConsejos.length) {
+        currentPostItIndex = 0;
+      }
+
+      if (filteredConsejos.length === 0) {
+        postitContainer.classList.add("hidden");
+        postitEmpty.classList.remove("hidden");
+        postitCurrentNum.textContent = "0";
+        postitTotalNum.textContent = "0";
+      } else {
+        postitContainer.classList.remove("hidden");
+        postitEmpty.classList.add("hidden");
+        updatePostItView();
+      }
+
+      resetSearchBtn.classList.toggle("hidden", q.length === 0);
+    }
+
+    function resetPostItFilters() {
+      currentPostItSearch = '';
+      currentPostItCategory = 'all';
+      if (searchInput) searchInput.value = '';
+      renderCategoryChips();
+      applyFilters();
+    }
+
+    function updatePostItView() {
+      if (filteredConsejos.length === 0) return;
+      const c = filteredConsejos[currentPostItIndex];
+
+      // Animación suave de cambio de nota
+      postitCard.classList.add("scale-[0.98]", "opacity-80");
+      setTimeout(() => {
+        postitHeaderBadge.textContent = `Consejo #${c.id} de 101`;
+        postitCatBadge.textContent = c.category;
+        postitTitle.textContent = `${c.id}.- ${c.title}`;
+        postitText.textContent = `«${c.shortText}»`;
+        postitCurrentNum.textContent = (currentPostItIndex + 1).toString();
+        postitTotalNum.textContent = filteredConsejos.length.toString();
+
+        if (VIRAL_IDS.includes(c.id)) {
+          postitViralTag.classList.remove("hidden");
+          postitViralTag.classList.add("inline-flex");
+        } else {
+          postitViralTag.classList.add("hidden");
+          postitViralTag.classList.remove("inline-flex");
+        }
+
+        // Actualizar Slider
+        postitSlider.max = (filteredConsejos.length - 1).toString();
+        postitSlider.value = currentPostItIndex.toString();
+        postitSliderLabel.textContent = `#${c.id}`;
+
+        postitCard.classList.remove("scale-[0.98]", "opacity-80");
+      }, 150);
+    }
+
+    function nextPostIt() {
+      if (filteredConsejos.length <= 1) return;
+      currentPostItIndex = (currentPostItIndex + 1) % filteredConsejos.length;
+      updatePostItView();
+    }
+
+    function prevPostIt() {
+      if (filteredConsejos.length <= 1) return;
+      currentPostItIndex = (currentPostItIndex - 1 + filteredConsejos.length) % filteredConsejos.length;
+      updatePostItView();
+    }
+
+    function randomPostIt() {
+      if (filteredConsejos.length <= 1) return;
+      let nextIdx;
+      do {
+        nextIdx = Math.floor(Math.random() * filteredConsejos.length);
+      } while (nextIdx === currentPostItIndex && filteredConsejos.length > 1);
+      currentPostItIndex = nextIdx;
+      updatePostItView();
+    }
+
+    function jumpToPostIt(idx) {
+      if (idx >= 0 && idx < filteredConsejos.length) {
+        currentPostItIndex = idx;
+        updatePostItView();
+      }
+    }
+
+    function setPostItTheme(themeKey) {
+      if (!THEMES[themeKey]) return;
+      currentPostItTheme = themeKey;
+      const theme = THEMES[themeKey];
+
+      // Actualizar botones de color
+      document.querySelectorAll(".postit-color-btn").forEach(btn => {
+        btn.classList.remove("ring-2", "ring-purple-600", "scale-110");
+        btn.classList.add("opacity-70");
+      });
+      const activeBtn = document.querySelector(`.postit-color-btn[onclick*="${themeKey}"]`);
+      if (activeBtn) {
+        activeBtn.classList.add("ring-2", "ring-purple-600", "scale-110");
+        activeBtn.classList.remove("opacity-70");
+      }
+
+      // Reemplazar clases de la tarjeta
+      postitCard.className = `relative z-10 rounded-3xl p-6 sm:p-10 border-2 ${theme.bg} ${theme.border} ${theme.shadow} transition-all duration-300 flex flex-col justify-between min-h-[440px] sm:min-h-[480px]`;
+      postitTitle.className = `font-sans font-extrabold text-xl sm:text-2xl lg:text-3xl ${theme.title} uppercase tracking-tight mb-4 leading-snug`;
+      postitCatBadge.className = `text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${theme.badge}`;
+      postitStack1.className = `absolute inset-0 translate-y-1.5 -translate-x-1 rounded-3xl rotate-1 border pointer-events-none transition-all ${theme.stack1}`;
+      postitStack2.className = `absolute inset-0 translate-y-3 translate-x-2 rounded-3xl -rotate-1 border pointer-events-none transition-all ${theme.stack2}`;
+      postitTape.className = `absolute -top-3.5 left-1/2 -translate-x-1/2 w-28 sm:w-36 h-7 backdrop-blur-md border rounded-sm shadow-sm rotate-[-0.5deg] pointer-events-none ${theme.tape}`;
+    }
+
+    // Funcionalidad de Copiar con Alerta Visual de Éxito
+    function copyCurrentPostIt() {
+      if (filteredConsejos.length === 0) return;
+      const c = filteredConsejos[currentPostItIndex];
+      const textToCopy = `«${c.id}.- ${c.title}»\n${c.shortText}\n\n— Robert Pacheco, Buenos Malos Consejos para mi Hijo`;
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const copyBtn = document.getElementById("btn-postit-copy");
+        const defaultIcon = document.getElementById("icon-copy-default");
+        const successIcon = document.getElementById("icon-copy-success");
+        const btnText = document.getElementById("text-copy-btn");
+
+        if (defaultIcon) defaultIcon.classList.add("hidden");
+        if (successIcon) successIcon.classList.remove("hidden");
+        if (btnText) btnText.textContent = "¡Copiado con Éxito!";
+        if (copyBtn) {
+          copyBtn.classList.remove("bg-white", "text-purple-950", "border-purple-200");
+          copyBtn.classList.add("bg-emerald-600", "text-white", "border-emerald-600");
+        }
+
+        setTimeout(() => {
+          if (defaultIcon) defaultIcon.classList.remove("hidden");
+          if (successIcon) successIcon.classList.add("hidden");
+          if (btnText) btnText.textContent = "Copiar Consejo";
+          if (copyBtn) {
+            copyBtn.classList.add("bg-white", "text-purple-950", "border-purple-200");
+            copyBtn.classList.remove("bg-emerald-600", "text-white", "border-emerald-600");
+          }
+        }, 2200);
+      }).catch(err => {
+        console.error("Error al copiar:", err);
+      });
+    }
+
+    // Funcionalidad de Compartir
+    function shareCurrentPostIt() {
+      if (filteredConsejos.length === 0) return;
+      const c = filteredConsejos[currentPostItIndex];
+      const shareData = {
+        title: `Consejo #${c.id}: ${c.title} — Robert Pacheco`,
+        text: `«${c.id}.- ${c.title}»\n${c.shortText}\n\n— Robert Pacheco`,
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(err => {
+          if (err.name !== 'AbortError') {
+            openShareModal(c);
+          }
+        });
+      } else {
+        openShareModal(c);
+      }
+    }
+
+    // Modal Alternativo de Compartir
+    const shareModal = document.getElementById("modal-share");
+    const shareModalTitle = document.getElementById("modal-share-title");
+
+    function openShareModal(c) {
+      if (!shareModal) return;
+      shareModalTitle.textContent = `${c.id}.- ${c.title}`;
+      shareModal.classList.remove("hidden");
+      shareModal.classList.add("flex");
+    }
+
+    function closeShareModal() {
+      if (!shareModal) return;
+      shareModal.classList.add("hidden");
+      shareModal.classList.remove("flex");
+    }
+
+    if (shareModal) {
+      shareModal.addEventListener("click", (e) => {
+        if (e.target === shareModal) closeShareModal();
+      });
+    }
+
+    function sharePostItToWhatsApp() {
+      if (filteredConsejos.length === 0) return;
+      const c = filteredConsejos[currentPostItIndex];
+      const msg = encodeURIComponent(`*Consejo #${c.id}: ${c.title}*\n\n«${c.shortText}»\n\n— Robert Pacheco (Buenos Malos Consejos para mi Hijo)\n${window.location.href}`);
+      window.open(`https://api.whatsapp.com/send?text=${msg}`, "_blank");
+      closeShareModal();
+    }
+
+    function sharePostItToTwitter() {
+      if (filteredConsejos.length === 0) return;
+      const c = filteredConsejos[currentPostItIndex];
+      const tweet = encodeURIComponent(`«${c.id}.- ${c.title}»\n${c.shortText}\n\n— @buenos_malos_consejos`);
+      window.open(`https://twitter.com/intent/tweet?text=${tweet}&url=${encodeURIComponent(window.location.href)}`, "_blank");
+      closeShareModal();
+    }
+
+    // Navegación por teclado (Flechas)
+    window.addEventListener("keydown", (e) => {
+      // Evitar si está escribiendo en el input
+      if (document.activeElement === searchInput) return;
+      if (e.key === "ArrowRight") {
+        nextPostIt();
+      } else if (e.key === "ArrowLeft") {
+        prevPostIt();
+      }
+    });
+
+    // Soporte táctil / swipe en móvil
+    let touchStartX = 0;
+    let touchEndX = 0;
+    if (postitCard) {
+      postitCard.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      postitCard.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) > 45) {
+          if (diff < 0) nextPostIt();
+          else prevPostIt();
+        }
+      }, { passive: true });
+    }
+
+    // Buscador interactivo
+    if (searchInput) {
+      searchInput.addEventListener("input", (e) => {
+        currentPostItSearch = e.target.value;
+        applyFilters();
+      });
+    }
+
+    if (resetSearchBtn) {
+      resetSearchBtn.addEventListener("click", () => {
+        resetPostItFilters();
+      });
+    }
+
+    // Inicialización del visor Post-it
+    renderCategoryChips();
+    applyFilters();
+
+    // 2. Consejo del Día Dinámico
+    const dailyBadge = document.getElementById("daily-badge");
+    const dailyTitle = document.getElementById("daily-title");
+    const dailyText = document.getElementById("daily-text");
+    const btnNext = document.getElementById("btn-next-consejo");
+    const btnCopy = document.getElementById("btn-copy-consejo");
+    const copyText = document.getElementById("copy-btn-text");
+    const btnWhatsapp = document.getElementById("btn-share-whatsapp");
+
+    function setDaily(c) {
+      dailyBadge.textContent = `Consejo #${c.id} • Categoría ${c.category.toUpperCase()}`;
+      dailyTitle.textContent = `${c.id}.- ${c.title}`;
+      dailyText.textContent = `«${c.shortText}»`;
+    }
+
+    btnNext.addEventListener("click", () => {
+      const rand = CONSEJOS[Math.floor(Math.random() * CONSEJOS.length)];
+      setDaily(rand);
+    });
+
+    btnCopy.addEventListener("click", () => {
+      const textToCopy = `${dailyTitle.textContent}\n${dailyText.textContent}\n\n— Robert Pacheco, Buenos Malos Consejos para mi Hijo`;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        copyText.textContent = "¡Copiado!";
+        setTimeout(() => copyText.textContent = "Copiar Consejo", 2000);
+      });
+    });
+
+    btnWhatsapp.addEventListener("click", () => {
+      const msg = encodeURIComponent(`${dailyTitle.textContent}\n${dailyText.textContent}\n\n— Robert Pacheco (Buenos Malos Consejos para mi Hijo)`);
+      window.open(`https://api.whatsapp.com/send?text=${msg}`, "_blank");
+    });
+
+    // Modal para extracto si existe
+    const modal = document.getElementById("modal-consejo");
+    const modalBadge = document.getElementById("modal-badge");
+    const modalTitle = document.getElementById("modal-title");
+    const modalBody = document.getElementById("modal-body");
+
+    function openModal(c) {
+      if (!modal) return;
+      if (modalBadge) modalBadge.textContent = `Consejo #${c.id} • Categoría: ${c.category.toUpperCase()}`;
+      if (modalTitle) modalTitle.textContent = `${c.id}.- ${c.title}`;
+      if (modalBody) modalBody.textContent = `«${c.shortText}»`;
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    if (modal) {
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    // Reproductor Reel Interactivo con Video GIFROB.mp4
+    let isPlaying = false;
+    const playBtn = document.getElementById("tiktok-play-btn");
+    const playIcon = document.getElementById("play-icon");
+    const video = document.getElementById("tiktok-video");
+    const videoWrapper = document.getElementById("tiktok-video-wrapper");
+    const progressBar = document.getElementById("reel-progress");
+
+    function toggleReelPlay() {
+      if (!video) return;
+      if (video.paused) {
+        video.play().then(() => {
+          isPlaying = true;
+          if (playIcon) playIcon.innerHTML = `<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>`;
+        }).catch(err => {
+          console.log("No se pudo auto-reproducir con sonido:", err);
+          video.muted = true;
+          video.play().then(() => {
+            isPlaying = true;
+            if (playIcon) playIcon.innerHTML = `<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>`;
+          });
+        });
+      } else {
+        video.pause();
+        isPlaying = false;
+        if (playIcon) playIcon.innerHTML = `<path d="M8 5v14l11-7z"/>`;
+      }
+    }
+
+    if (playBtn) {
+      playBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleReelPlay();
+      });
+    }
+
+    if (videoWrapper) {
+      videoWrapper.addEventListener("click", () => {
+        toggleReelPlay();
+      });
+    }
+
+    if (video) {
+      video.addEventListener("timeupdate", () => {
+        if (progressBar && video.duration) {
+          const pct = (video.currentTime / video.duration) * 100;
+          progressBar.style.width = `${pct}%`;
+        }
+      });
+      video.addEventListener("ended", () => {
+        isPlaying = false;
+        if (playIcon) playIcon.innerHTML = `<path d="M8 5v14l11-7z"/>`;
+      });
+    }
+
+    // Likes
+    let likes = 248530;
+    let hasLiked = false;
+    const likeBtn = document.getElementById("tiktok-like-btn");
+    const likeIcon = document.getElementById("like-icon");
+    const likeCount = document.getElementById("like-count");
+
+    likeBtn.addEventListener("click", () => {
+      hasLiked = !hasLiked;
+      likes += hasLiked ? 1 : -1;
+      likeIcon.classList.toggle("text-rose-500", hasLiked);
+      likeIcon.classList.toggle("text-white", !hasLiked);
+      likeCount.textContent = (likes / 1000).toFixed(1) + "K";
+    });
+
+    function compartirWeb() {
+      if (navigator.share) {
+        navigator.share({
+          title: "Buenos Malos Consejos para mi Hijo - Robert Pacheco",
+          text: "Descubre los 101 Buenos Malos Consejos para mi Hijo de Robert Pacheco.",
+          url: window.location.href
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Enlace oficial copiado al portapapeles.");
+      }
+    }
+
+    function handleCommentSubmit(e) {
+      e.preventDefault();
+      document.getElementById("form-success").classList.remove("hidden");
+      document.getElementById("community-form").reset();
+      setTimeout(() => {
+        document.getElementById("form-success").classList.add("hidden");
+      }, 5000);
+    }
+
+    // ==========================================
+    // SECCIÓN CÓMICS: LÓGICA DEL VISOR INTERACTIVO
+    // ==========================================
+    const COMIC_PAGES = [
+      { file: "7.jpg", title: "La regla del 7" },
+      { file: "AMNESIA.jpg", title: "Amnesia" },
+      { file: "arbol.jpg", title: "El árbol" },
+      { file: "CABALLERO.jpg", title: "El caballero" },
+      { file: "caliente.jpg", title: "Comida caliente" },
+      { file: "DADPOOL.jpg", title: "Dadpool" },
+      { file: "depre.jpg", title: "Día gris" },
+      { file: "flash.jpg", title: "Flash" },
+      { file: "indirectas.jpg", title: "Las indirectas" },
+      { file: "lata.jpg", title: "La lata" },
+      { file: "LLAMA.jpg", title: "La llama" },
+      { file: "logica.jpg", title: "Lógica cotidiana" },
+      { file: "maps.jpg", title: "El mapa" },
+      { file: "modem.jpg", title: "El módem" },
+      { file: "omepra.jpg", title: "Omeprazol" },
+      { file: "paz.jpg", title: "La paz mental" },
+      { file: "por.jpg", title: "Prioridades" },
+      { file: "realismo.jpg", title: "Dosis de realismo" },
+      { file: "RECALENTADO.jpg", title: "El recalentado" },
+      { file: "rusa.jpg", title: "Ruleta" },
+      { file: "shampoo.jpg", title: "El champú" },
+      { file: "socrates.jpg", title: "Sócrates y la vida" },
+      { file: "tablet.jpg", title: "La tablet" },
+      { file: "UNICORNIO.jpg", title: "El unicornio" },
+      { file: "utiles.jpg", title: "Útiles necesarios" }
+    ];
+
+    let currentComicPage = 0;
+    let comicViewMode = "carousel"; // "carousel" | "vertical"
+    const comicModal = document.getElementById("comic-modal");
+    const comicImage = document.getElementById("comic-image");
+    const comicCurrentNum = document.getElementById("comic-current-num");
+    const comicPageTitle = document.getElementById("comic-page-title");
+    const comicCarouselView = document.getElementById("comic-carousel-view");
+    const comicVerticalView = document.getElementById("comic-vertical-view");
+    const comicThumbnails = document.getElementById("comic-thumbnails");
+    const viewModeLabel = document.getElementById("view-mode-label");
+
+    // Inicializar miniaturas
+    function renderComicThumbnails() {
+      comicThumbnails.innerHTML = COMIC_PAGES.map((page, idx) => `
+        <button
+          type="button"
+          onclick="openComic(${idx})"
+          class="comic-thumb-btn flex-shrink-0 w-8 h-8 rounded-lg font-mono text-xs font-bold transition-all ${
+            currentComicPage === idx && comicViewMode === 'carousel'
+              ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white scale-110 shadow-lg ring-2 ring-white'
+              : 'bg-white/10 hover:bg-white/20 text-purple-200'
+          }"
+          title="Página ${idx + 1}: ${page.title}"
+        >
+          ${idx + 1}
+        </button>
+      `).join("");
+    }
+
+    // Inicializar vista vertical
+    function renderComicVertical() {
+      comicVerticalView.innerHTML = COMIC_PAGES.map((page, idx) => `
+        <div class="bg-slate-900/80 p-3 sm:p-4 rounded-2xl border border-white/10 shadow-xl text-center">
+          <div class="flex items-center justify-between text-xs text-purple-300 font-mono mb-2 px-2">
+            <span>Página ${idx + 1} de ${COMIC_PAGES.length}</span>
+            <span class="font-bold text-white">${page.title}</span>
+          </div>
+          <img
+            src="comic/${page.file}"
+            alt="Página ${idx + 1}: ${page.title}"
+            loading="lazy"
+            class="w-full max-h-[85vh] object-contain mx-auto rounded-xl shadow-md"
+          >
+        </div>
+      `).join("");
+    }
+
+    function updateComicDisplay() {
+      const page = COMIC_PAGES[currentComicPage];
+      comicImage.src = `comic/${page.file}`;
+      comicImage.alt = `Página ${currentComicPage + 1}: ${page.title}`;
+      comicCurrentNum.textContent = currentComicPage + 1;
+      comicPageTitle.textContent = page.title;
+      renderComicThumbnails();
+    }
+
+    function openComic(pageIndex = 0) {
+      currentComicPage = pageIndex;
+      comicViewMode = "carousel";
+      comicCarouselView.classList.remove("hidden");
+      comicVerticalView.classList.add("hidden");
+      viewModeLabel.textContent = "Tira vertical";
+      updateComicDisplay();
+      comicModal.classList.remove("hidden");
+      comicModal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    }
+
+    function openComicVertical() {
+      comicViewMode = "vertical";
+      renderComicVertical();
+      comicCarouselView.classList.add("hidden");
+      comicVerticalView.classList.remove("hidden");
+      viewModeLabel.textContent = "Página a página";
+      comicCurrentNum.textContent = "1-" + COMIC_PAGES.length;
+      comicPageTitle.textContent = "Todas las viñetas";
+      renderComicThumbnails();
+      comicModal.classList.remove("hidden");
+      comicModal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeComic() {
+      comicModal.classList.add("hidden");
+      comicModal.classList.remove("flex");
+      document.body.style.overflow = "auto";
+    }
+
+    function prevComicPage() {
+      if (comicViewMode === "vertical") {
+        comicViewMode = "carousel";
+        comicCarouselView.classList.remove("hidden");
+        comicVerticalView.classList.add("hidden");
+        viewModeLabel.textContent = "Tira vertical";
+      }
+      currentComicPage = currentComicPage > 0 ? currentComicPage - 1 : COMIC_PAGES.length - 1;
+      updateComicDisplay();
+    }
+
+    function nextComicPage() {
+      if (comicViewMode === "vertical") {
+        comicViewMode = "carousel";
+        comicCarouselView.classList.remove("hidden");
+        comicVerticalView.classList.add("hidden");
+        viewModeLabel.textContent = "Tira vertical";
+      }
+      currentComicPage = currentComicPage < COMIC_PAGES.length - 1 ? currentComicPage + 1 : 0;
+      updateComicDisplay();
+    }
+
+    function toggleComicViewMode() {
+      if (comicViewMode === "carousel") {
+        openComicVertical();
+      } else {
+        openComic(currentComicPage);
+      }
+    }
+
+    // Atajos de teclado en el visor
+    window.addEventListener("keydown", (e) => {
+      if (comicModal.classList.contains("hidden")) return;
+      if (e.key === "Escape") closeComic();
+      if (e.key === "ArrowLeft") prevComicPage();
+      if (e.key === "ArrowRight") nextComicPage();
+    });
+
+    // Soporte táctil Swipe para móviles
+    let touchStartX = null;
+    comicCarouselView.addEventListener("touchstart", (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    comicCarouselView.addEventListener("touchend", (e) => {
+      if (touchStartX === null) return;
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
+      if (diff > 50) nextComicPage();
+      else if (diff < -50) prevComicPage();
+      touchStartX = null;
+    }, { passive: true });
+
+    // Control del menú móvil con flecha de invitación
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileArrowInvite = document.getElementById("mobile-arrow-invite");
+    const mobileMenuDrawer = document.getElementById("mobile-menu-drawer");
+    const mobileMenuPing = document.getElementById("mobile-menu-ping");
+    const mobileMenuIcon = document.getElementById("mobile-menu-icon");
+
+    function toggleMobileMenu() {
+      if (!mobileMenuDrawer) return;
+      const isClosed = mobileMenuDrawer.classList.contains("hidden");
+      if (isClosed) {
+        mobileMenuDrawer.classList.remove("hidden");
+        if (mobileArrowInvite) mobileArrowInvite.classList.add("hidden");
+        if (mobileMenuPing) mobileMenuPing.classList.add("hidden");
+        if (mobileMenuIcon) {
+          mobileMenuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>`;
+        }
+      } else {
+        mobileMenuDrawer.classList.add("hidden");
+        if (mobileArrowInvite) mobileArrowInvite.classList.remove("hidden");
+        if (mobileMenuPing) mobileMenuPing.classList.remove("hidden");
+        if (mobileMenuIcon) {
+          mobileMenuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>`;
+        }
+      }
+    }
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+    }
+    if (mobileArrowInvite) {
+      mobileArrowInvite.addEventListener("click", toggleMobileMenu);
+    }
+    document.querySelectorAll(".mobile-nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        if (mobileMenuDrawer) mobileMenuDrawer.classList.add("hidden");
+        if (mobileArrowInvite) mobileArrowInvite.classList.remove("hidden");
+        if (mobileMenuPing) mobileMenuPing.classList.remove("hidden");
+        if (mobileMenuIcon) {
+          mobileMenuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>`;
+        }
+      });
+    });
+  </script>
+
+  <!-- VISOR INTERACTIVO DE CÓMIC (MODAL FULLSCREEN) -->
+  <div id="comic-modal" class="fixed inset-0 z-50 hidden flex-col bg-slate-950/95 backdrop-blur-xl">
+    <!-- Header del visor -->
+    <div class="flex-shrink-0 flex items-center justify-between px-4 sm:px-8 py-3 sm:py-4 bg-slate-900/90 border-b border-white/10 z-20">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-purple-600/30 border border-purple-500/40 flex items-center justify-center text-purple-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <div>
+          <h3 class="font-serif font-black text-white text-sm sm:text-base leading-none">
+            Buenos Malos Consejos. <span class="text-purple-400">Cómics en línea</span>
+          </h3>
+          <p id="comic-page-info" class="text-xs text-purple-200/70 font-mono mt-1">
+            Página <span id="comic-current-num" class="text-amber-400 font-bold">1</span> de <span id="comic-total-num">25</span> • <span id="comic-page-title">La regla del 7</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="toggle-view-mode-btn" type="button" onclick="toggleComicViewMode()" class="p-2 sm:px-3 sm:py-2 rounded-xl bg-white/10 hover:bg-white/20 text-purple-200 hover:text-white transition-colors text-xs font-bold flex items-center gap-1.5 cursor-pointer">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <span id="view-mode-label" class="hidden sm:inline">Tira vertical</span>
+        </button>
+
+        <button type="button" onclick="closeComic()" class="p-2 sm:px-4 sm:py-2 rounded-xl bg-red-600/80 hover:bg-red-600 text-white transition-all text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-lg shadow-red-900/40 cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          <span class="hidden sm:inline">Cerrar</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Contenedor del Carrusel -->
+    <div id="comic-carousel-view" class="flex-1 flex items-center justify-center p-2 sm:p-6 relative select-none overflow-hidden">
+      <button type="button" onclick="prevComicPage()" class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-30 p-3 sm:p-4 rounded-full bg-slate-900/80 hover:bg-purple-600 text-white border border-white/20 shadow-2xl backdrop-blur-md transition-all hover:scale-110 active:scale-95 cursor-pointer">
+        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <div class="max-w-4xl max-h-[72vh] sm:max-h-[76vh] w-full flex items-center justify-center">
+        <div class="relative bg-white/5 p-2 sm:p-3 rounded-2xl sm:rounded-3xl border border-white/10 shadow-2xl max-h-full flex items-center justify-center">
+          <img id="comic-image" src="comic/7.jpg" alt="Página de Cómic" class="max-h-[66vh] sm:max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-2xl transition-all">
+        </div>
+      </div>
+
+      <button type="button" onclick="nextComicPage()" class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-30 p-3 sm:p-4 rounded-full bg-slate-900/80 hover:bg-purple-600 text-white border border-white/20 shadow-2xl backdrop-blur-md transition-all hover:scale-110 active:scale-95 cursor-pointer">
+        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <!-- Contenedor de Tira Vertical -->
+    <div id="comic-vertical-view" class="hidden flex-1 overflow-y-auto p-4 sm:p-8 space-y-6 max-w-3xl mx-auto w-full">
+      <!-- Se genera dinámicamente con las 19 imágenes -->
+    </div>
+
+    <!-- Footer del Visor con selector de páginas -->
+    <div class="flex-shrink-0 bg-slate-900/90 border-t border-white/10 px-4 py-3 z-20">
+      <div class="max-w-5xl mx-auto flex items-center justify-between gap-4">
+        <button type="button" onclick="prevComicPage()" class="px-3 sm:px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1 transition-all cursor-pointer">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          <span class="hidden sm:inline">Anterior</span>
+        </button>
+
+        <div id="comic-thumbnails" class="flex items-center gap-1.5 overflow-x-auto py-1 px-2 scrollbar-thin scrollbar-thumb-purple-600 max-w-[60vw]">
+          <!-- Botones 1..19 -->
+        </div>
+
+        <button type="button" onclick="nextComicPage()" class="px-3 sm:px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1 transition-all shadow-md cursor-pointer">
+          <span class="hidden sm:inline">Siguiente</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
