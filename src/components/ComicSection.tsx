@@ -160,7 +160,7 @@ export function ComicSection() {
                 {/* Portada principal con la primera página */}
                 <div className="relative w-56 sm:w-64 aspect-[3/4] bg-white rounded-2xl overflow-hidden shadow-2xl border-4 border-white flex flex-col justify-between">
                   <img
-                    src="comic/7.jpg"
+                    src="/comic/7.jpg"
                     alt="Portada del Cómic"
                     className="w-full h-full object-cover"
                   />
@@ -325,7 +325,7 @@ export function ComicSection() {
                   <div className="relative bg-white/5 p-2 sm:p-3 rounded-2xl sm:rounded-3xl border border-white/10 shadow-2xl max-h-full flex items-center justify-center">
                     <img
                       key={currentPage}
-                      src={`comic/${COMIC_PAGES[currentPage].file}`}
+                      src={`/comic/${COMIC_PAGES[currentPage].file}`}
                       alt={`Página ${currentPage + 1}: ${COMIC_PAGES[currentPage].title}`}
                       className="max-h-[66vh] sm:max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-2xl animate-scaleIn transition-all"
                     />
@@ -352,7 +352,7 @@ export function ComicSection() {
                       <span className="font-bold text-white">{page.title}</span>
                     </div>
                     <img
-                      src={`comic/${page.file}`}
+                      src={`/comic/${page.file}`}
                       alt={`Página ${idx + 1}: ${page.title}`}
                       loading="lazy"
                       className="w-full max-h-[85vh] object-contain mx-auto rounded-xl shadow-md"

@@ -87,7 +87,7 @@ export function Footer() {
               <li><a href="#sobre-robert" className="hover:text-purple-400 transition-colors">Sobre Robert</a></li>
               <li><a href="#adquiere-tu-libro" className="hover:text-purple-400 transition-colors">Adquiere tu libro</a></li>
               <li><a href="#comics" className="hover:text-purple-400 transition-colors text-pink-400 font-medium">Comic Online</a></li>
-              <li><a href="#consejo-dia" className="hover:text-purple-400 transition-colors">Consejo Viral</a></li>
+              <li><a href="#hero" className="hover:text-amber-300 font-semibold text-amber-200 transition-colors">🎂 Para Cumpleaños</a></li>
               <li><a href="#los-101" className="hover:text-purple-400 transition-colors">Los 101 Consejos</a></li>
               <li><a href="#redes-sociales" className="hover:text-purple-400 transition-colors">Redes Sociales</a></li>
               <li><a href="#videos-personalizados" className="hover:text-purple-400 transition-colors text-purple-300 font-semibold">Videos Personalizados</a></li>

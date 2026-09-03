@@ -1,23 +1,158 @@
-import { useState, useRef, MouseEvent } from 'react';
+import { useState, useRef, useEffect, MouseEvent } from 'react';
 import { Heart, MessageCircle, Share2, Music, Play, Pause, Sparkles, Volume2, VolumeX } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 export function Hero() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [likes, setLikes] = useState(248530);
   const [hasLiked, setHasLiked] = useState(false);
   const [copiedShare, setCopiedShare] = useState(false);
+  const [copiedBirthdayLink, setCopiedBirthdayLink] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
+  const [isBirthdayModalOpen, setIsBirthdayModalOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const birthdayVideoRef = useRef<HTMLVideoElement | null>(null);
+
+  const getBirthdayShareUrl = () => {
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('video', 'cumpleanos');
+      url.hash = 'cumpleanos';
+      return url.toString();
+    } catch {
+      return `${window.location.origin}${window.location.pathname}?video=cumpleanos#cumpleanos`;
+    }
+  };
+
+  const triggerBirthdayConfetti = () => {
+    try {
+      // Ráfagas laterales ascendentes
+      confetti({
+        particleCount: 75,
+        angle: 60,
+        spread: 70,
+        origin: { x: 0.15, y: 0.65 },
+        zIndex: 99999,
+        colors: ['#8A2BE2', '#F59E0B', '#EC4899', '#3B82F6', '#10B981', '#FFD700']
+      });
+      confetti({
+        particleCount: 75,
+        angle: 120,
+        spread: 70,
+        origin: { x: 0.85, y: 0.65 },
+        zIndex: 99999,
+        colors: ['#8A2BE2', '#F59E0B', '#EC4899', '#3B82F6', '#10B981', '#FFD700']
+      });
+      // Disparo central festivo de celebración
+      setTimeout(() => {
+        confetti({
+          particleCount: 90,
+          spread: 100,
+          origin: { x: 0.5, y: 0.35 },
+          zIndex: 99999,
+          scalar: 1.25,
+          colors: ['#FFD700', '#F43F5E', '#A855F7', '#38BDF8', '#F59E0B', '#34D399']
+        });
+      }, 250);
+    } catch (err) {
+      console.error("Confetti error:", err);
+    }
+  };
+
+  const openBirthday = () => {
+    setIsBirthdayModalOpen(true);
+    try {
+      window.history.replaceState(null, '', getBirthdayShareUrl());
+    } catch (e) {}
+    triggerBirthdayConfetti();
+    if (birthdayVideoRef.current) {
+      birthdayVideoRef.current.currentTime = 0;
+      birthdayVideoRef.current.muted = false;
+      birthdayVideoRef.current.volume = 1;
+      const playPromise = birthdayVideoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          console.warn("Autoplay con sonido prevenido por el navegador, aplicando fallback:", err);
+          if (birthdayVideoRef.current) {
+            birthdayVideoRef.current.muted = true;
+            birthdayVideoRef.current.play().catch(() => {});
+          }
+        });
+      }
+    }
+  };
+
+  const closeBirthday = () => {
+    if (birthdayVideoRef.current) {
+      birthdayVideoRef.current.pause();
+      birthdayVideoRef.current.currentTime = 0;
+    }
+    setIsBirthdayModalOpen(false);
+    try {
+      const url = new URL(window.location.href);
+      if (url.searchParams.get('video') === 'cumpleanos' || url.searchParams.has('cumpleanos') || url.hash.includes('cumple')) {
+        url.searchParams.delete('video');
+        url.searchParams.delete('cumpleanos');
+        url.hash = '';
+        window.history.replaceState(null, '', url.pathname + (url.search ? url.search : ''));
+      }
+    } catch (e) {}
+  };
+
+  useEffect(() => {
+    (window as any).openBirthdayModal = openBirthday;
+    return () => {
+      delete (window as any).openBirthdayModal;
+    };
+  }, []);
+
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const hash = window.location.hash.toLowerCase();
+      if (
+        params.get('video') === 'cumpleanos' ||
+        params.has('cumpleanos') ||
+        hash.includes('cumple') ||
+        hash.includes('birthday')
+      ) {
+        const timer = setTimeout(() => {
+          openBirthday();
+        }, 150);
+        return () => clearTimeout(timer);
+      }
+    } catch (e) {}
+  }, []);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.setAttribute('playsinline', 'true');
+      videoRef.current.setAttribute('webkit-playsinline', 'true');
+    }
+  }, []);
 
   const togglePlay = () => {
     if (!videoRef.current) return;
     if (videoRef.current.paused) {
-      videoRef.current.play().then(() => {
-        setIsPlaying(true);
-      }).catch((err) => {
-        console.error("Error al reproducir video:", err);
-      });
+      videoRef.current.muted = isMuted;
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            setIsPlaying(true);
+          })
+          .catch((err) => {
+            console.warn("Error al intentar reproducir, reintentando con silencio:", err);
+            if (videoRef.current) {
+              videoRef.current.muted = true;
+              setIsMuted(true);
+              videoRef.current.play().then(() => {
+                setIsPlaying(true);
+              }).catch(console.error);
+            }
+          });
+      }
     } else {
       videoRef.current.pause();
       setIsPlaying(false);
@@ -118,12 +253,14 @@ export function Hero() {
               >
                 Adquiere tu libro
               </a>
-              <a
-                href="#consejo-dia"
-                className="bg-white/80 hover:bg-white text-purple-900 border-2 border-purple-600 px-7 py-4 rounded-2xl font-bold uppercase tracking-wider shadow-md flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95 text-center text-sm"
+              <button
+                type="button"
+                onClick={openBirthday}
+                className="bg-gradient-to-r from-amber-400 via-rose-500 to-purple-600 hover:from-amber-300 hover:via-rose-400 hover:to-purple-500 text-white border-2 border-white/40 px-7 py-4 rounded-2xl font-bold uppercase tracking-wider shadow-lg shadow-purple-900/30 flex items-center justify-center gap-2.5 transition-all hover:scale-105 active:scale-95 text-center text-sm cursor-pointer"
               >
-                Consejo del Día
-              </a>
+                <span className="text-xl">🎂</span>
+                <span className="font-black">Para Cumpleaños</span>
+              </button>
             </div>
 
           </div>
@@ -149,6 +286,7 @@ export function Hero() {
                   <video
                     ref={videoRef}
                     src="/GIFROB.mp4"
+                    poster="/gifrob_poster.jpg"
                     playsInline
                     loop
                     muted={isMuted}
@@ -284,6 +422,108 @@ export function Hero() {
 
         </div>
       </div>
+
+      {/* Birthday Framed Modal */}
+      <div
+        className={`fixed inset-0 z-50 items-center justify-center bg-slate-950/85 backdrop-blur-md p-3 sm:p-6 select-none ${isBirthdayModalOpen ? 'flex' : 'hidden'}`}
+        role="dialog"
+        aria-modal="true"
+        onClick={(e) => {
+          if (e.target === e.currentTarget) closeBirthday();
+        }}
+      >
+        <div className="relative w-full max-w-[380px] sm:max-w-[430px] bg-gradient-to-b from-slate-900 via-purple-950 to-slate-950 rounded-[32px] sm:rounded-[40px] p-3.5 sm:p-5 border-4 sm:border-[6px] border-amber-400/90 shadow-2xl shadow-purple-950/80 ring-4 ring-amber-400/20 flex flex-col items-center">
+            
+            {/* Header del marco: Título, Compartir y Cerrar */}
+            <div className="w-full flex items-center justify-between gap-2 px-1 pb-3 mb-3 border-b border-amber-400/30">
+              <div className="flex items-center gap-2 min-w-0">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-400 to-rose-500 flex items-center justify-center text-white text-base shrink-0 shadow-sm">
+                  🎂
+                </div>
+                <div className="min-w-0">
+                  <h3 className="font-serif font-black text-amber-300 text-xs sm:text-sm tracking-wide uppercase truncate">
+                    Para Cumpleaños
+                  </h3>
+                  <p className="text-[10px] text-purple-200/70 font-mono truncate">
+                    Robert Pacheco
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                <button
+                  type="button"
+                  onClick={() => {
+                    const shareUrl = getBirthdayShareUrl();
+                    if (navigator.share) {
+                      navigator.share({
+                        title: "¡Feliz Cumpleaños! - Buenos Malos Consejos para mi Hijo",
+                        text: "¡Mira este mensaje especial de cumpleaños de Robert Pacheco!",
+                        url: shareUrl
+                      }).catch(() => {});
+                    } else {
+                      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent('¡Feliz Cumpleaños! 🎉 Mira este mensaje especial de Robert Pacheco: ' + shareUrl)}`, "_blank");
+                    }
+                  }}
+                  className="px-2.5 sm:px-3 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow-md hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                >
+                  <Share2 className="w-3.5 h-3.5" />
+                  <span>Compartir</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={closeBirthday}
+                  className="px-2.5 sm:px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow-md hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                >
+                  ✕ <span>Cerrar</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Video enmarcado */}
+            <div className="relative w-full max-h-[68vh] sm:max-h-[72vh] aspect-[478/850] bg-black rounded-2xl sm:rounded-[24px] overflow-hidden border-2 border-amber-400/40 shadow-inner flex items-center justify-center">
+              <video
+                ref={birthdayVideoRef}
+                playsInline
+                controls
+                preload="auto"
+                className="w-full h-full object-contain bg-black"
+              >
+                <source src="hbrob.mp4" type="video/mp4" />
+                <source src="public/hbrob.mp4" type="video/mp4" />
+                Tu navegador no soporta video.
+              </video>
+            </div>
+
+            <div className="w-full flex items-center justify-between px-1 pt-3 text-[11px] text-amber-200/80 font-medium">
+              <span className="flex items-center gap-1 font-serif italic">
+                ✨ Buenos Malos Consejos para mi Hijo
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  const shareUrl = getBirthdayShareUrl();
+                  const onCopied = () => {
+                    setCopiedBirthdayLink(true);
+                    setTimeout(() => setCopiedBirthdayLink(false), 2500);
+                  };
+                  if (navigator.clipboard?.writeText) {
+                    navigator.clipboard.writeText(shareUrl).then(onCopied).catch(() => {
+                      onCopied();
+                    });
+                  } else {
+                    onCopied();
+                  }
+                }}
+                className="text-purple-300 hover:text-white underline font-mono text-[10px] cursor-pointer"
+              >
+                {copiedBirthdayLink ? "¡Enlace copiado!" : "Copiar enlace"}
+              </button>
+            </div>
+
+          </div>
+        </div>
     </section>
   );
 }

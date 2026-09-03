@@ -30,10 +30,10 @@ export function Header() {
       className: 'bg-gradient-to-r from-pink-500 to-rose-600 text-white hover:from-pink-400 hover:to-rose-500 border-pink-400/60 shadow-sm shadow-pink-500/30',
     },
     {
-      name: 'Consejo Viral',
-      href: '#consejo-dia',
-      icon: <Sparkles className="w-3.5 h-3.5 text-white shrink-0" />,
-      className: 'bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-400 hover:to-orange-400 border-amber-400/60 shadow-sm shadow-amber-500/30',
+      name: 'Para Cumpleaños',
+      href: '#hero',
+      icon: <span className="text-xs">🎂</span>,
+      className: 'bg-gradient-to-r from-amber-500 to-rose-500 text-white hover:from-amber-400 hover:to-rose-400 border-amber-400/60 shadow-sm shadow-amber-500/30',
     },
     {
       name: 'Los 101 Consejos',

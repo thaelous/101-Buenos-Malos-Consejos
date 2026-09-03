@@ -4,7 +4,6 @@ import { AboutSection } from './components/AboutSection';
 import { PersonalizedVideosSection } from './components/PersonalizedVideosSection';
 import { AdquiereTuLibro } from './components/AdquiereTuLibro';
 import { ComicSection } from './components/ComicSection';
-import { DailyAdvice } from './components/DailyAdvice';
 import { ConsejosList } from './components/ConsejosList';
 import { SocialSection } from './components/SocialSection';
 import { Footer } from './components/Footer';
@@ -36,10 +35,7 @@ export default function App() {
         {/* 4. Comic Online (Buenos Malos Consejos. Cómics en línea) */}
         <ComicSection />
 
-        {/* 5. El Consejo del Día (Viralizable con tipografía manuscrita) */}
-        <DailyAdvice />
-
-        {/* 6. Los 101 Consejos (El Libro Completo con buscador y filtros) */}
+        {/* 5. Los 101 Consejos (El Libro Completo con buscador y filtros) */}
         <ConsejosList />
 
         {/* 7. Redes Sociales Oficiales */}
