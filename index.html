@@ -109,9 +109,12 @@
       <a href="#" class="flex items-center gap-3 group shrink-0">
         <div class="relative">
           <div class="absolute -inset-1 bg-gradient-to-r from-[#8A2BE2] to-pink-500 rounded-full blur-xs opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div class="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-[#8A2BE2] to-[#2E1065] flex items-center justify-center text-white font-serif font-black text-base sm:text-lg shadow-md border-2 border-white group-hover:scale-105 transition-transform duration-200">
-            RP
-          </div>
+          <img
+            src="log.png"
+            alt="Logo Robert Pacheco"
+            onerror="this.onerror=null; this.src='./log.png';"
+            class="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shadow-md border-2 border-white group-hover:scale-105 transition-transform duration-200"
+          />
         </div>
         <div>
           <span class="font-serif font-black text-lg sm:text-2xl tracking-tight text-slate-950 block leading-none drop-shadow-xs">
@@ -149,6 +152,10 @@
           <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
           <span>Los 101 Consejos</span>
         </a>
+        <a href="#mis-apps" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wide border border-cyan-400/70 bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 text-white hover:from-cyan-500 hover:via-blue-500 hover:to-indigo-500 shadow-md shadow-cyan-600/30 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></svg>
+          <span>Mis Apps</span>
+        </a>
         <a href="#redes-sociales" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-teal-400/60 bg-gradient-to-r from-teal-500 to-cyan-600 text-white hover:from-teal-400 hover:to-cyan-500 shadow-sm shadow-teal-500/25 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
           <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
           <span>Redes Sociales</span>
@@ -167,6 +174,7 @@
         <a href="#comics" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-pink-500 to-rose-600 text-white border border-pink-400/60 shadow-xs transition-all hover:scale-105">Comic</a>
         <button type="button" onclick="openBirthdayModal()" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-amber-500 to-rose-500 text-white border border-amber-400/60 shadow-xs transition-all hover:scale-105 cursor-pointer">Cumpleaños</button>
         <a href="#los-101" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-violet-600 to-purple-700 text-white border border-purple-400/60 shadow-xs transition-all hover:scale-105">101 Consejos</a>
+        <a href="#mis-apps" class="px-2.5 py-1 rounded-full text-[11px] font-extrabold uppercase bg-gradient-to-r from-cyan-600 to-blue-600 text-white border border-cyan-400/60 shadow-xs transition-all hover:scale-105">Mis Apps</a>
         <a href="#redes-sociales" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-teal-500 to-cyan-600 text-white border border-teal-400/60 shadow-xs transition-all hover:scale-105">Redes</a>
         <a href="#videos-personalizados" class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 text-white shadow-sm transition-all hover:scale-105">Videos</a>
       </nav>
@@ -219,6 +227,13 @@
         </button>
         <a href="#los-101" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-purple-400/60 bg-gradient-to-r from-violet-600 to-purple-700 text-white shadow-sm">
           <span>Los 101 Consejos</span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#mis-apps" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-extrabold uppercase tracking-wide border border-cyan-400/70 bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 text-white shadow-md">
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></svg>
+            <span>Mis Apps</span>
+          </span>
           <span class="text-white">→</span>
         </a>
         <a href="#redes-sociales" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-bold uppercase tracking-wide border border-teal-400/60 bg-gradient-to-r from-teal-500 to-cyan-600 text-white shadow-sm">
@@ -328,8 +343,8 @@
 
             <!-- Barra Lateral Derecha de Interacciones -->
             <div class="absolute right-2 bottom-20 z-20 flex flex-col items-center gap-4 text-white">
-              <div class="w-10 h-10 rounded-full border-2 border-white bg-[#8A2BE2] flex items-center justify-center font-bold text-xs shadow-md">
-                RP
+              <div class="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-purple-900 flex items-center justify-center shadow-md">
+                <img src="log.png" alt="Robert Pacheco" onerror="this.onerror=null; this.src='./log.png';" class="w-full h-full object-cover" />
               </div>
 
               <button id="tiktok-like-btn" class="flex flex-col items-center group">
@@ -572,13 +587,13 @@
                   <h4 class="font-serif font-black text-lg leading-tight drop-shadow">
                     Buenos Malos Consejos
                   </h4>
-                  <p class="text-[11px] text-purple-200">25 tiras cómicas completas</p>
+                  <p class="text-[11px] text-purple-200">28 tiras cómicas completas</p>
                 </div>
               </div>
 
               <div class="absolute -bottom-3 -right-3 bg-amber-400 text-slate-950 font-black text-xs px-3 py-1.5 rounded-full shadow-lg border-2 border-slate-900 transform group-hover:scale-110 transition-transform flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                <span>¡25 Tiras!</span>
+                <span>¡28 Tiras!</span>
               </div>
             </div>
           </div>
@@ -624,7 +639,7 @@
             <div class="mt-6 flex items-center justify-center md:justify-start gap-2 text-xs text-purple-300 font-medium">
               <span>Colección completa:</span>
               <span class="bg-purple-800/80 px-2.5 py-0.5 rounded-full text-white font-bold text-[11px] border border-purple-500/30">
-                25 páginas ilustradas
+                28 páginas ilustradas
               </span>
             </div>
           </div>
@@ -1230,7 +1245,226 @@
     </div>
   </section>
 
-  <!-- 8. PIE DE PÁGINA (FOOTER) -->
+  <!-- 8. SECCIÓN MIS APPS (WEB APPS GRATUITAS) -->
+  <section id="mis-apps" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 bg-white/80 border border-cyan-200 shadow-sm px-4 py-1.5 rounded-full mb-4">
+        <svg class="w-4 h-4 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-900 font-mono">
+          Herramientas y Aplicaciones
+        </span>
+      </div>
+      <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight">
+        MIS <span class="text-cyan-600">APPS</span>
+      </h2>
+      <div class="w-16 h-1 bg-cyan-600 mx-auto mt-4 rounded-full"></div>
+      <p class="mt-4 text-xl sm:text-2xl font-black text-slate-800 tracking-tight">
+        Web apps gratuitas.
+      </p>
+      <p class="mt-2 text-sm sm:text-base text-slate-600 max-w-xl mx-auto">
+        Herramientas interactivas creadas para agilizar el aprendizaje, entrenar el cálculo mental y potenciar habilidades prácticas.
+      </p>
+    </div>
+
+    <!-- Imagen del personaje de la pantalla MIS APPS (robappb.png) -->
+    <div class="flex justify-center relative z-0 -mb-16 sm:-mb-24 md:-mb-28 lg:-mb-32 pointer-events-none select-none">
+      <div class="max-w-md sm:max-w-lg md:max-w-xl flex items-center justify-center px-4">
+        <img
+          src="./robappb.png"
+          alt="Robert Pacheco - Mis Apps"
+          onerror="this.onerror=null; this.src='robappb.png';"
+          class="w-auto h-80 sm:h-96 md:h-[430px] lg:h-[480px] max-w-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300 pointer-events-auto"
+        />
+      </div>
+    </div>
+
+    <!-- Grid de Aplicaciones: Altair y El Juego de la Vida de Conway -->
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-start">
+      
+      <!-- 1. Tarjeta / Botón Desplegable: Altair -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-cyan-200/90 shadow-xl shadow-cyan-900/5 overflow-hidden transition-all duration-300 hover:shadow-cyan-500/20 hover:border-cyan-400">
+        
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="altair-toggle-btn"
+          onclick="toggleAltairBox()"
+          aria-expanded="false"
+          aria-controls="altair-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-cyan-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-cyan-600/30 shrink-0 border-2 border-cyan-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-cyan-950">
+              <img
+                src="altboton.jpeg"
+                alt="Altair: Calculadora de operaciones rápidas"
+                onerror="this.onerror=null; this.src='./altboton.jpeg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-cyan-100 text-cyan-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-cyan-700 transition-colors leading-tight">
+                Altair: Calculadora de operaciones rápidas
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-cyan-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-cyan-100 text-slate-600 group-hover:text-cyan-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="altair-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="altair-details-box" class="hidden border-t border-cyan-100 bg-gradient-to-b from-cyan-50/60 to-white p-6 sm:p-8 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-cyan-200/90 p-5 sm:p-6 shadow-xs mb-6">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-cyan-200 bg-cyan-900">
+                <img
+                  src="altboton.jpeg"
+                  alt="Altair Icono"
+                  onerror="this.onerror=null; this.src='./altboton.jpeg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
+                  Calculadora que despliega paso a paso las ecuaciones y enseña a realizar las operaciones de forma mental.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos que enlaza a la aplicación -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Acceso libre y sin registro
+            </span>
+            <a
+              href="https://thaelous.github.io/Altair-Matematicas-rapidas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:via-blue-500 hover:to-indigo-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-cyan-600/30 hover:shadow-cyan-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
+            >
+              <span>Vamos</span>
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2. Tarjeta / Botón Desplegable: El Juego de la Vida de Conway -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-emerald-200/90 shadow-xl shadow-emerald-900/5 overflow-hidden transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-400">
+        
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="conway-toggle-btn"
+          onclick="toggleConwayBox()"
+          aria-expanded="false"
+          aria-controls="conway-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-emerald-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-emerald-600/30 shrink-0 border-2 border-emerald-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-emerald-950">
+              <img
+                src="conway.jpeg"
+                alt="El Juego de la Vida de Conway"
+                onerror="this.onerror=null; this.src='./conway.jpeg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-emerald-700 transition-colors leading-tight">
+                El Juego de la Vida de Conway
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-emerald-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-emerald-100 text-slate-600 group-hover:text-emerald-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="conway-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="conway-details-box" class="hidden border-t border-emerald-100 bg-gradient-to-b from-emerald-50/60 to-white p-6 sm:p-8 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-emerald-200/90 p-5 sm:p-6 shadow-xs mb-6">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-emerald-200 bg-emerald-900">
+                <img
+                  src="conway.jpeg"
+                  alt="Conway Icono"
+                  onerror="this.onerror=null; this.src='./conway.jpeg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
+                  Células virtuales que viven, nacen o mueren según reglas matemáticas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos que enlaza a la aplicación -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Acceso libre y sin registro
+            </span>
+            <a
+              href="https://thaelous.github.io/EL-JUEGO-DE-LA-VIDA/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-emerald-600/30 hover:shadow-emerald-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
+            >
+              <span>Vamos</span>
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. PIE DE PÁGINA (FOOTER) -->
   <footer class="bg-slate-950 text-slate-400 py-14 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -1255,6 +1489,7 @@
           <a href="#comics" class="hover:text-pink-400 font-bold text-pink-300 transition-colors">Comic Online</a>
           <button type="button" onclick="openBirthdayModal()" class="hover:text-amber-300 font-bold text-amber-200 transition-colors cursor-pointer flex items-center gap-1">🎂 Para Cumpleaños</button>
           <a href="#los-101" class="hover:text-white transition-colors">Los 101 Consejos</a>
+          <a href="#mis-apps" class="hover:text-cyan-300 font-bold text-cyan-200 transition-colors">Mis Apps</a>
           <a href="#redes-sociales" class="hover:text-white transition-colors">Redes Sociales</a>
           <a href="#videos-personalizados" class="hover:text-purple-300 transition-colors text-purple-200 font-bold">Videos Personalizados</a>
         </div>
@@ -2143,6 +2378,7 @@
       { file: "arbol.jpg", title: "El árbol" },
       { file: "CABALLERO.jpg", title: "El caballero" },
       { file: "caliente.jpg", title: "Comida caliente" },
+      { file: "chilaqueria.jpeg", title: "La chilaquería" },
       { file: "DADPOOL.jpg", title: "Dadpool" },
       { file: "depre.jpg", title: "Día gris" },
       { file: "flash.jpg", title: "Flash" },
@@ -2154,6 +2390,7 @@
       { file: "modem.jpg", title: "El módem" },
       { file: "omepra.jpg", title: "Omeprazol" },
       { file: "paz.jpg", title: "La paz mental" },
+      { file: "pedro.jpeg", title: "Pedro" },
       { file: "por.jpg", title: "Prioridades" },
       { file: "realismo.jpg", title: "Dosis de realismo" },
       { file: "RECALENTADO.jpg", title: "El recalentado" },
@@ -2162,7 +2399,8 @@
       { file: "socrates.jpg", title: "Sócrates y la vida" },
       { file: "tablet.jpg", title: "La tablet" },
       { file: "UNICORNIO.jpg", title: "El unicornio" },
-      { file: "utiles.jpg", title: "Útiles necesarios" }
+      { file: "utiles.jpg", title: "Útiles necesarios" },
+      { file: "viagra.jpeg", title: "Viagra" }
     ];
 
     let currentComicPage = 0;
@@ -2362,6 +2600,44 @@
         }
       });
     });
+
+    // Control de la sección Mis Apps - Calculadora Altair
+    function toggleAltairBox() {
+      const box = document.getElementById("altair-details-box");
+      const btn = document.getElementById("altair-toggle-btn");
+      const chevron = document.getElementById("altair-chevron");
+      if (!box) return;
+
+      const isHidden = box.classList.contains("hidden");
+      if (isHidden) {
+        box.classList.remove("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "true");
+        if (chevron) chevron.classList.add("rotate-180");
+      } else {
+        box.classList.add("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "false");
+        if (chevron) chevron.classList.remove("rotate-180");
+      }
+    }
+
+    // Control de la sección Mis Apps - El Juego de la Vida de Conway
+    function toggleConwayBox() {
+      const box = document.getElementById("conway-details-box");
+      const btn = document.getElementById("conway-toggle-btn");
+      const chevron = document.getElementById("conway-chevron");
+      if (!box) return;
+
+      const isHidden = box.classList.contains("hidden");
+      if (isHidden) {
+        box.classList.remove("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "true");
+        if (chevron) chevron.classList.add("rotate-180");
+      } else {
+        box.classList.add("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "false");
+        if (chevron) chevron.classList.remove("rotate-180");
+      }
+    }
   </script>
 </body>
 </html>

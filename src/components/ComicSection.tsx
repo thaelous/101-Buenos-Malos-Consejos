@@ -7,6 +7,7 @@ export const COMIC_PAGES = [
   { file: 'arbol.jpg', title: 'El árbol' },
   { file: 'CABALLERO.jpg', title: 'El caballero' },
   { file: 'caliente.jpg', title: 'Comida caliente' },
+  { file: 'chilaqueria.jpeg', title: 'La chilaquería' },
   { file: 'DADPOOL.jpg', title: 'Dadpool' },
   { file: 'depre.jpg', title: 'Día gris' },
   { file: 'flash.jpg', title: 'Flash' },
@@ -18,6 +19,7 @@ export const COMIC_PAGES = [
   { file: 'modem.jpg', title: 'El módem' },
   { file: 'omepra.jpg', title: 'Omeprazol' },
   { file: 'paz.jpg', title: 'La paz mental' },
+  { file: 'pedro.jpeg', title: 'Pedro' },
   { file: 'por.jpg', title: 'Prioridades' },
   { file: 'realismo.jpg', title: 'Dosis de realismo' },
   { file: 'RECALENTADO.jpg', title: 'El recalentado' },
@@ -27,6 +29,7 @@ export const COMIC_PAGES = [
   { file: 'tablet.jpg', title: 'La tablet' },
   { file: 'UNICORNIO.jpg', title: 'El unicornio' },
   { file: 'utiles.jpg', title: 'Útiles necesarios' },
+  { file: 'viagra.jpeg', title: 'Viagra' },
 ];
 
 export function ComicSection() {
