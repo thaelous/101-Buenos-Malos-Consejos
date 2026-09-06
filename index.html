@@ -1276,8 +1276,8 @@
       </div>
     </div>
 
-    <!-- Grid de Aplicaciones: Altair y El Juego de la Vida de Conway -->
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-start">
+    <!-- Grid de Aplicaciones: Altair, Conway y Las Preguntas de Aldebarán -->
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto items-start">
       
       <!-- 1. Tarjeta / Botón Desplegable: Altair -->
       <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-cyan-200/90 shadow-xl shadow-cyan-900/5 overflow-hidden transition-all duration-300 hover:shadow-cyan-500/20 hover:border-cyan-400">
@@ -1479,6 +1479,112 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-emerald-600/30 hover:shadow-emerald-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
+              >
+                <span>Vamos</span>
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 3. Tarjeta / Botón Desplegable: Las Preguntas de Aldebarán -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-purple-200/90 shadow-xl shadow-purple-900/5 overflow-hidden transition-all duration-300 hover:shadow-purple-500/20 hover:border-purple-400">
+        
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="aldebaran-toggle-btn"
+          onclick="toggleAldebaranBox()"
+          aria-expanded="false"
+          aria-controls="aldebaran-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-purple-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-purple-600/30 shrink-0 border-2 border-purple-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-purple-950">
+              <img
+                src="preglog.jpg"
+                alt="Las Preguntas de Aldebarán"
+                onerror="this.onerror=null; this.src='./preglog.jpg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-purple-700 transition-colors leading-tight">
+                Las Preguntas de Aldebarán
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-purple-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-purple-100 text-slate-600 group-hover:text-purple-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="aldebaran-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="aldebaran-details-box" class="hidden border-t border-purple-100 bg-gradient-to-b from-purple-50/60 to-white p-6 sm:p-8 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-purple-200/90 p-5 sm:p-6 shadow-xs mb-6">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-purple-200 bg-purple-900">
+                <img
+                  src="preglog.jpg"
+                  alt="Las Preguntas de Aldebarán Icono"
+                  onerror="this.onerror=null; this.src='./preglog.jpg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-purple-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
+                  1050 preguntas de un niño. La versión web.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
+              <!-- Botón Compartir Aldebarán -->
+              <button
+                type="button"
+                id="btn-share-aldebaran"
+                onclick="shareApp('aldebaran')"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-purple-50 hover:bg-purple-100 text-purple-900 border border-purple-200/90 font-bold text-sm uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs"
+                title="Compartir Las Preguntas de Aldebarán"
+              >
+                <svg class="w-4 h-4 text-purple-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="aldebaran-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://thaelous.github.io/LAS-PREGUNTAS-DE-ALDEBAR-N/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:from-purple-500 hover:via-indigo-500 hover:to-blue-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
               >
                 <span>Vamos</span>
                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -2669,6 +2775,25 @@
       }
     }
 
+    // Control de la sección Mis Apps - Las Preguntas de Aldebarán
+    function toggleAldebaranBox() {
+      const box = document.getElementById("aldebaran-details-box");
+      const btn = document.getElementById("aldebaran-toggle-btn");
+      const chevron = document.getElementById("aldebaran-chevron");
+      if (!box) return;
+
+      const isHidden = box.classList.contains("hidden");
+      if (isHidden) {
+        box.classList.remove("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "true");
+        if (chevron) chevron.classList.add("rotate-180");
+      } else {
+        box.classList.add("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "false");
+        if (chevron) chevron.classList.remove("rotate-180");
+      }
+    }
+
     // Compartir aplicaciones de la sección Mis Apps
     function shareApp(appKey) {
       const apps = {
@@ -2683,6 +2808,12 @@
           text: "¡Descubre El Juego de la Vida de Conway! Células virtuales que viven, nacen o mueren según reglas matemáticas.",
           url: "https://thaelous.github.io/EL-JUEGO-DE-LA-VIDA/",
           textElemId: "conway-share-text"
+        },
+        aldebaran: {
+          title: "Las Preguntas de Aldebarán",
+          text: "¡Descubre Las Preguntas de Aldebarán! 1050 preguntas de un niño. La versión web.",
+          url: "https://thaelous.github.io/LAS-PREGUNTAS-DE-ALDEBAR-N/",
+          textElemId: "aldebaran-share-text"
         }
       };
 
