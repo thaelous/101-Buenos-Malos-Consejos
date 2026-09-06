@@ -75,36 +75,32 @@ export function AdquiereTuLibro() {
             </a>
           </div>
 
-          {/* Tarjeta 3: Próximamente App */}
-          <div className="bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-white/60 shadow-lg flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 relative group">
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-purple-900 text-white text-[11px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow-md z-10">
-              PRÓXIMAMENTE
-            </div>
-
+          {/* Tarjeta 3: Las Preguntas de Aldebarán */}
+          <div className="bg-white/85 backdrop-blur-md rounded-3xl p-8 border border-white shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
             <div>
-              {/* Imagen sin fondo de la carpeta public */}
-              <div className="w-full h-52 flex items-center justify-center mb-6 mt-2 overflow-hidden">
+              <div className="w-full h-52 flex items-center justify-center mb-6 overflow-hidden">
                 <img
-                  src="/approbb.png"
-                  alt="101 Buenos Malos Consejos, La App"
-                  className="max-h-52 w-auto max-w-full object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-300"
+                  src="/portada.jpg"
+                  alt="Las Preguntas de Aldebarán"
+                  className="max-h-52 w-auto max-w-full object-contain rounded-lg drop-shadow-xl group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-serif font-black text-2xl text-slate-950 mb-3">
-                101 Buenos Malos Consejos, La App
+              <h3 className="font-serif font-black text-2xl text-slate-950 mb-2">
+                Las Preguntas de Aldebarán
               </h3>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-                La experiencia interactiva que estás esperando para llevar todos los consejos en tu bolsillo.
+              <p className="text-slate-600 font-bold text-sm sm:text-base leading-relaxed mb-6">
+                1050 preguntas de un niño.
               </p>
             </div>
 
-            <button
-              type="button"
-              disabled
-              className="w-full py-4 bg-slate-200 text-slate-500 font-bold text-center rounded-2xl uppercase text-xs tracking-wider cursor-not-allowed select-none"
+            <a
+              href="https://play.google.com/store/books/details?id=saIJEgAAQBAJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 bg-[#8A2BE2] hover:bg-[#2E1065] text-white font-bold text-center rounded-2xl uppercase text-xs tracking-wider shadow-md hover:shadow-lg transition-all active:scale-95 block"
             >
-              Muy Pronto Disponible
-            </button>
+              Adquiérelo en Google Play
+            </a>
           </div>
 
         </div>
