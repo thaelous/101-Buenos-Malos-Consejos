@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="spacebg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="60%" stop-color="#05070c"/>
+      <stop offset="100%" stop-color="#020305"/>
+    </radialGradient>
+    <radialGradient id="earthGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="40%" stop-color="#0284c7"/>
+      <stop offset="85%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="tunnelBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="35%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="65%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="rgba(249,115,22,0)"/>
+    </radialGradient>
+    <filter id="laserGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur1" />
+      <feGaussianBlur stdDeviation="4" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="110" fill="url(#spacebg)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="90" cy="90" r="2.5" opacity="0.8"/>
+    <circle cx="420" cy="80" r="3" opacity="0.9"/>
+    <circle cx="450" cy="340" r="2" opacity="0.6"/>
+    <circle cx="70" cy="410" r="2.5" opacity="0.7"/>
+    <circle cx="150" cy="460" r="2" opacity="0.5"/>
+    <circle cx="370" cy="450" r="2" opacity="0.6"/>
+    <circle cx="80" cy="220" r="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Earth Orbital Aura -->
+  <circle cx="256" cy="240" r="168" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.25" stroke-dasharray="6,8"/>
+  <ellipse cx="256" cy="240" rx="195" ry="75" fill="none" stroke="#f43f5e" stroke-width="1.5" opacity="0.3" transform="rotate(-25, 256, 240)"/>
+
+  <!-- Earth Sphere Base -->
+  <circle cx="256" cy="240" r="145" fill="url(#earthGrad)"/>
+
+  <!-- Earth Continents & Grids -->
+  <!-- Stylized Landmasses (Green/Teal) -->
+  <path d="M 175 160 Q 200 145 230 165 T 265 150 T 290 180 T 260 215 T 215 205 T 180 185 Z" fill="#10b981" opacity="0.65"/>
+  <path d="M 270 230 Q 310 210 340 240 T 360 290 T 325 335 T 285 300 T 265 255 Z" fill="#10b981" opacity="0.65"/>
+  <path d="M 145 250 Q 170 235 195 265 T 190 310 T 155 330 T 130 280 Z" fill="#059669" opacity="0.55"/>
+
+  <!-- Atmosphere Rim Glow -->
+  <circle cx="256" cy="240" r="145" fill="none" stroke="#38bdf8" stroke-width="6" opacity="0.4"/>
+
+  <!-- Magma Core Glow inside planet -->
+  <circle cx="256" cy="240" r="55" fill="url(#coreGlow)" filter="url(#laserGlow)"/>
+
+  <!-- Gravitational Tunnel Laser Axis (Piercing Earth) -->
+  <!-- Tunnel Bore Hole Top-Left Entry -->
+  <ellipse cx="148" cy="132" rx="22" ry="12" fill="#020617" stroke="#f43f5e" stroke-width="3.5" transform="rotate(45, 148, 132)"/>
+  
+  <!-- Tunnel Bore Hole Bottom-Right Exit (Antipode) -->
+  <ellipse cx="364" cy="348" rx="22" ry="12" fill="#020617" stroke="#06b6d4" stroke-width="3.5" transform="rotate(45, 364, 348)"/>
+
+  <!-- Glowing Laser Beam Through Center -->
+  <g filter="url(#laserGlow)">
+    <line x1="120" y1="104" x2="392" y2="376" stroke="url(#tunnelBeam)" stroke-width="9" stroke-linecap="round"/>
+    <line x1="120" y1="104" x2="392" y2="376" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Antipode Marker Ping -->
+  <circle cx="364" cy="348" r="8" fill="#06b6d4" filter="url(#laserGlow)"/>
+  <circle cx="148" cy="132" r="8" fill="#f43f5e" filter="url(#laserGlow)"/>
+
+  <!-- Bottom Badge: TÚNEL ANTÍPODA -->
+  <rect x="75" y="415" width="362" height="52" rx="26" fill="#090d16" stroke="#f43f5e" stroke-width="2.5"/>
+  <text x="256" y="449" fill="#f8fafc" font-size="20" font-family="system-ui, sans-serif" font-weight="900" letter-spacing="3" text-anchor="middle">
+    TÚNEL ANTÍPODA
+  </text>
+</svg>

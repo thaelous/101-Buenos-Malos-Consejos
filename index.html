@@ -1276,12 +1276,11 @@
       </div>
     </div>
 
-    <!-- Grid de Aplicaciones: Altair, Conway y Las Preguntas de Aldebarán -->
+    <!-- Grid de Aplicaciones: 6 Web Apps Gratuitas de Robert Pacheco -->
     <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto items-start">
       
-      <!-- 1. Tarjeta / Botón Desplegable: Altair -->
+      <!-- 1. Tarjeta / Botón Desplegable: Calculadora Altair -->
       <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-cyan-200/90 shadow-xl shadow-cyan-900/5 overflow-hidden transition-all duration-300 hover:shadow-cyan-500/20 hover:border-cyan-400">
-        
         <!-- Botón Desplegable / Cabecera interactiva -->
         <button
           type="button"
@@ -1306,7 +1305,7 @@
                 <span>Web App Gratuita</span>
               </div>
               <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-cyan-700 transition-colors leading-tight">
-                Altair: Calculadora de operaciones rápidas
+                Calculadora Altair
               </h3>
               <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
                 <span>Haz clic para desplegar información</span>
@@ -1340,7 +1339,7 @@
                   Sobre la aplicación
                 </span>
                 <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
-                  Calculadora que despliega paso a paso las ecuaciones y enseña a realizar las operaciones de forma mental.
+                  Calculadora escolar que despliega paso a paso las operaciones y enseña a realizar el cálculo de forma mental.
                 </p>
               </div>
             </div>
@@ -1369,7 +1368,7 @@
 
               <!-- Botón Vamos -->
               <a
-                href="https://altair-matematicas-rapidas.vercel.app/"
+                href="https://altairmate.buenosmalosconsejos.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:via-blue-500 hover:to-indigo-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-cyan-600/30 hover:shadow-cyan-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
@@ -1382,71 +1381,69 @@
             </div>
           </div>
         </div>
-
       </div>
 
-      <!-- 2. Tarjeta / Botón Desplegable: El Juego de la Vida de Conway -->
-      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-emerald-200/90 shadow-xl shadow-emerald-900/5 overflow-hidden transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-400">
-        
+      <!-- 2. Tarjeta / Botón Desplegable: Fracciones Visuales -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-amber-200/90 shadow-xl shadow-amber-900/5 overflow-hidden transition-all duration-300 hover:shadow-amber-500/20 hover:border-amber-400">
         <!-- Botón Desplegable / Cabecera interactiva -->
         <button
           type="button"
-          id="conway-toggle-btn"
-          onclick="toggleConwayBox()"
+          id="fracciones-toggle-btn"
+          onclick="toggleFraccionesBox()"
           aria-expanded="false"
-          aria-controls="conway-details-box"
-          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-emerald-50/50 group"
+          aria-controls="fracciones-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-amber-50/50 group"
         >
           <div class="flex items-center gap-4 sm:gap-5">
-            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-emerald-600/30 shrink-0 border-2 border-emerald-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-emerald-950">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-amber-600/30 shrink-0 border-2 border-amber-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-amber-950">
               <img
-                src="conway.jpeg"
-                alt="El Juego de la Vida de Conway"
-                onerror="this.onerror=null; this.src='./conway.jpeg';"
+                src="fracciones.svg"
+                alt="Fracciones visuales"
+                onerror="this.onerror=null; this.src='./fracciones.svg';"
                 class="w-full h-full object-cover"
               />
             </div>
             <div>
-              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping"></span>
                 <span>Web App Gratuita</span>
               </div>
-              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-emerald-700 transition-colors leading-tight">
-                El Juego de la Vida de Conway
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-amber-700 transition-colors leading-tight">
+                Fracciones visuales
               </h3>
               <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
                 <span>Haz clic para desplegar información</span>
-                <span class="text-emerald-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+                <span class="text-amber-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
               </p>
             </div>
           </div>
 
           <!-- Indicador flecha / chevron desplegable -->
-          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-emerald-100 text-slate-600 group-hover:text-emerald-800 flex items-center justify-center shrink-0 transition-all duration-300">
-            <svg id="conway-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-amber-100 text-slate-600 group-hover:text-amber-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="fracciones-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </div>
         </button>
 
         <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
-        <div id="conway-details-box" class="hidden border-t border-emerald-100 bg-gradient-to-b from-emerald-50/60 to-white p-6 sm:p-8 transition-all duration-300">
-          <div class="rounded-2xl bg-white border border-emerald-200/90 p-5 sm:p-6 shadow-xs mb-6">
+        <div id="fracciones-details-box" class="hidden border-t border-amber-100 bg-gradient-to-b from-amber-50/60 to-white p-6 sm:p-8 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-amber-200/90 p-5 sm:p-6 shadow-xs mb-6">
             <div class="flex items-start gap-3.5">
-              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-emerald-200 bg-emerald-900">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-amber-200 bg-amber-900">
                 <img
-                  src="conway.jpeg"
-                  alt="Conway Icono"
-                  onerror="this.onerror=null; this.src='./conway.jpeg';"
+                  src="fracciones.svg"
+                  alt="Fracciones Icono"
+                  onerror="this.onerror=null; this.src='./fracciones.svg';"
                   class="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-emerald-900 block mb-1.5 font-mono">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-900 block mb-1.5 font-mono">
                   Sobre la aplicación
                 </span>
                 <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
-                  Células virtuales que viven, nacen o mueren según reglas matemáticas.
+                  Cortador geométrico interactivo para entender, comparar y calcular fracciones de manera visual, práctica e intuitiva.
                 </p>
               </div>
             </div>
@@ -1459,26 +1456,26 @@
               Acceso libre y sin registro
             </span>
             <div class="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
-              <!-- Botón Compartir Conway -->
+              <!-- Botón Compartir Fracciones -->
               <button
                 type="button"
-                id="btn-share-conway"
-                onclick="shareApp('conway')"
-                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-200/90 font-bold text-sm uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs"
-                title="Compartir El Juego de la Vida de Conway"
+                id="btn-share-fracciones"
+                onclick="shareApp('fracciones')"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/90 font-bold text-sm uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs"
+                title="Compartir Fracciones visuales"
               >
-                <svg class="w-4 h-4 text-emerald-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
                 </svg>
-                <span id="conway-share-text">Compartir</span>
+                <span id="fracciones-share-text">Compartir</span>
               </button>
 
               <!-- Botón Vamos -->
               <a
-                href="https://el-juego-de-la-vida-five.vercel.app/"
+                href="https://fracciones.buenosmalosconsejos.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-emerald-600/30 hover:shadow-emerald-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
+                class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-600 to-rose-600 hover:from-amber-400 hover:via-orange-500 hover:to-rose-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-amber-600/30 hover:shadow-amber-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
               >
                 <span>Vamos</span>
                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -1488,12 +1485,10 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- 3. Tarjeta / Botón Desplegable: Las Preguntas de Aldebarán -->
       <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-purple-200/90 shadow-xl shadow-purple-900/5 overflow-hidden transition-all duration-300 hover:shadow-purple-500/20 hover:border-purple-400">
-        
         <!-- Botón Desplegable / Cabecera interactiva -->
         <button
           type="button"
@@ -1518,7 +1513,7 @@
                 <span>Web App Gratuita</span>
               </div>
               <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-purple-700 transition-colors leading-tight">
-                Las Preguntas de Aldebarán
+                Las preguntas de Aldebarán
               </h3>
               <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
                 <span>Haz clic para desplegar información</span>
@@ -1552,7 +1547,7 @@
                   Sobre la aplicación
                 </span>
                 <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
-                  1050 preguntas de un niño. La versión web.
+                  1050 preguntas de un niño. La versión web con un árbol interactivo de conocimiento y curiosidades asombrosas.
                 </p>
               </div>
             </div>
@@ -1571,7 +1566,7 @@
                 id="btn-share-aldebaran"
                 onclick="shareApp('aldebaran')"
                 class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-purple-50 hover:bg-purple-100 text-purple-900 border border-purple-200/90 font-bold text-sm uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs"
-                title="Compartir Las Preguntas de Aldebarán"
+                title="Compartir Las preguntas de Aldebarán"
               >
                 <svg class="w-4 h-4 text-purple-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
@@ -1581,7 +1576,7 @@
 
               <!-- Botón Vamos -->
               <a
-                href="https://las-preguntas-de-aldebar-n.vercel.app/"
+                href="https://preguntaaldebaran.buenosmalosconsejos.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:from-purple-500 hover:via-indigo-500 hover:to-blue-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
@@ -1594,7 +1589,318 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- 4. Tarjeta / Botón Desplegable: El Juego de la Vida de Conway -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-emerald-200/90 shadow-xl shadow-emerald-900/5 overflow-hidden transition-all duration-300 hover:shadow-emerald-500/20 hover:border-emerald-400">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="conway-toggle-btn"
+          onclick="toggleConwayBox()"
+          aria-expanded="false"
+          aria-controls="conway-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-emerald-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-emerald-600/30 shrink-0 border-2 border-emerald-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-emerald-950">
+              <img
+                src="conway.jpeg"
+                alt="El Juego de la Vida de Conway"
+                onerror="this.onerror=null; this.src='./conway.jpeg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-emerald-700 transition-colors leading-tight">
+                El Juego de la vida de Conway
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-emerald-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-emerald-100 text-slate-600 group-hover:text-emerald-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="conway-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="conway-details-box" class="hidden border-t border-emerald-100 bg-gradient-to-b from-emerald-50/60 to-white p-6 sm:p-8 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-emerald-200/90 p-5 sm:p-6 shadow-xs mb-6">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-emerald-200 bg-emerald-900">
+                <img
+                  src="conway.jpeg"
+                  alt="Conway Icono"
+                  onerror="this.onerror=null; this.src='./conway.jpeg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
+                  Células virtuales que viven, nacen o mueren según reglas matemáticas. Simulador interactivo en HTML5 Canvas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
+              <!-- Botón Compartir Conway -->
+              <button
+                type="button"
+                id="btn-share-conway"
+                onclick="shareApp('conway')"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-200/90 font-bold text-sm uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs"
+                title="Compartir El Juego de la vida de Conway"
+              >
+                <svg class="w-4 h-4 text-emerald-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="conway-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://juegovida.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-emerald-600/30 hover:shadow-emerald-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
+              >
+                <span>Vamos</span>
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Tarjeta / Botón Desplegable: Túnel a la Antípoda -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-rose-200/90 shadow-xl shadow-rose-900/5 overflow-hidden transition-all duration-300 hover:shadow-rose-500/20 hover:border-rose-400">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="tunel-toggle-btn"
+          onclick="toggleTunelBox()"
+          aria-expanded="false"
+          aria-controls="tunel-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-rose-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-rose-600/30 shrink-0 border-2 border-rose-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-slate-950">
+              <img
+                src="tunel.svg"
+                alt="Túnel a la Antípoda"
+                onerror="this.onerror=null; this.src='./tunel.svg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-rose-700 transition-colors leading-tight">
+                Tunel a la Antípoda
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-rose-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-rose-100 text-slate-600 group-hover:text-rose-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="tunel-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="tunel-details-box" class="hidden border-t border-rose-100 bg-gradient-to-b from-rose-50/60 to-white p-6 sm:p-8 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-rose-200/90 p-5 sm:p-6 shadow-xs mb-6">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-rose-200 bg-slate-900">
+                <img
+                  src="tunel.svg"
+                  alt="Túnel Antípoda Icono"
+                  onerror="this.onerror=null; this.src='./tunel.svg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-rose-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
+                  Visualizador 3D y simulador de túnel gravitacional que atraviesa el núcleo de la Tierra hacia tu antípoda exacta.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
+              <!-- Botón Compartir Túnel -->
+              <button
+                type="button"
+                id="btn-share-tunel"
+                onclick="shareApp('tunel')"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-900 border border-rose-200/90 font-bold text-sm uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs"
+                title="Compartir Tunel a la Antípoda"
+              >
+                <svg class="w-4 h-4 text-rose-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="tunel-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://tunelantipoda.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-rose-600 via-pink-600 to-cyan-600 hover:from-rose-500 hover:via-pink-500 hover:to-cyan-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-rose-600/30 hover:shadow-rose-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
+              >
+                <span>Vamos</span>
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Tarjeta / Botón Desplegable: Microscopio cuántico virtual -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-indigo-200/90 shadow-xl shadow-indigo-900/5 overflow-hidden transition-all duration-300 hover:shadow-indigo-500/20 hover:border-indigo-400">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="micro-toggle-btn"
+          onclick="toggleMicroBox()"
+          aria-expanded="false"
+          aria-controls="micro-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-indigo-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-indigo-600/30 shrink-0 border-2 border-indigo-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-slate-950">
+              <img
+                src="microscopio.svg"
+                alt="Microscopio cuántico virtual"
+                onerror="this.onerror=null; this.src='./microscopio.svg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-indigo-700 transition-colors leading-tight">
+                Microscopio cuántico virtual
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-indigo-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-indigo-100 text-slate-600 group-hover:text-indigo-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="micro-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="micro-details-box" class="hidden border-t border-indigo-100 bg-gradient-to-b from-indigo-50/60 to-white p-6 sm:p-8 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-indigo-200/90 p-5 sm:p-6 shadow-xs mb-6">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-indigo-200 bg-slate-900">
+                <img
+                  src="microscopio.svg"
+                  alt="Microscopio Cuántico Icono"
+                  onerror="this.onerror=null; this.src='./microscopio.svg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-base sm:text-lg font-medium leading-relaxed">
+                  Del Macro al Subatómico: simulador interactivo de escalas para explorar la materia visible hasta el fascinante reino cuántico.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
+              <!-- Botón Compartir Microscopio -->
+              <button
+                type="button"
+                id="btn-share-micro"
+                onclick="shareApp('micro')"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-indigo-50 hover:bg-indigo-100 text-indigo-900 border border-indigo-200/90 font-bold text-sm uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs"
+                title="Compartir Microscopio cuántico virtual"
+              >
+                <svg class="w-4 h-4 text-indigo-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="micro-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://microvirtual.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600 hover:from-indigo-500 hover:via-purple-500 hover:to-cyan-500 text-white font-black text-base uppercase tracking-wider shadow-lg shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-200 cursor-pointer"
+              >
+                <span>Vamos</span>
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -2737,83 +3043,87 @@
       });
     });
 
-    // Control de la sección Mis Apps - Calculadora Altair
+    // Control genérico y funciones de despliegue para la sección Mis Apps
+    function toggleAppDetails(boxId, btnId, chevronId) {
+      const box = document.getElementById(boxId);
+      const btn = document.getElementById(btnId);
+      const chevron = document.getElementById(chevronId);
+      if (!box) return;
+
+      const isHidden = box.classList.contains("hidden");
+      if (isHidden) {
+        box.classList.remove("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "true");
+        if (chevron) chevron.classList.add("rotate-180");
+      } else {
+        box.classList.add("hidden");
+        if (btn) btn.setAttribute("aria-expanded", "false");
+        if (chevron) chevron.classList.remove("rotate-180");
+      }
+    }
+
     function toggleAltairBox() {
-      const box = document.getElementById("altair-details-box");
-      const btn = document.getElementById("altair-toggle-btn");
-      const chevron = document.getElementById("altair-chevron");
-      if (!box) return;
-
-      const isHidden = box.classList.contains("hidden");
-      if (isHidden) {
-        box.classList.remove("hidden");
-        if (btn) btn.setAttribute("aria-expanded", "true");
-        if (chevron) chevron.classList.add("rotate-180");
-      } else {
-        box.classList.add("hidden");
-        if (btn) btn.setAttribute("aria-expanded", "false");
-        if (chevron) chevron.classList.remove("rotate-180");
-      }
+      toggleAppDetails("altair-details-box", "altair-toggle-btn", "altair-chevron");
     }
 
-    // Control de la sección Mis Apps - El Juego de la Vida de Conway
-    function toggleConwayBox() {
-      const box = document.getElementById("conway-details-box");
-      const btn = document.getElementById("conway-toggle-btn");
-      const chevron = document.getElementById("conway-chevron");
-      if (!box) return;
-
-      const isHidden = box.classList.contains("hidden");
-      if (isHidden) {
-        box.classList.remove("hidden");
-        if (btn) btn.setAttribute("aria-expanded", "true");
-        if (chevron) chevron.classList.add("rotate-180");
-      } else {
-        box.classList.add("hidden");
-        if (btn) btn.setAttribute("aria-expanded", "false");
-        if (chevron) chevron.classList.remove("rotate-180");
-      }
+    function toggleFraccionesBox() {
+      toggleAppDetails("fracciones-details-box", "fracciones-toggle-btn", "fracciones-chevron");
     }
 
-    // Control de la sección Mis Apps - Las Preguntas de Aldebarán
     function toggleAldebaranBox() {
-      const box = document.getElementById("aldebaran-details-box");
-      const btn = document.getElementById("aldebaran-toggle-btn");
-      const chevron = document.getElementById("aldebaran-chevron");
-      if (!box) return;
+      toggleAppDetails("aldebaran-details-box", "aldebaran-toggle-btn", "aldebaran-chevron");
+    }
 
-      const isHidden = box.classList.contains("hidden");
-      if (isHidden) {
-        box.classList.remove("hidden");
-        if (btn) btn.setAttribute("aria-expanded", "true");
-        if (chevron) chevron.classList.add("rotate-180");
-      } else {
-        box.classList.add("hidden");
-        if (btn) btn.setAttribute("aria-expanded", "false");
-        if (chevron) chevron.classList.remove("rotate-180");
-      }
+    function toggleConwayBox() {
+      toggleAppDetails("conway-details-box", "conway-toggle-btn", "conway-chevron");
+    }
+
+    function toggleTunelBox() {
+      toggleAppDetails("tunel-details-box", "tunel-toggle-btn", "tunel-chevron");
+    }
+
+    function toggleMicroBox() {
+      toggleAppDetails("micro-details-box", "micro-toggle-btn", "micro-chevron");
     }
 
     // Compartir aplicaciones de la sección Mis Apps
     function shareApp(appKey) {
       const apps = {
         altair: {
-          title: "Altair: Calculadora de operaciones rápidas",
-          text: "¡Descubre Altair! Calculadora interactiva que enseña a realizar operaciones de forma mental paso a paso.",
-          url: "https://altair-matematicas-rapidas.vercel.app/",
+          title: "Calculadora Altair",
+          text: "¡Descubre Calculadora Altair! Calculadora escolar que despliega paso a paso las operaciones y enseña a realizar el cálculo de forma mental.",
+          url: "https://altairmate.buenosmalosconsejos.com/",
           textElemId: "altair-share-text"
         },
-        conway: {
-          title: "El Juego de la Vida de Conway",
-          text: "¡Descubre El Juego de la Vida de Conway! Células virtuales que viven, nacen o mueren según reglas matemáticas.",
-          url: "https://el-juego-de-la-vida-five.vercel.app/",
-          textElemId: "conway-share-text"
+        fracciones: {
+          title: "Fracciones visuales",
+          text: "¡Descubre Fracciones visuales! Cortador geométrico interactivo para entender, comparar y calcular fracciones de manera visual, práctica e intuitiva.",
+          url: "https://fracciones.buenosmalosconsejos.com/",
+          textElemId: "fracciones-share-text"
         },
         aldebaran: {
-          title: "Las Preguntas de Aldebarán",
-          text: "¡Descubre Las Preguntas de Aldebarán! 1050 preguntas de un niño. La versión web.",
-          url: "https://las-preguntas-de-aldebar-n.vercel.app/",
+          title: "Las preguntas de Aldebarán",
+          text: "¡Descubre Las preguntas de Aldebarán! 1050 preguntas de un niño. La versión web con un árbol interactivo de conocimiento.",
+          url: "https://preguntaaldebaran.buenosmalosconsejos.com/",
           textElemId: "aldebaran-share-text"
+        },
+        conway: {
+          title: "El Juego de la vida de Conway",
+          text: "¡Descubre El Juego de la vida de Conway! Células virtuales que viven, nacen o mueren según reglas matemáticas.",
+          url: "https://juegovida.buenosmalosconsejos.com/",
+          textElemId: "conway-share-text"
+        },
+        tunel: {
+          title: "Tunel a la Antípoda",
+          text: "¡Descubre Tunel a la Antípoda! Visualizador 3D y simulador de túnel gravitacional que atraviesa el núcleo de la Tierra hacia tu antípoda exacta.",
+          url: "https://tunelantipoda.buenosmalosconsejos.com/",
+          textElemId: "tunel-share-text"
+        },
+        micro: {
+          title: "Microscopio cuántico virtual",
+          text: "¡Descubre el Microscopio cuántico virtual! Del Macro al Subatómico: simulador interactivo de escalas para explorar la materia visible hasta el reino cuántico.",
+          url: "https://microvirtual.buenosmalosconsejos.com/",
+          textElemId: "micro-share-text"
         }
       };
 
