@@ -1276,7 +1276,7 @@
       </div>
     </div>
 
-    <!-- Grid de Aplicaciones: 6 Web Apps Gratuitas de Robert Pacheco -->
+    <!-- Grid de Aplicaciones: 7 Web Apps Gratuitas de Robert Pacheco -->
     <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto items-start">
       
       <!-- 1. Tarjeta / Botón Desplegable: Calculadora Altair -->
@@ -1892,6 +1892,110 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex-1 inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600 hover:from-indigo-500 hover:via-purple-500 hover:to-cyan-500 text-white font-black text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0"
+              >
+                <span>Vamos</span>
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Tarjeta / Botón Desplegable: Tabla Periódica Interactiva -->
+      <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-teal-200/90 shadow-xl shadow-teal-900/5 overflow-hidden transition-all duration-300 hover:shadow-teal-500/20 hover:border-teal-400">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="tabla-toggle-btn"
+          onclick="toggleTablaBox()"
+          aria-expanded="false"
+          aria-controls="tabla-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-teal-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-teal-600/30 shrink-0 border-2 border-teal-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-slate-950">
+              <img
+                src="tablaperiodica.svg"
+                alt="Tabla Periódica Interactiva"
+                onerror="this.onerror=null; this.src='./tablaperiodica.svg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-800 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-teal-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-teal-700 transition-colors leading-tight">
+                Tabla Periódica Interactiva
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-teal-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-teal-100 text-slate-600 group-hover:text-teal-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="tabla-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="tabla-details-box" class="hidden border-t border-teal-100 bg-gradient-to-b from-teal-50/60 to-white p-5 sm:p-6 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-teal-200/90 p-4 sm:p-5 shadow-xs mb-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-teal-200 bg-slate-900">
+                <img
+                  src="tablaperiodica.svg"
+                  alt="Tabla Periódica Icono"
+                  onerror="this.onerror=null; this.src='./tablaperiodica.svg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-sm sm:text-base font-medium leading-relaxed">
+                  Tabla periódica interactiva con motor de construcción de moléculas: explora elementos químicos, consulta propiedades atómicas en tiempo real y ensambla enlaces covalentes para crear tus propios compuestos moleculares.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col gap-3 pt-1">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 w-full">
+              <!-- Botón Compartir Tabla Periódica -->
+              <button
+                type="button"
+                id="btn-share-tabla"
+                onclick="shareApp('tabla')"
+                class="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-3 rounded-2xl bg-teal-50 hover:bg-teal-100 text-teal-900 border border-teal-200/90 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs shrink-0"
+                title="Compartir Tabla Periódica Interactiva"
+              >
+                <svg class="w-4 h-4 text-teal-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="tabla-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://tablaperiodica.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 rounded-2xl bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 hover:from-teal-500 hover:via-emerald-500 hover:to-cyan-500 text-white font-black text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-teal-600/30 hover:shadow-teal-600/50 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0"
               >
                 <span>Vamos</span>
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -3096,6 +3200,10 @@
       toggleAppDetails("micro-details-box", "micro-toggle-btn", "micro-chevron");
     }
 
+    function toggleTablaBox() {
+      toggleAppDetails("tabla-details-box", "tabla-toggle-btn", "tabla-chevron");
+    }
+
     // Compartir aplicaciones de la sección Mis Apps
     function shareApp(appKey) {
       const apps = {
@@ -3134,6 +3242,12 @@
           text: "¡Descubre el Microscopio cuántico virtual! Del Macro al Subatómico: simulador interactivo de escalas para explorar la materia visible hasta el reino cuántico.",
           url: "https://microvirtual.buenosmalosconsejos.com/",
           textElemId: "micro-share-text"
+        },
+        tabla: {
+          title: "Tabla Periódica Interactiva",
+          text: "¡Descubre la Tabla Periódica Interactiva! Explora los elementos químicos y crea compuestos moleculares con un motor de construcción interactivo en tiempo real.",
+          url: "https://tablaperiodica.buenosmalosconsejos.com/",
+          textElemId: "tabla-share-text"
         }
       };
 

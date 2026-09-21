@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tbg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#042f2e"/>
+      <stop offset="50%" stop-color="#021c1c"/>
+      <stop offset="100%" stop-color="#010e0e"/>
+    </radialGradient>
+    <linearGradient id="ptGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="bondGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="mGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="512" height="512" rx="110" fill="url(#tbg)"/>
+
+  <!-- Periodic Table Micro Grid (Stylized background) -->
+  <g opacity="0.22" stroke="#2dd4bf" stroke-width="1.2" fill="none">
+    <!-- Row 1 -->
+    <rect x="76" y="80" width="36" height="36" rx="6"/>
+    <rect x="400" y="80" width="36" height="36" rx="6"/>
+    <!-- Row 2 -->
+    <rect x="76" y="122" width="36" height="36" rx="6"/>
+    <rect x="118" y="122" width="36" height="36" rx="6"/>
+    <rect x="274" y="122" width="36" height="36" rx="6"/>
+    <rect x="316" y="122" width="36" height="36" rx="6"/>
+    <rect x="358" y="122" width="36" height="36" rx="6"/>
+    <rect x="400" y="122" width="36" height="36" rx="6"/>
+    <!-- Row 3 -->
+    <rect x="76" y="164" width="36" height="36" rx="6"/>
+    <rect x="118" y="164" width="36" height="36" rx="6"/>
+    <rect x="274" y="164" width="36" height="36" rx="6"/>
+    <rect x="316" y="164" width="36" height="36" rx="6"/>
+    <rect x="358" y="164" width="36" height="36" rx="6"/>
+    <rect x="400" y="164" width="36" height="36" rx="6"/>
+  </g>
+
+  <!-- Central Element Card: Carbon & Chemistry Core (C 6) -->
+  <rect x="190" y="68" width="132" height="132" rx="20" fill="#0f766e" fill-opacity="0.3" stroke="#2dd4bf" stroke-width="3" filter="url(#mGlow)"/>
+  <text x="206" y="94" fill="#5eead4" font-size="16" font-family="system-ui, sans-serif" font-weight="800">6</text>
+  <text x="306" y="94" fill="#99f6e4" font-size="12" font-family="system-ui, sans-serif" font-weight="600" text-anchor="end">12.011</text>
+  <text x="256" y="152" fill="#ffffff" font-size="56" font-family="system-ui, sans-serif" font-weight="900" text-anchor="middle" filter="url(#mGlow)">C</text>
+  <text x="256" y="184" fill="#a7f3d0" font-size="13" font-family="system-ui, sans-serif" font-weight="700" letter-spacing="1.5" text-anchor="middle">CARBONO</text>
+
+  <!-- Molecular Structure / Engine - Covalent Bonds -->
+  <!-- Main ring bonds (Benzene / Molecule structure) -->
+  <g stroke="url(#bondGrad)" stroke-width="5" stroke-linecap="round" filter="url(#mGlow)">
+    <line x1="256" y1="200" x2="256" y2="245"/>
+    <!-- Central node connecting outward -->
+    <line x1="256" y1="245" x2="180" y2="290"/>
+    <line x1="256" y1="245" x2="332" y2="290"/>
+    
+    <!-- Double bond lines for molecule realism -->
+    <line x1="180" y1="290" x2="180" y2="365"/>
+    <line x1="190" y1="298" x2="190" y2="357" stroke="#38bdf8" stroke-width="2.5" opacity="0.8"/>
+
+    <line x1="332" y1="290" x2="332" y2="365"/>
+    <line x1="322" y1="298" x2="322" y2="357" stroke="#38bdf8" stroke-width="2.5" opacity="0.8"/>
+
+    <line x1="180" y1="365" x2="256" y2="405"/>
+    <line x1="332" y1="365" x2="256" y2="405"/>
+
+    <!-- External Functional Groups (Molecules building) -->
+    <!-- Hydrogen / Oxygen branch left -->
+    <line x1="180" y1="290" x2="115" y2="255" stroke="#38bdf8" stroke-width="4"/>
+    <!-- Nitrogen branch right -->
+    <line x1="332" y1="290" x2="397" y2="255" stroke="#a78bfa" stroke-width="4"/>
+    <!-- Hydroxyl branch bottom -->
+    <line x1="256" y1="405" x2="256" y2="445" stroke="#f43f5e" stroke-width="4"/>
+  </g>
+
+  <!-- Molecular Atom Nodes (Glowing Spheres with elemental labels) -->
+  <!-- Left Oxygen node -->
+  <g filter="url(#mGlow)">
+    <circle cx="115" cy="255" r="22" fill="#ef4444"/>
+    <circle cx="110" cy="249" r="7" fill="#fca5a5" opacity="0.6"/>
+    <text x="115" y="262" fill="#ffffff" font-size="20" font-family="system-ui, sans-serif" font-weight="900" text-anchor="middle">O</text>
+  </g>
+
+  <!-- Right Nitrogen node -->
+  <g filter="url(#mGlow)">
+    <circle cx="397" cy="255" r="22" fill="#3b82f6"/>
+    <circle cx="392" cy="249" r="7" fill="#93c5fd" opacity="0.6"/>
+    <text x="397" y="262" fill="#ffffff" font-size="20" font-family="system-ui, sans-serif" font-weight="900" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Central Ring Nodes (Carbon atoms) -->
+  <circle cx="256" cy="245" r="14" fill="#14b8a6" stroke="#5eead4" stroke-width="2.5" filter="url(#mGlow)"/>
+  <circle cx="180" cy="290" r="14" fill="#0d9488" stroke="#5eead4" stroke-width="2.5" filter="url(#mGlow)"/>
+  <circle cx="332" cy="290" r="14" fill="#0d9488" stroke="#5eead4" stroke-width="2.5" filter="url(#mGlow)"/>
+  <circle cx="180" cy="365" r="14" fill="#0d9488" stroke="#5eead4" stroke-width="2.5" filter="url(#mGlow)"/>
+  <circle cx="332" cy="365" r="14" fill="#0d9488" stroke="#5eead4" stroke-width="2.5" filter="url(#mGlow)"/>
+  <circle cx="256" cy="405" r="14" fill="#14b8a6" stroke="#5eead4" stroke-width="2.5" filter="url(#mGlow)"/>
+
+  <!-- Bottom Hydrogen / Radical node -->
+  <g filter="url(#mGlow)">
+    <circle cx="256" cy="445" r="17" fill="#06b6d4"/>
+    <circle cx="252" cy="441" r="5" fill="#a5f3fc" opacity="0.7"/>
+    <text x="256" y="451" fill="#ffffff" font-size="16" font-family="system-ui, sans-serif" font-weight="900" text-anchor="middle">H</text>
+  </g>
+
+  <!-- Orbiting Electron Particles -->
+  <circle cx="150" cy="210" r="4.5" fill="#5eead4" filter="url(#mGlow)"/>
+  <circle cx="360" cy="215" r="4.5" fill="#38bdf8" filter="url(#mGlow)"/>
+  <circle cx="256" cy="325" r="5" fill="#facc15" filter="url(#mGlow)"/>
+
+  <!-- Badge at the bottom -->
+  <rect x="52" y="465" width="408" height="34" rx="17" fill="#042f2e" stroke="#2dd4bf" stroke-width="1.8"/>
+  <text x="256" y="488" fill="#ccfbf1" font-size="14" font-family="system-ui, sans-serif" font-weight="900" letter-spacing="2" text-anchor="middle">
+    TABLA PERIÓDICA &amp; MOLÉCULAS
+  </text>
+</svg>
