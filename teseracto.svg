@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tbg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1e0b36"/>
+      <stop offset="50%" stop-color="#0f051d"/>
+      <stop offset="100%" stop-color="#05010a"/>
+    </radialGradient>
+    <linearGradient id="tesseractGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <linearGradient id="timeFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#e879f9"/>
+    </linearGradient>
+    <filter id="hyperGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="intenseGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="512" height="512" rx="110" fill="url(#tbg)"/>
+
+  <!-- Spacetime grid / Hyperspace warp lines in background -->
+  <g stroke="#9333ea" stroke-width="1" opacity="0.25" fill="none">
+    <circle cx="256" cy="256" r="210" stroke-dasharray="4 8"/>
+    <circle cx="256" cy="256" r="160" stroke-dasharray="2 6"/>
+    <circle cx="256" cy="256" r="110" stroke-dasharray="3 5"/>
+    <line x1="46" y1="46" x2="466" y2="466"/>
+    <line x1="46" y1="466" x2="466" y2="46"/>
+  </g>
+
+  <!-- Outer Tesseract Cube Vertices:
+       Top-Left-Front:  (130, 160)
+       Top-Right-Front: (330, 160)
+       Bot-Left-Front:  (130, 360)
+       Bot-Right-Front: (330, 360)
+       
+       Top-Left-Back:   (182, 110)
+       Top-Right-Back:  (382, 110)
+       Bot-Left-Back:   (182, 310)
+       Bot-Right-Back:  (382, 310)
+  -->
+
+  <!-- Inner Tesseract Cube (Hypercube 4D projection) Vertices:
+       Scaled by 0.5 centered at (256, 235)
+       Inner Front: (193, 200), (293, 200), (193, 300), (293, 300)
+       Inner Back:  (219, 175), (319, 175), (219, 275), (319, 275)
+  -->
+
+  <!-- 4D Hypercube Outer Struts & Faces -->
+  <g stroke="url(#tesseractGlow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85">
+    <!-- Back Cube Outer -->
+    <polygon points="182,110 382,110 382,310 182,310" stroke="#7e22ce" stroke-width="2.5" opacity="0.6"/>
+    <!-- Connecting outer front to back -->
+    <line x1="130" y1="160" x2="182" y2="110" stroke="#a855f7"/>
+    <line x1="330" y1="160" x2="382" y2="110" stroke="#a855f7"/>
+    <line x1="130" y1="360" x2="182" y2="310" stroke="#a855f7"/>
+    <line x1="330" y1="360" x2="382" y2="310" stroke="#a855f7"/>
+  </g>
+
+  <!-- 4D Inter-Dimensional Connecting Lines (Outer vertices to Inner vertices) -->
+  <g stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0.9" filter="url(#hyperGlow)">
+    <line x1="130" y1="160" x2="193" y2="200"/>
+    <line x1="330" y1="160" x2="293" y2="200"/>
+    <line x1="130" y1="360" x2="193" y2="300"/>
+    <line x1="330" y1="360" x2="293" y2="300"/>
+    
+    <line x1="182" y1="110" x2="219" y2="175" stroke="#c084fc"/>
+    <line x1="382" y1="110" x2="319" y2="175" stroke="#c084fc"/>
+    <line x1="182" y1="310" x2="219" y2="275" stroke="#c084fc"/>
+    <line x1="382" y1="310" x2="319" y2="275" stroke="#c084fc"/>
+  </g>
+
+  <!-- Front Outer Cube -->
+  <polygon points="130,160 330,160 330,360 130,360" stroke="#38bdf8" stroke-width="3.5" fill="none" filter="url(#hyperGlow)"/>
+
+  <!-- Inner Hypercube (Glowing 4D Core) -->
+  <g filter="url(#intenseGlow)">
+    <polygon points="219,175 319,175 319,275 219,275" stroke="#f43f5e" stroke-width="2.5" fill="none" opacity="0.7"/>
+    <line x1="193" y1="200" x2="219" y2="175" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="293" y1="200" x2="319" y2="175" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="193" y1="300" x2="219" y2="275" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="293" y1="300" x2="319" y2="275" stroke="#f43f5e" stroke-width="2"/>
+    <polygon points="193,200 293,200 293,300 193,300" stroke="#fb7185" stroke-width="3" fill="#3b0764" fill-opacity="0.45"/>
+  </g>
+
+  <!-- Vertices Glowing Spheres (Outer 8 Vertices) -->
+  <g fill="#38bdf8" filter="url(#hyperGlow)">
+    <circle cx="130" cy="160" r="6"/>
+    <circle cx="330" cy="160" r="6"/>
+    <circle cx="130" cy="360" r="6"/>
+    <circle cx="330" cy="360" r="6"/>
+    <circle cx="182" cy="110" r="5" fill="#a855f7"/>
+    <circle cx="382" cy="110" r="5" fill="#a855f7"/>
+    <circle cx="182" cy="310" r="5" fill="#a855f7"/>
+    <circle cx="382" cy="310" r="5" fill="#a855f7"/>
+  </g>
+
+  <!-- Central Camera Lens & Time-Rewind Chronometer -->
+  <!-- Camera Aperture Outer Ring -->
+  <circle cx="256" cy="245" r="38" fill="#090014" stroke="#a855f7" stroke-width="3" filter="url(#hyperGlow)"/>
+  <circle cx="256" cy="245" r="30" fill="#1e1b4b" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Phone Camera Lens Center & Sensor Reflection -->
+  <circle cx="256" cy="245" r="18" fill="#020617"/>
+  <circle cx="250" cy="240" r="6" fill="#38bdf8" opacity="0.8" filter="url(#hyperGlow)"/>
+
+  <!-- Counter-Clockwise Time Rewind Arc (Reverse Time Symbol) -->
+  <path d="M 235 220 A 34 34 0 1 0 286 230" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" filter="url(#hyperGlow)"/>
+  <!-- Rewind Arrowhead at start of arc -->
+  <polygon points="234,208 230,224 246,220" fill="#22d3ee" filter="url(#hyperGlow)"/>
+
+  <!-- Chrono / Rewind glyphs inside (t-1, ⏮, 4D symbol) -->
+  <g filter="url(#hyperGlow)">
+    <!-- Rewind Double Triangle Glyphs -->
+    <path d="M 248 245 L 255 240 L 255 250 Z M 256 245 L 263 240 L 263 250 Z" fill="#f43f5e"/>
+  </g>
+
+  <!-- Camera Viewfinder Corner Brackets around hypercube -->
+  <g stroke="#38bdf8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9" filter="url(#hyperGlow)">
+    <path d="M 96 126 L 96 96 L 126 96"/>
+    <path d="M 386 96 L 416 96 L 416 126"/>
+    <path d="M 96 386 L 96 416 L 126 416"/>
+    <path d="M 386 416 L 416 416 L 416 386"/>
+  </g>
+
+  <!-- REC / Live Time Indicator -->
+  <g>
+    <circle cx="120" cy="74" r="5" fill="#f43f5e" filter="url(#hyperGlow)"/>
+    <text x="134" y="78" fill="#fca5a5" font-size="11" font-family="system-ui, sans-serif" font-weight="900" letter-spacing="1">4D LIVE CAM</text>
+    <text x="396" y="78" fill="#38bdf8" font-size="11" font-family="system-ui, sans-serif" font-weight="900" letter-spacing="1" text-anchor="end">⏮ -TIME</text>
+  </g>
+
+  <!-- Bottom Badge -->
+  <rect x="52" y="465" width="408" height="34" rx="17" fill="#1e0b36" stroke="#c084fc" stroke-width="1.8"/>
+  <text x="256" y="488" fill="#f5d0fe" font-size="14" font-family="system-ui, sans-serif" font-weight="900" letter-spacing="2" text-anchor="middle">
+    TESERACTO 4D &amp; TIEMPO
+  </text>
+</svg>
