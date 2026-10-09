@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="gbg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#04122c"/>
+      <stop offset="50%" stop-color="#020917"/>
+      <stop offset="100%" stop-color="#010308"/>
+    </radialGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="30%" stop-color="#3b82f6"/>
+      <stop offset="70%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="gravityWell" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="gravGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="512" height="512" rx="110" fill="url(#gbg)"/>
+
+  <!-- Spacetime Curvature Grid (Gravitational funnel / Einstein well) -->
+  <g stroke="#38bdf8" stroke-width="1.2" opacity="0.38" fill="none">
+    <!-- Concentric warped circles plunging toward center -->
+    <ellipse cx="256" cy="275" rx="200" ry="115" stroke-dasharray="3 3"/>
+    <ellipse cx="256" cy="285" rx="165" ry="92"/>
+    <ellipse cx="256" cy="295" rx="130" ry="70"/>
+    <ellipse cx="256" cy="305" rx="95" ry="48"/>
+    <ellipse cx="256" cy="315" rx="60" ry="28"/>
+    <ellipse cx="256" cy="323" rx="28" ry="12"/>
+
+    <!-- Curvature Geodesic Lines sinking into gravity well -->
+    <path d="M 56 275 Q 160 275 256 324"/>
+    <path d="M 456 275 Q 352 275 256 324"/>
+    <path d="M 90 200 Q 180 250 256 324"/>
+    <path d="M 422 200 Q 332 250 256 324"/>
+    <path d="M 160 130 Q 210 230 256 324"/>
+    <path d="M 352 130 Q 302 230 256 324"/>
+    <path d="M 256 95 L 256 324"/>
+    <path d="M 110 350 Q 185 340 256 324"/>
+    <path d="M 402 350 Q 327 340 256 324"/>
+    <path d="M 190 395 Q 225 365 256 324"/>
+    <path d="M 322 395 Q 287 365 256 324"/>
+  </g>
+
+  <!-- Orbital Paths (Geodesics) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Orbit 1: Inner fast satellite -->
+    <ellipse cx="256" cy="270" rx="110" ry="55" stroke="#60a5fa" stroke-width="2" stroke-dasharray="8 6" opacity="0.8" transform="rotate(-15 256 270)"/>
+    <!-- Orbit 2: Outer elliptical body -->
+    <ellipse cx="256" cy="255" rx="175" ry="80" stroke="#93c5fd" stroke-width="1.8" opacity="0.6" transform="rotate(18 256 255)"/>
+  </g>
+
+  <!-- Central Massive Celestial Body / Singularity -->
+  <g filter="url(#gravGlow)">
+    <!-- Gravitational distortion halo -->
+    <circle cx="256" cy="250" r="58" fill="url(#sunGlow)"/>
+    <circle cx="256" cy="250" r="50" fill="#1e3a8a" stroke="#60a5fa" stroke-width="3"/>
+    <!-- Atmosphere corona -->
+    <circle cx="240" cy="235" r="14" fill="#93c5fd" opacity="0.6"/>
+  </g>
+
+  <!-- Orbiting Masses / Planets -->
+  <!-- Planet 1 (Gold/Amber) -->
+  <g filter="url(#gravGlow)">
+    <circle cx="165" cy="235" r="12" fill="#fbbf24"/>
+    <circle cx="162" cy="232" r="3.5" fill="#fef08a" opacity="0.8"/>
+    <!-- Velocity / Gravitational Vector Arrow -->
+    <line x1="165" y1="235" x2="140" y2="255" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="165" y1="235" x2="210" y2="242" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Planet 2 (Cyan/Teal) -->
+  <g filter="url(#gravGlow)">
+    <circle cx="380" cy="225" r="15" fill="#06b6d4"/>
+    <circle cx="376" cy="221" r="4.5" fill="#a5f3fc" opacity="0.8"/>
+    <!-- Velocity Vector -->
+    <line x1="380" y1="225" x2="395" y2="195" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Attraction line to center -->
+    <line x1="380" y1="225" x2="310" y2="238" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Minor satellite -->
+  <circle cx="230" cy="315" r="7" fill="#ec4899" filter="url(#gravGlow)"/>
+
+  <!-- Field Line Intensity Indicators -->
+  <g stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.85" filter="url(#gravGlow)">
+    <path d="M 220 180 Q 256 200 292 180" fill="none"/>
+    <path d="M 205 160 Q 256 185 307 160" fill="none"/>
+  </g>
+
+  <!-- Bottom Badge -->
+  <rect x="52" y="465" width="408" height="34" rx="17" fill="#031633" stroke="#38bdf8" stroke-width="1.8"/>
+  <text x="256" y="488" fill="#bae6fd" font-size="14" font-family="system-ui, sans-serif" font-weight="900" letter-spacing="2" text-anchor="middle">
+    GRAVEDAD &amp; ESPACIO-TIEMPO
+  </text>
+</svg>

@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ebg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1e0b36"/>
+      <stop offset="50%" stop-color="#0e041d"/>
+      <stop offset="100%" stop-color="#05010a"/>
+    </radialGradient>
+    <radialGradient id="epicCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="40%" stop-color="#a855f7"/>
+      <stop offset="80%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#a855f7"/>
+      <stop offset="70%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="epGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="512" height="512" rx="110" fill="url(#ebg)"/>
+
+  <!-- Subtle Harmonic Frequency Background Grid / Radar circles -->
+  <g stroke="#8b5cf6" stroke-width="0.8" opacity="0.18" fill="none">
+    <circle cx="256" cy="256" r="220" stroke-dasharray="3 4"/>
+    <circle cx="256" cy="256" r="170"/>
+    <circle cx="256" cy="256" r="120" stroke-dasharray="2 3"/>
+    <circle cx="256" cy="256" r="70"/>
+    <line x1="36" y1="256" x2="476" y2="256"/>
+    <line x1="256" y1="36" x2="256" y2="476"/>
+    <line x1="100" y1="100" x2="412" y2="412"/>
+    <line x1="100" y1="412" x2="412" y2="100"/>
+  </g>
+
+  <!-- Fourier Complex Traced Curve (parametric floral/spirograph figure) -->
+  <path d="M 256 90 
+           C 290 90, 330 135, 345 165 
+           C 375 145, 415 170, 422 210 
+           C 405 240, 420 285, 395 320 
+           C 405 360, 368 395, 330 395 
+           C 305 422, 260 415, 235 425 
+           C 195 410, 165 375, 140 375 
+           C 115 340, 95 300, 105 255 
+           C 95 210, 130 170, 160 155 
+           C 180 120, 220 90, 256 90 Z" 
+        fill="none" stroke="url(#traceGrad)" stroke-width="3.5" filter="url(#epGlow)" opacity="0.95"/>
+
+  <!-- Epicycle Hierarchy: Decenas de círculos giratorios encadenados (Harmonics) -->
+  <!-- Level 1 (Main Circle) -->
+  <circle cx="256" cy="256" r="96" fill="none" stroke="#a855f7" stroke-width="1.8" opacity="0.6"/>
+  <circle cx="256" cy="256" r="4" fill="#c084fc"/>
+
+  <!-- Vector 1: Center to Epicycle 2 -->
+  <line x1="256" y1="256" x2="330" y2="195" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Level 2 (Second Circle) -->
+  <circle cx="330" cy="195" r="54" fill="none" stroke="#ec4899" stroke-width="1.6" opacity="0.65"/>
+  <circle cx="330" cy="195" r="3.5" fill="#f472b6"/>
+
+  <!-- Vector 2: Epicycle 2 to Epicycle 3 -->
+  <line x1="330" y1="195" x2="370" y2="230" stroke="#f472b6" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Level 3 (Third Circle) -->
+  <circle cx="370" cy="230" r="32" fill="none" stroke="#38bdf8" stroke-width="1.4" opacity="0.7"/>
+  <circle cx="370" cy="230" r="3" fill="#7dd3fc"/>
+
+  <!-- Vector 3: Epicycle 3 to Epicycle 4 -->
+  <line x1="370" y1="230" x2="390" y2="210" stroke="#7dd3fc" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Level 4 (Fourth Circle) -->
+  <circle cx="390" cy="210" r="18" fill="none" stroke="#fbbf24" stroke-width="1.2" opacity="0.75"/>
+  <circle cx="390" cy="210" r="2.5" fill="#fde68a"/>
+
+  <!-- Vector 4: to Level 5 tip -->
+  <line x1="390" y1="210" x2="400" y2="218" stroke="#fbbf24" stroke-width="1.2"/>
+  
+  <!-- Level 5 & 6 (Tiny Harmonic Epicycles) -->
+  <circle cx="400" cy="218" r="10" fill="none" stroke="#34d399" stroke-width="1" opacity="0.8"/>
+  <circle cx="400" cy="218" r="2" fill="#6ee7b7"/>
+  <line x1="400" y1="218" x2="407" y2="214" stroke="#34d399" stroke-width="1"/>
+  <circle cx="407" cy="214" r="5" fill="none" stroke="#f43f5e" stroke-width="0.8" opacity="0.85"/>
+  <circle cx="410" cy="213" r="2" fill="#ffffff" filter="url(#epGlow)"/>
+
+  <!-- Tracing Pen Line connecting to the generated curve -->
+  <line x1="410" y1="213" x2="422" y2="210" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.9"/>
+
+  <!-- Additional Fourier planetary harmonic circles across the orbit to evoke 'decenas de círculos' -->
+  <g fill="none" stroke-width="1" opacity="0.45">
+    <circle cx="180" cy="315" r="42" stroke="#818cf8"/>
+    <circle cx="150" cy="285" r="24" stroke="#a78bfa"/>
+    <circle cx="132" cy="270" r="14" stroke="#c084fc"/>
+    <circle cx="122" cy="260" r="8" stroke="#f472b6"/>
+    <line x1="180" y1="315" x2="150" y2="285" stroke="#818cf8" stroke-width="1"/>
+    <line x1="150" y1="285" x2="132" y2="270" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="132" y1="270" x2="122" y2="260" stroke="#c084fc" stroke-width="0.9"/>
+    
+    <circle cx="210" cy="160" r="36" stroke="#38bdf8"/>
+    <circle cx="190" cy="140" r="20" stroke="#2dd4bf"/>
+    <circle cx="178" cy="128" r="11" stroke="#34d399"/>
+    <circle cx="170" cy="120" r="6" stroke="#a3e635"/>
+    <line x1="210" y1="160" x2="190" y2="140" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="190" y1="140" x2="178" y2="128" stroke="#2dd4bf" stroke-width="1"/>
+    <line x1="178" y1="128" x2="170" y2="120" stroke="#34d399" stroke-width="0.8"/>
+
+    <circle cx="310" cy="340" r="38" stroke="#f59e0b"/>
+    <circle cx="335" cy="365" r="22" stroke="#ef4444"/>
+    <circle cx="350" cy="380" r="12" stroke="#ec4899"/>
+    <circle cx="360" cy="388" r="6" stroke="#d946ef"/>
+  </g>
+
+  <!-- Glowing Tracer Dot / Pen tip -->
+  <circle cx="422" cy="210" r="5" fill="#38bdf8" filter="url(#epGlow)"/>
+  <circle cx="422" cy="210" r="2.5" fill="#ffffff"/>
+
+  <!-- Frequency spectrum bars at bottom -->
+  <g fill="#a855f7" opacity="0.6">
+    <rect x="176" y="440" width="4" height="18" rx="2"/>
+    <rect x="186" y="432" width="4" height="26" rx="2" fill="#c084fc"/>
+    <rect x="196" y="445" width="4" height="13" rx="2"/>
+    <rect x="206" y="425" width="4" height="33" rx="2" fill="#ec4899"/>
+    <rect x="216" y="438" width="4" height="20" rx="2"/>
+    <rect x="226" y="448" width="4" height="10" rx="2"/>
+    <rect x="236" y="420" width="4" height="38" rx="2" fill="#38bdf8"/>
+    <rect x="246" y="434" width="4" height="24" rx="2"/>
+    <rect x="256" y="415" width="4" height="43" rx="2" fill="#fbbf24"/>
+    <rect x="266" y="430" width="4" height="28" rx="2"/>
+    <rect x="276" y="442" width="4" height="16" rx="2"/>
+    <rect x="286" y="428" width="4" height="30" rx="2" fill="#38bdf8"/>
+    <rect x="296" y="447" width="4" height="11" rx="2"/>
+    <rect x="306" y="436" width="4" height="22" rx="2"/>
+    <rect x="316" y="424" width="4" height="34" rx="2" fill="#ec4899"/>
+    <rect x="326" y="443" width="4" height="15" rx="2"/>
+  </g>
+
+  <!-- Floating Mathematical harmonic symbols -->
+  <text x="75" y="125" fill="#a855f7" font-family="monospace" font-size="16" opacity="0.4" font-weight="bold">e^(iωt)</text>
+  <text x="390" y="115" fill="#38bdf8" font-family="monospace" font-size="16" opacity="0.4" font-weight="bold">∑ cₙ</text>
+  <text x="80" y="410" fill="#ec4899" font-family="monospace" font-size="15" opacity="0.35" font-weight="bold">f(t)</text>
+  <text x="395" y="440" fill="#fbbf24" font-family="monospace" font-size="14" opacity="0.35" font-weight="bold">2π/T</text>
+</svg>
