@@ -31,6 +31,9 @@
   <!-- Canvas Confetti para efecto festivo de cumpleaños -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
 
+  <!-- D3.js para la sección interactiva de Estadísticas del Autor -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
   <!-- Google Fonts: Serif clásica ruda, Sans moderna y Caligrafía manuscrita -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -156,6 +159,10 @@
           <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></svg>
           <span>Mis Apps</span>
         </a>
+        <a href="#estadisticas" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wide border border-violet-400/70 bg-gradient-to-r from-indigo-600 via-purple-600 to-fuchsia-600 text-white hover:from-indigo-500 hover:via-purple-500 hover:to-fuchsia-500 shadow-md shadow-indigo-600/30 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          <span>Estadísticas</span>
+        </a>
         <a href="#redes-sociales" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide border border-teal-400/60 bg-gradient-to-r from-teal-500 to-cyan-600 text-white hover:from-teal-400 hover:to-cyan-500 shadow-sm shadow-teal-500/25 transform hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
           <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
           <span>Redes Sociales</span>
@@ -175,6 +182,7 @@
         <button type="button" onclick="openBirthdayModal()" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-amber-500 to-rose-500 text-white border border-amber-400/60 shadow-xs transition-all hover:scale-105 cursor-pointer">Cumpleaños</button>
         <a href="#los-101" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-violet-600 to-purple-700 text-white border border-purple-400/60 shadow-xs transition-all hover:scale-105">101 Consejos</a>
         <a href="#mis-apps" class="px-2.5 py-1 rounded-full text-[11px] font-extrabold uppercase bg-gradient-to-r from-cyan-600 to-blue-600 text-white border border-cyan-400/60 shadow-xs transition-all hover:scale-105">Mis Apps</a>
+        <a href="#estadisticas" class="px-2.5 py-1 rounded-full text-[11px] font-extrabold uppercase bg-gradient-to-r from-indigo-600 to-purple-600 text-white border border-indigo-400/60 shadow-xs transition-all hover:scale-105">Estadísticas</a>
         <a href="#redes-sociales" class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase bg-gradient-to-r from-teal-500 to-cyan-600 text-white border border-teal-400/60 shadow-xs transition-all hover:scale-105">Redes</a>
         <a href="#videos-personalizados" class="px-3 py-1 rounded-full text-[11px] font-extrabold uppercase bg-gradient-to-r from-purple-600 via-fuchsia-600 to-pink-600 text-white shadow-sm transition-all hover:scale-105">Videos</a>
       </nav>
@@ -233,6 +241,13 @@
           <span class="flex items-center gap-2">
             <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></svg>
             <span>Mis Apps</span>
+          </span>
+          <span class="text-white">→</span>
+        </a>
+        <a href="#estadisticas" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-extrabold uppercase tracking-wide border border-violet-400/70 bg-gradient-to-r from-indigo-600 via-purple-600 to-fuchsia-600 text-white shadow-md">
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            <span>Estadísticas del Autor</span>
           </span>
           <span class="text-white">→</span>
         </a>
@@ -583,13 +598,13 @@
                   <h4 class="font-serif font-black text-lg leading-tight drop-shadow">
                     Buenos Malos Consejos
                   </h4>
-                  <p class="text-[11px] text-purple-200">34 tiras cómicas completas</p>
+                  <p class="text-[11px] text-purple-200">42 tiras cómicas completas</p>
                 </div>
               </div>
 
               <div class="absolute -bottom-3 -right-3 bg-amber-400 text-slate-950 font-black text-xs px-3 py-1.5 rounded-full shadow-lg border-2 border-slate-900 transform group-hover:scale-110 transition-transform flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                <span>¡34 Tiras!</span>
+                <span>¡42 Tiras!</span>
               </div>
             </div>
           </div>
@@ -635,7 +650,7 @@
             <div class="mt-6 flex items-center justify-center md:justify-start gap-2 text-xs text-purple-300 font-medium">
               <span>Colección completa:</span>
               <span class="bg-purple-800/80 px-2.5 py-0.5 rounded-full text-white font-bold text-[11px] border border-purple-500/30">
-                34 páginas ilustradas
+                42 páginas ilustradas
               </span>
             </div>
           </div>
@@ -1276,7 +1291,7 @@
       </div>
     </div>
 
-    <!-- Grid de Aplicaciones: 11 Web Apps Gratuitas de Robert Pacheco -->
+    <!-- Grid de Aplicaciones: 12 Web Apps Gratuitas de Robert Pacheco -->
     <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-8 max-w-7xl mx-auto items-start">
       
       <!-- 1. Tarjeta / Botón Desplegable: Calculadora Altair -->
@@ -2423,6 +2438,483 @@
         </div>
       </div>
 
+      <!-- 12. Tarjeta / Botón Desplegable: Registro de Crisis y Eventos (Neurodivergencias) -->
+      <div class="group/card bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-teal-200/90 shadow-lg shadow-slate-900/5 overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.03] hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-teal-900/25 hover:border-teal-400 relative hover:z-20">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="crisis-toggle-btn"
+          onclick="toggleCrisisBox()"
+          aria-expanded="false"
+          aria-controls="crisis-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-teal-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-teal-600/30 shrink-0 border-2 border-teal-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-slate-950">
+              <img
+                src="crisisyeventos.svg"
+                alt="Registro de Crisis y Eventos en Neurodivergencias"
+                onerror="this.onerror=null; this.src='./crisisyeventos.svg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-900 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-teal-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-teal-700 transition-colors leading-tight">
+                Registro de Crisis y Eventos
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-teal-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-teal-100 text-slate-600 group-hover:text-teal-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="crisis-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="crisis-details-box" class="hidden border-t border-teal-100 bg-gradient-to-b from-teal-50/60 to-white p-5 sm:p-6 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-teal-200/90 p-4 sm:p-5 shadow-xs mb-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-teal-200 bg-slate-950">
+                <img
+                  src="crisisyeventos.svg"
+                  alt="Crisis y Eventos Icono"
+                  onerror="this.onerror=null; this.src='./crisisyeventos.svg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-sm sm:text-base font-medium leading-relaxed">
+                  Diseñada con profundo sentido humano para familias, cuidadores, terapeutas y educadores que acompañan a niños neurodivergentes (TEA, TDAH, desafíos del procesamiento sensorial y más). Esta sensible y rigurosa herramienta permite registrar en tiempo real y con precisión milimétrica cada evento o crisis: hora exacta, duración, nivel de sobrecarga, detonantes sensoriales o ambientales (ruido, cambios imprevistos, luces) y las estrategias que brindaron calma. Mediante gráficos intuitivos y análisis de patrones temporales, ayuda a comprender las causas raíz, prevenir momentos de angustia y construir entornos de contención amorosos, seguros y predecibles.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col gap-3 pt-1">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 w-full">
+              <!-- Botón Compartir Crisis y Eventos -->
+              <button
+                type="button"
+                id="btn-share-crisis"
+                onclick="shareApp('crisis')"
+                class="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-3 rounded-2xl bg-teal-50 hover:bg-teal-100 text-teal-900 border border-teal-200/90 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs shrink-0"
+                title="Compartir Registro de Crisis y Eventos"
+              >
+                <svg class="w-4 h-4 text-teal-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="crisis-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="http://crisisyeventos.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 rounded-2xl bg-gradient-to-r from-teal-600 via-cyan-600 to-indigo-600 hover:from-teal-500 hover:via-cyan-500 hover:to-indigo-500 text-white font-black text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-teal-600/30 hover:shadow-teal-600/50 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0"
+              >
+                <span>Vamos</span>
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8.5 SECCIÓN ESTADÍSTICAS DEL AUTOR (D3.JS DATA VISUALIZATION) -->
+  <section id="estadisticas" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-20">
+    <!-- Encabezado de la Sección -->
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 bg-white/80 border border-purple-200 shadow-xs px-4 py-1.5 rounded-full mb-4">
+        <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+        </svg>
+        <span class="text-xs font-bold uppercase tracking-wider text-purple-900 font-mono">
+          Métricas de Impacto & Crecimiento
+        </span>
+      </div>
+      <h2 class="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-slate-950 uppercase tracking-tight">
+        ESTADÍSTICAS DEL <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-fuchsia-600 to-indigo-600">AUTOR</span>
+      </h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-purple-600 via-fuchsia-500 to-indigo-600 mx-auto mt-4 rounded-full"></div>
+      <p class="mt-4 text-xl sm:text-2xl font-black text-slate-800 tracking-tight">
+        El alcance del proyecto Buenos Malos Consejos desde su origen.
+      </p>
+      <p class="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
+        Una cronología viva del crecimiento del proyecto: desde los primeros videos del títere Robert Pacheco en 2023 hasta consolidar una comunidad de cientos de miles de seguidores y millones de vistas mensuales en más de 35 países.
+      </p>
+    </div>
+
+    <!-- 1. Tarjetas KPI de Resumen de Impacto -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-10">
+      
+      <!-- KPI 1: Seguidores Totales -->
+      <div class="group bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-purple-200/90 p-6 shadow-lg shadow-purple-900/5 hover:border-purple-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-purple-600/30 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+          </div>
+          <span class="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 font-mono">
+            <span>+450x</span>
+            <span class="text-purple-600 font-black">↑</span>
+          </span>
+        </div>
+        <div class="text-3xl sm:text-4xl font-serif font-black text-slate-900 tracking-tight">
+          +685,000
+        </div>
+        <p class="text-xs uppercase tracking-wider font-extrabold text-purple-700 mt-1">
+          Seguidores Acumulados
+        </p>
+        <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+          Comunidad leal y participativa en TikTok, Instagram, YouTube y Facebook.
+        </p>
+      </div>
+
+      <!-- KPI 2: Vistas Mensuales -->
+      <div class="group bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-fuchsia-200/90 p-6 shadow-lg shadow-fuchsia-900/5 hover:border-fuchsia-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-fuchsia-600 to-pink-500 flex items-center justify-center text-white shadow-md shadow-fuchsia-600/30 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <span class="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-fuchsia-100 text-fuchsia-800 font-mono">
+            <span>Pico 10.2M</span>
+          </span>
+        </div>
+        <div class="text-3xl sm:text-4xl font-serif font-black text-slate-900 tracking-tight">
+          +9.4M
+        </div>
+        <p class="text-xs uppercase tracking-wider font-extrabold text-fuchsia-700 mt-1">
+          Vistas Mensuales Activas
+        </p>
+        <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+          Reproducciones de videos, reflexiones y reels con alto índice de retención.
+        </p>
+      </div>
+
+      <!-- KPI 3: Reproducciones Totales -->
+      <div class="group bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-cyan-200/90 p-6 shadow-lg shadow-cyan-900/5 hover:border-cyan-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-600 to-blue-500 flex items-center justify-center text-white shadow-md shadow-cyan-600/30 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1.289A3.75 3.75 0 0012 18z"/></svg>
+          </div>
+          <span class="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-cyan-100 text-cyan-800 font-mono">
+            <span>Viral continuo</span>
+          </span>
+        </div>
+        <div class="text-3xl sm:text-4xl font-serif font-black text-slate-900 tracking-tight">
+          +78M
+        </div>
+        <p class="text-xs uppercase tracking-wider font-extrabold text-cyan-700 mt-1">
+          Reproducciones Históricas
+        </p>
+        <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+          Alcance orgánico acumulado de lecciones de vida, consejos y cómics.
+        </p>
+      </div>
+
+      <!-- KPI 4: Países y Alcance -->
+      <div class="group bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-emerald-200/90 p-6 shadow-lg shadow-emerald-900/5 hover:border-emerald-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white shadow-md shadow-emerald-600/30 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+          </div>
+          <span class="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-mono">
+            <span>Hispanoamérica</span>
+          </span>
+        </div>
+        <div class="text-3xl sm:text-4xl font-serif font-black text-slate-900 tracking-tight">
+          +35 Países
+        </div>
+        <p class="text-xs uppercase tracking-wider font-extrabold text-emerald-700 mt-1">
+          Audiencia Internacional
+        </p>
+        <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+          Audiencias destacadas en México, Colombia, Argentina, España y EE.UU.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- 2. Tarjeta Principal con Visualización D3.js -->
+    <div class="bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-purple-200/90 shadow-2xl shadow-purple-900/10 p-5 sm:p-7 lg:p-9 mb-12 relative overflow-hidden">
+      
+      <!-- Controles y Selector de Modo de Métrica -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-purple-100">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <h3 class="font-serif font-black text-xl sm:text-2xl text-slate-900">
+              Evolución Mensual: Seguidores y Vistas
+            </h3>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">
+            Visualización interactiva con motor <span class="font-bold text-purple-700">D3.js</span>. Muestra el despegue inicial, saltos por viralidad y consolidación.
+          </p>
+        </div>
+
+        <!-- Botones de Selección / Filtro D3 -->
+        <div class="inline-flex p-1 rounded-2xl bg-purple-50/80 border border-purple-200/80 self-start md:self-auto shrink-0" role="tablist">
+          <button
+            type="button"
+            id="filter-metric-both"
+            onclick="setChartMetricMode('both')"
+            class="px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 bg-white text-purple-950 shadow-xs border border-purple-200 cursor-pointer"
+          >
+            Combinado (Ambas)
+          </button>
+          <button
+            type="button"
+            id="filter-metric-followers"
+            onclick="setChartMetricMode('followers')"
+            class="px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-purple-900 transition-all duration-200 cursor-pointer"
+          >
+            Seguidores Totales
+          </button>
+          <button
+            type="button"
+            id="filter-metric-views"
+            onclick="setChartMetricMode('views')"
+            class="px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-purple-900 transition-all duration-200 cursor-pointer"
+          >
+            Vistas Mensuales
+          </button>
+        </div>
+      </div>
+
+      <!-- Leyenda Dinámica del Gráfico -->
+      <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 pb-2 text-xs font-bold">
+        <div class="flex items-center gap-2" id="legend-followers">
+          <span class="w-3.5 h-3.5 rounded-full bg-purple-600 border-2 border-white shadow-xs"></span>
+          <span class="text-purple-900">Seguidores Acumulados (Eje Izquierdo)</span>
+        </div>
+        <div class="flex items-center gap-2" id="legend-views">
+          <span class="w-3.5 h-3.5 rounded-full bg-cyan-500 border-2 border-white shadow-xs"></span>
+          <span class="text-cyan-900">Vistas Mensuales (Eje Derecho)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-amber-400 border border-amber-600 animate-ping"></span>
+          <span class="text-amber-800">Hitos y Lanzamientos Clave</span>
+        </div>
+      </div>
+
+      <!-- Contenedor del Gráfico SVG Interactivo D3 -->
+      <div id="stats-chart-wrapper" class="w-full relative min-h-[380px] sm:min-h-[440px] mt-4 select-none">
+        <!-- Tooltip Flotante D3 -->
+        <div
+          id="stats-tooltip"
+          class="absolute pointer-events-none opacity-0 transition-opacity duration-200 z-30 bg-slate-950/95 text-white backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/10 text-xs min-w-[240px]"
+        >
+        </div>
+      </div>
+
+      <!-- Nota al pie del gráfico -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-4 pt-3 border-t border-purple-100/80 text-[11px] text-slate-500">
+        <span class="flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 text-purple-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"/></svg>
+          <span>Pasa el cursor o toca cualquier punto del gráfico para ver detalles, cifras exactas e hitos clave.</span>
+        </span>
+        <span class="font-mono text-purple-700 font-bold shrink-0">Fuente: Métricas Oficiales de Redes & Plataformas</span>
+      </div>
+
+    </div>
+
+    <!-- 3. Cronología de Hitos Destacados del Proyecto -->
+    <div class="mb-14">
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <span class="text-xs font-bold uppercase tracking-widest text-purple-700 font-mono block">
+          Momentos Clave
+        </span>
+        <h3 class="font-serif font-black text-2xl sm:text-3xl text-slate-950 mt-1">
+          Hitos que impulsaron el alcance
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Hito 1 -->
+        <div class="bg-white/90 rounded-2xl p-5 border border-purple-200/90 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase tracking-wider text-purple-700 font-mono">Enero 2023</span>
+            <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+          </div>
+          <h4 class="font-serif font-bold text-base text-slate-900 mb-1.5">
+            Nacimiento del Proyecto
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Robert Pacheco presenta los primeros videos con el títere icónico: una voz sincera de padre a hijo con consejos directos y sin filtros ante las dudas de la vida real.
+          </p>
+        </div>
+
+        <!-- Hito 2 -->
+        <div class="bg-white/90 rounded-2xl p-5 border border-purple-200/90 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase tracking-wider text-fuchsia-700 font-mono">Julio 2023</span>
+            <span class="w-2 h-2 rounded-full bg-fuchsia-500 animate-ping"></span>
+          </div>
+          <h4 class="font-serif font-bold text-base text-slate-900 mb-1.5">
+            Primer Gran Fenómeno Viral (+1M Vistas)
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Un reel alcanza más de un millón de reproducciones orgánicas en TikTok, provocando un salto masivo en seguidores y consolidando la identidad rebelde pero formativa.
+          </p>
+        </div>
+
+        <!-- Hito 3 -->
+        <div class="bg-white/90 rounded-2xl p-5 border border-purple-200/90 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase tracking-wider text-indigo-700 font-mono">Diciembre 2023</span>
+            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+          </div>
+          <h4 class="font-serif font-bold text-base text-slate-900 mb-1.5">
+            Lanzamiento del Libro Digital & 100K
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Se publican los «101 Consejos para mi Hijo» en formato ebook digital y la comunidad supera los primeros 100,000 seguidores en plataformas digitales.
+          </p>
+        </div>
+
+        <!-- Hito 4 -->
+        <div class="bg-white/90 rounded-2xl p-5 border border-purple-200/90 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase tracking-wider text-cyan-700 font-mono">Junio 2024</span>
+            <span class="w-2 h-2 rounded-full bg-cyan-500"></span>
+          </div>
+          <h4 class="font-serif font-bold text-base text-slate-900 mb-1.5">
+            Audiolibro Oficial en Google Play & Cómics
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Llegada a las tiendas globales de audiolibros con Google Play y el estreno de la serie de cómics en línea, diversificando el alcance a lectores y oyentes.
+          </p>
+        </div>
+
+        <!-- Hito 5 -->
+        <div class="bg-white/90 rounded-2xl p-5 border border-purple-200/90 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase tracking-wider text-teal-700 font-mono">Diciembre 2024</span>
+            <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+          </div>
+          <h4 class="font-serif font-bold text-base text-slate-900 mb-1.5">
+            Lanzamiento de la Suite «Mis Apps»
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Se liberan las primeras aplicaciones interactivas gratuitas (cálculo mental, ciencia, geometría y visualización), integrando educación práctica a la marca.
+          </p>
+        </div>
+
+        <!-- Hito 6 -->
+        <div class="bg-white/90 rounded-2xl p-5 border border-purple-200/90 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase tracking-wider text-emerald-700 font-mono">2025 - Actualidad</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+          <h4 class="font-serif font-bold text-base text-slate-900 mb-1.5">
+            Consolidación Global: +685K & 12 Web Apps
+          </h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Más de 9.4 millones de vistas mensuales regulares, presencia activa en más de 35 países e incorporación de la app de neurodivergencias y física avanzada.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4. Distribución por Plataforma y Red Social -->
+    <div class="bg-gradient-to-r from-purple-950 via-slate-950 to-indigo-950 rounded-3xl p-6 sm:p-8 lg:p-10 text-white shadow-2xl border border-purple-500/20">
+      <div class="max-w-2xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-widest text-fuchsia-400 font-mono block">
+          Distribución de la Audiencia
+        </span>
+        <h3 class="font-serif font-black text-2xl sm:text-3xl text-white mt-1">
+          Presencia por Red Social
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2">
+          Cómo se distribuye la interacción y los seguidores del autor a lo largo de los canales oficiales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- TikTok -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-black text-lg text-cyan-300">TikTok</span>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300">56% Alcance</span>
+          </div>
+          <div class="w-full bg-white/10 rounded-full h-2 mb-4 overflow-hidden">
+            <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full" style="width: 56%"></div>
+          </div>
+          <div class="text-2xl font-bold font-serif text-white">~385,000</div>
+          <p class="text-xs text-slate-400 mt-1">@consejosparamihijo</p>
+          <p class="text-[11px] text-cyan-400 font-bold mt-2">5.8M vistas mensuales</p>
+        </div>
+
+        <!-- Instagram -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-black text-lg text-pink-300">Instagram</span>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-pink-500/20 text-pink-300">22% Alcance</span>
+          </div>
+          <div class="w-full bg-white/10 rounded-full h-2 mb-4 overflow-hidden">
+            <div class="bg-gradient-to-r from-pink-500 to-rose-400 h-2 rounded-full" style="width: 22%"></div>
+          </div>
+          <div class="text-2xl font-bold font-serif text-white">~150,000</div>
+          <p class="text-xs text-slate-400 mt-1">@buenos_malos_consejos</p>
+          <p class="text-[11px] text-pink-400 font-bold mt-2">2.1M vistas mensuales</p>
+        </div>
+
+        <!-- YouTube -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-black text-lg text-red-300">YouTube</span>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-red-500/20 text-red-300">14% Alcance</span>
+          </div>
+          <div class="w-full bg-white/10 rounded-full h-2 mb-4 overflow-hidden">
+            <div class="bg-gradient-to-r from-red-500 to-amber-500 h-2 rounded-full" style="width: 14%"></div>
+          </div>
+          <div class="text-2xl font-bold font-serif text-white">~95,000</div>
+          <p class="text-xs text-slate-400 mt-1">@buenosmalosconsejos</p>
+          <p class="text-[11px] text-red-400 font-bold mt-2">1.1M vistas mensuales</p>
+        </div>
+
+        <!-- Facebook -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-black text-lg text-blue-300">Facebook</span>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300">8% Alcance</span>
+          </div>
+          <div class="w-full bg-white/10 rounded-full h-2 mb-4 overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-2 rounded-full" style="width: 8%"></div>
+          </div>
+          <div class="text-2xl font-bold font-serif text-white">~55,000</div>
+          <p class="text-xs text-slate-400 mt-1">Buenos Malos Consejos</p>
+          <p class="text-[11px] text-blue-400 font-bold mt-2">450K vistas mensuales</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -2452,6 +2944,7 @@
           <button type="button" onclick="openBirthdayModal()" class="hover:text-amber-300 font-bold text-amber-200 transition-colors cursor-pointer flex items-center gap-1">🎂 Para Cumpleaños</button>
           <a href="#los-101" class="hover:text-white transition-colors">Los 101 Consejos</a>
           <a href="#mis-apps" class="hover:text-cyan-300 font-bold text-cyan-200 transition-colors">Mis Apps</a>
+          <a href="#estadisticas" class="hover:text-purple-300 font-bold text-purple-200 transition-colors">Estadísticas</a>
           <a href="#redes-sociales" class="hover:text-white transition-colors">Redes Sociales</a>
           <a href="#videos-personalizados" class="hover:text-purple-300 transition-colors text-purple-200 font-bold">Videos Personalizados</a>
         </div>
@@ -2562,7 +3055,7 @@
             Buenos Malos Consejos. <span class="text-purple-400">Cómics en línea</span>
           </h3>
           <p id="comic-page-info" class="text-xs text-purple-200/70 font-mono mt-1">
-            Página <span id="comic-current-num" class="text-amber-400 font-bold">1</span> de <span id="comic-total-num">34</span> • <span id="comic-page-title">La regla del 7</span>
+            Página <span id="comic-current-num" class="text-amber-400 font-bold">1</span> de <span id="comic-total-num">42</span> • <span id="comic-page-title">La regla del 7</span>
           </p>
         </div>
       </div>
@@ -3336,17 +3829,21 @@
     // ==========================================
     const COMIC_PAGES = [
       { file: "7.jpg", title: "La regla del 7" },
+      { file: "alcohol.jpg", title: "El alcohol" },
       { file: "AMNESIA.jpg", title: "Amnesia" },
       { file: "arbol.jpg", title: "El árbol" },
       { file: "CABALLERO.jpg", title: "El caballero" },
+      { file: "caball.jpg", title: "Como un caballero" },
       { file: "caliente.jpg", title: "Comida caliente" },
       { file: "chilaqueria.jpeg", title: "La chilaquería" },
+      { file: "ching.jpg", title: "Chingarle" },
       { file: "DADPOOL.jpg", title: "Dadpool" },
       { file: "depre.jpg", title: "Día gris" },
       { file: "dormir.jpeg", title: "Dormir" },
       { file: "encantado.jpeg", title: "Encantado" },
       { file: "escroto.jpeg", title: "Escroto" },
       { file: "flash.jpg", title: "Flash" },
+      { file: "frasco.jpg", title: "El frasco" },
       { file: "hogwarts.jpeg", title: "Hogwarts" },
       { file: "indirectas.jpg", title: "Las indirectas" },
       { file: "joven.jpeg", title: "Joven" },
@@ -3358,6 +3855,7 @@
       { file: "omepra.jpg", title: "Omeprazol" },
       { file: "paz.jpg", title: "La paz mental" },
       { file: "pedro.jpeg", title: "Pedro" },
+      { file: "pend.jpg", title: "Los pendientes" },
       { file: "por.jpg", title: "Prioridades" },
       { file: "realismo.jpg", title: "Dosis de realismo" },
       { file: "RECALENTADO.jpg", title: "El recalentado" },
@@ -3366,9 +3864,12 @@
       { file: "socrates.jpg", title: "Sócrates y la vida" },
       { file: "tablet.jpg", title: "La tablet" },
       { file: "taco.jpeg", title: "El taco" },
+      { file: "talla.jpg", title: "La talla" },
+      { file: "tdah.jpg", title: "TDAH" },
       { file: "UNICORNIO.jpg", title: "El unicornio" },
       { file: "utiles.jpg", title: "Útiles necesarios" },
-      { file: "viagra.jpeg", title: "Viagra" }
+      { file: "viagra.jpeg", title: "Viagra" },
+      { file: "vivir.jpg", title: "Saber vivir" }
     ];
 
     let currentComicPage = 0;
@@ -3636,6 +4137,10 @@
       toggleAppDetails("epiciclos-details-box", "epiciclos-toggle-btn", "epiciclos-chevron");
     }
 
+    function toggleCrisisBox() {
+      toggleAppDetails("crisis-details-box", "crisis-toggle-btn", "crisis-chevron");
+    }
+
     // Compartir aplicaciones de la sección Mis Apps
     function shareApp(appKey) {
       const apps = {
@@ -3704,6 +4209,12 @@
           text: "¡Descubre Epiciclos de Fourier! Decenas de círculos girando en armonía matemática para generar y dibujar figuras asombrosas en tiempo real.",
           url: "https://epiciclos.buenosmalosconsejos.com/",
           textElemId: "epiciclos-share-text"
+        },
+        crisis: {
+          title: "Registro de Crisis y Eventos en Neurodivergencias",
+          text: "¡Descubre Registro de Crisis y Eventos! Aplicación para documentar y analizar eventos en niños neurodivergentes, identificando tiempos, detonantes y patrones para su bienestar.",
+          url: "http://crisisyeventos.buenosmalosconsejos.com/",
+          textElemId: "crisis-share-text"
         }
       };
 
@@ -3759,6 +4270,480 @@
     }
 
     window.shareApp = shareApp;
+
+    // ==========================================
+    // SECCIÓN ESTADÍSTICAS DEL AUTOR CON D3.JS
+    // ==========================================
+    const AUTHOR_STATS_DATA = [
+      { date: "2023-01", label: "Ene 23", fullLabel: "Enero 2023", followers: 1500, views: 35000, milestone: "Nacimiento de Buenos Malos Consejos. Primeros videos con el títere de Robert." },
+      { date: "2023-03", label: "Mar 23", fullLabel: "Marzo 2023", followers: 8900, views: 120000, milestone: null },
+      { date: "2023-05", label: "May 23", fullLabel: "Mayo 2023", followers: 26000, views: 390000, milestone: null },
+      { date: "2023-07", label: "Jul 23", fullLabel: "Julio 2023", followers: 68000, views: 1150000, milestone: "Primer gran fenómeno viral en TikTok (+1M vistas orgánicas)." },
+      { date: "2023-09", label: "Sep 23", fullLabel: "Septiembre 2023", followers: 96000, views: 1750000, milestone: null },
+      { date: "2023-12", label: "Dic 23", fullLabel: "Diciembre 2023", followers: 135000, views: 2400000, milestone: "Superados los 100K seguidores y publicación del Libro Digital Oficial." },
+      { date: "2024-03", label: "Mar 24", fullLabel: "Marzo 2024", followers: 185000, views: 3200000, milestone: null },
+      { date: "2024-06", label: "Jun 24", fullLabel: "Junio 2024", followers: 260000, views: 4600000, milestone: "Audiolibro oficial en Google Play & Cómics en línea." },
+      { date: "2024-09", label: "Sep 24", fullLabel: "Septiembre 2024", followers: 345000, views: 5800000, milestone: null },
+      { date: "2024-12", label: "Dic 24", fullLabel: "Diciembre 2024", followers: 430000, views: 6900000, milestone: "Lanzamiento de la suite de Web Apps educativas y de cálculo." },
+      { date: "2025-03", label: "Mar 25", fullLabel: "Marzo 2025", followers: 495000, views: 7650000, milestone: null },
+      { date: "2025-07", label: "Jul 25", fullLabel: "Julio 2025", followers: 555000, views: 8300000, milestone: "Expansión de audiencia a más de 35 países en Hispanoamérica." },
+      { date: "2025-11", label: "Nov 25", fullLabel: "Noviembre 2025", followers: 605000, views: 8850000, milestone: null },
+      { date: "2026-03", label: "Mar 26", fullLabel: "Marzo 2026", followers: 645000, views: 9200000, milestone: "Desarrollo de herramientas de física y neurodivergencias." },
+      { date: "2026-10", label: "Oct 26", fullLabel: "Octubre 2026 (Hoy)", followers: 685000, views: 9450000, milestone: "Actualidad: +685K seguidores, +9.4M vistas/mes y 12 Web Apps." }
+    ];
+
+    let currentStatsMetricMode = "both"; // "both", "followers", "views"
+
+    function setChartMetricMode(mode) {
+      currentStatsMetricMode = mode;
+      
+      const btnBoth = document.getElementById("filter-metric-both");
+      const btnFollowers = document.getElementById("filter-metric-followers");
+      const btnViews = document.getElementById("filter-metric-views");
+
+      const activeClasses = ["bg-white", "text-purple-950", "shadow-xs", "border", "border-purple-200"];
+      const inactiveClasses = ["text-slate-600", "hover:text-purple-900"];
+
+      [btnBoth, btnFollowers, btnViews].forEach(btn => {
+        if (!btn) return;
+        btn.classList.remove(...activeClasses);
+        btn.classList.add(...inactiveClasses);
+      });
+
+      const activeBtn = mode === "both" ? btnBoth : mode === "followers" ? btnFollowers : btnViews;
+      if (activeBtn) {
+        activeBtn.classList.remove(...inactiveClasses);
+        activeBtn.classList.add(...activeClasses);
+      }
+
+      const legFollowers = document.getElementById("legend-followers");
+      const legViews = document.getElementById("legend-views");
+      if (legFollowers) legFollowers.style.opacity = (mode === "views") ? "0.35" : "1";
+      if (legViews) legViews.style.opacity = (mode === "followers") ? "0.35" : "1";
+
+      renderStatsChart();
+    }
+
+    window.setChartMetricMode = setChartMetricMode;
+
+    function formatNumberShort(val) {
+      if (val >= 1000000) return (val / 1000000).toFixed(val % 1000000 === 0 ? 0 : 1) + "M";
+      if (val >= 1000) return (val / 1000).toFixed(val % 1000 === 0 ? 0 : 0) + "K";
+      return val.toString();
+    }
+
+    function renderStatsChart() {
+      if (typeof d3 === "undefined") return;
+      const container = document.getElementById("stats-chart-wrapper");
+      if (!container) return;
+
+      const containerWidth = container.clientWidth || 800;
+      const width = Math.max(300, containerWidth);
+      const height = Math.max(360, Math.min(460, Math.round(width * 0.48)));
+      const margin = {
+        top: 25,
+        right: (currentStatsMetricMode === "followers") ? 25 : (width < 640 ? 55 : 75),
+        bottom: 45,
+        left: (currentStatsMetricMode === "views") ? 25 : (width < 640 ? 45 : 65)
+      };
+
+      const innerWidth = width - margin.left - margin.right;
+      const innerHeight = height - margin.top - margin.bottom;
+
+      // Limpiar SVG previo
+      d3.select(container).selectAll("svg").remove();
+
+      const svg = d3.select(container)
+        .append("svg")
+        .attr("viewBox", `0 0 ${width} ${height}`)
+        .attr("width", "100%")
+        .attr("height", height)
+        .attr("class", "overflow-visible font-sans");
+
+      const defs = svg.append("defs");
+
+      // Gradiente Seguidores (Morado/Violeta)
+      const gradFollowers = defs.append("linearGradient")
+        .attr("id", "gradFollowersArea")
+        .attr("x1", "0%").attr("y1", "0%")
+        .attr("x2", "0%").attr("y2", "100%");
+      gradFollowers.append("stop").attr("offset", "0%").attr("stop-color", "#8A2BE2").attr("stop-opacity", 0.35);
+      gradFollowers.append("stop").attr("offset", "100%").attr("stop-color", "#8A2BE2").attr("stop-opacity", 0.0);
+
+      // Gradiente Vistas (Cian/Azul)
+      const gradViews = defs.append("linearGradient")
+        .attr("id", "gradViewsArea")
+        .attr("x1", "0%").attr("y1", "0%")
+        .attr("x2", "0%").attr("y2", "100%");
+      gradViews.append("stop").attr("offset", "0%").attr("stop-color", "#06b6d4").attr("stop-opacity", 0.30);
+      gradViews.append("stop").attr("offset", "100%").attr("stop-color", "#06b6d4").attr("stop-opacity", 0.0);
+
+      // Filtro Glow suave
+      const filter = defs.append("filter")
+        .attr("id", "dotGlow")
+        .attr("x", "-50%").attr("y", "-50%")
+        .attr("width", "200%").attr("height", "200%");
+      filter.append("feGaussianBlur").attr("stdDeviation", "3").attr("result", "blur");
+      const feMerge = filter.append("feMerge");
+      feMerge.append("feMergeNode").attr("in", "blur");
+      feMerge.append("feMergeNode").attr("in", "SourceGraphic");
+
+      const g = svg.append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+      // Escalas
+      const xScale = d3.scalePoint()
+        .domain(AUTHOR_STATS_DATA.map(d => d.date))
+        .range([0, innerWidth])
+        .padding(0.15);
+
+      const maxFollowers = d3.max(AUTHOR_STATS_DATA, d => d.followers) * 1.12;
+      const yFollowers = d3.scaleLinear()
+        .domain([0, maxFollowers])
+        .range([innerHeight, 0]);
+
+      const maxViews = d3.max(AUTHOR_STATS_DATA, d => d.views) * 1.15;
+      const yViews = d3.scaleLinear()
+        .domain([0, maxViews])
+        .range([innerHeight, 0]);
+
+      // Líneas horizontales de cuadrícula (Grid)
+      const gridTicks = 5;
+      g.append("g")
+        .attr("class", "grid-lines opacity-10")
+        .selectAll("line")
+        .data(d3.range(0, maxFollowers, maxFollowers / gridTicks))
+        .enter()
+        .append("line")
+        .attr("x1", 0)
+        .attr("x2", innerWidth)
+        .attr("y1", d => yFollowers(d))
+        .attr("y2", d => yFollowers(d))
+        .attr("stroke", "#6b21a8")
+        .attr("stroke-dasharray", "3 4");
+
+      // Eje X
+      const xAxis = g.append("g")
+        .attr("transform", `translate(0,${innerHeight})`)
+        .attr("class", "text-slate-500 text-[11px] font-bold");
+
+      xAxis.call(d3.axisBottom(xScale).tickFormat((d, i) => {
+        if (width < 600 && i % 2 !== 0 && i !== AUTHOR_STATS_DATA.length - 1) return "";
+        const item = AUTHOR_STATS_DATA.find(x => x.date === d);
+        return item ? item.label : d;
+      }))
+      .attr("stroke-width", 0.5);
+
+      xAxis.select(".domain").attr("stroke", "#cbd5e1");
+      xAxis.selectAll(".tick line").attr("stroke", "#cbd5e1");
+
+      // Eje Y Izquierdo (Seguidores)
+      if (currentStatsMetricMode !== "views") {
+        const yAxisLeft = g.append("g")
+          .attr("class", "text-purple-700 font-bold text-[11px] font-mono");
+
+        yAxisLeft.call(d3.axisLeft(yFollowers).ticks(5).tickFormat(d => formatNumberShort(d)));
+        yAxisLeft.select(".domain").remove();
+        yAxisLeft.selectAll(".tick line").remove();
+
+        g.append("text")
+          .attr("transform", "rotate(-90)")
+          .attr("y", -margin.left + 14)
+          .attr("x", -innerHeight / 2)
+          .attr("text-anchor", "middle")
+          .attr("class", "fill-purple-800 text-[10px] font-extrabold uppercase tracking-wider")
+          .text("Seguidores");
+      }
+
+      // Eje Y Derecho (Vistas Mensuales)
+      if (currentStatsMetricMode !== "followers") {
+        const yAxisRight = g.append("g")
+          .attr("transform", `translate(${innerWidth},0)`)
+          .attr("class", "text-cyan-700 font-bold text-[11px] font-mono");
+
+        yAxisRight.call(d3.axisRight(yViews).ticks(5).tickFormat(d => formatNumberShort(d)));
+        yAxisRight.select(".domain").remove();
+        yAxisRight.selectAll(".tick line").remove();
+
+        g.append("text")
+          .attr("transform", "rotate(90)")
+          .attr("y", -margin.right + 14)
+          .attr("x", innerHeight / 2)
+          .attr("text-anchor", "middle")
+          .attr("class", "fill-cyan-800 text-[10px] font-extrabold uppercase tracking-wider")
+          .text("Vistas Mensuales");
+      }
+
+      // 1. Vistas Mensuales (Área y Línea)
+      if (currentStatsMetricMode !== "followers") {
+        const areaViews = d3.area()
+          .curve(d3.curveMonotoneX)
+          .x(d => xScale(d.date))
+          .y0(innerHeight)
+          .y1(d => yViews(d.views));
+
+        const lineViews = d3.line()
+          .curve(d3.curveMonotoneX)
+          .x(d => xScale(d.date))
+          .y(d => yViews(d.views));
+
+        g.append("path")
+          .datum(AUTHOR_STATS_DATA)
+          .attr("fill", "url(#gradViewsArea)")
+          .attr("d", areaViews);
+
+        g.append("path")
+          .datum(AUTHOR_STATS_DATA)
+          .attr("fill", "none")
+          .attr("stroke", "#06b6d4")
+          .attr("stroke-width", 3)
+          .attr("stroke-linecap", "round")
+          .attr("d", lineViews);
+      }
+
+      // 2. Seguidores Totales (Área y Línea)
+      if (currentStatsMetricMode !== "views") {
+        const areaFollowers = d3.area()
+          .curve(d3.curveMonotoneX)
+          .x(d => xScale(d.date))
+          .y0(innerHeight)
+          .y1(d => yFollowers(d.followers));
+
+        const lineFollowers = d3.line()
+          .curve(d3.curveMonotoneX)
+          .x(d => xScale(d.date))
+          .y(d => yFollowers(d.followers));
+
+        g.append("path")
+          .datum(AUTHOR_STATS_DATA)
+          .attr("fill", "url(#gradFollowersArea)")
+          .attr("d", areaFollowers);
+
+        g.append("path")
+          .datum(AUTHOR_STATS_DATA)
+          .attr("fill", "none")
+          .attr("stroke", "#8A2BE2")
+          .attr("stroke-width", 3.5)
+          .attr("stroke-linecap", "round")
+          .attr("d", lineFollowers);
+      }
+
+      // Puntos / Nodos con Hitos
+      AUTHOR_STATS_DATA.forEach(d => {
+        const xPos = xScale(d.date);
+
+        if (d.milestone) {
+          const yPos = (currentStatsMetricMode === "views") ? yViews(d.views) : yFollowers(d.followers);
+          
+          g.append("circle")
+            .attr("cx", xPos)
+            .attr("cy", yPos)
+            .attr("r", 9)
+            .attr("fill", "none")
+            .attr("stroke", "#f59e0b")
+            .attr("stroke-width", 2)
+            .attr("stroke-dasharray", "2 2")
+            .attr("opacity", 0.85);
+
+          g.append("circle")
+            .attr("cx", xPos)
+            .attr("cy", yPos)
+            .attr("r", 4.5)
+            .attr("fill", "#f59e0b")
+            .attr("stroke", "#ffffff")
+            .attr("stroke-width", 2);
+        } else {
+          if (currentStatsMetricMode !== "views") {
+            g.append("circle")
+              .attr("cx", xPos)
+              .attr("cy", yFollowers(d.followers))
+              .attr("r", 3)
+              .attr("fill", "#8A2BE2")
+              .attr("stroke", "#ffffff")
+              .attr("stroke-width", 1.5);
+          }
+          if (currentStatsMetricMode === "views") {
+            g.append("circle")
+              .attr("cx", xPos)
+              .attr("cy", yViews(d.views))
+              .attr("r", 3)
+              .attr("fill", "#06b6d4")
+              .attr("stroke", "#ffffff")
+              .attr("stroke-width", 1.5);
+          }
+        }
+      });
+
+      // Línea vertical interactiva para Hover (Crosshair)
+      const cursorLine = g.append("line")
+        .attr("y1", 0)
+        .attr("y2", innerHeight)
+        .attr("stroke", "#a855f7")
+        .attr("stroke-width", 1.5)
+        .attr("stroke-dasharray", "4 4")
+        .attr("opacity", 0);
+
+      // Puntos activos flotantes para Hover
+      const hoverFollowersDot = g.append("circle")
+        .attr("r", 6)
+        .attr("fill", "#8A2BE2")
+        .attr("stroke", "#ffffff")
+        .attr("stroke-width", 2.5)
+        .attr("filter", "url(#dotGlow)")
+        .attr("opacity", 0);
+
+      const hoverViewsDot = g.append("circle")
+        .attr("r", 6)
+        .attr("fill", "#06b6d4")
+        .attr("stroke", "#ffffff")
+        .attr("stroke-width", 2.5)
+        .attr("filter", "url(#dotGlow)")
+        .attr("opacity", 0);
+
+      const tooltip = document.getElementById("stats-tooltip");
+
+      const updateTooltip = (item) => {
+        if (!tooltip || !item) return;
+
+        const xPos = xScale(item.date);
+        cursorLine
+          .attr("x1", xPos)
+          .attr("x2", xPos)
+          .attr("opacity", 0.9);
+
+        if (currentStatsMetricMode !== "views") {
+          hoverFollowersDot
+            .attr("cx", xPos)
+            .attr("cy", yFollowers(item.followers))
+            .attr("opacity", 1);
+        } else {
+          hoverFollowersDot.attr("opacity", 0);
+        }
+
+        if (currentStatsMetricMode !== "followers") {
+          hoverViewsDot
+            .attr("cx", xPos)
+            .attr("cy", yViews(item.views))
+            .attr("opacity", 1);
+        } else {
+          hoverViewsDot.attr("opacity", 0);
+        }
+
+        let html = `
+          <div class="flex items-center justify-between gap-3 border-b border-white/15 pb-2 mb-2.5">
+            <span class="font-mono text-[11px] font-black uppercase text-purple-300">${item.fullLabel}</span>
+            ${item.milestone ? '<span class="px-2 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[9px] uppercase tracking-wider shrink-0">Hito Clave</span>' : ''}
+          </div>
+          <div class="space-y-1.5 font-sans">
+        `;
+
+        if (currentStatsMetricMode !== "views") {
+          html += `
+            <div class="flex items-center justify-between gap-4">
+              <span class="flex items-center gap-1.5 text-slate-300">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-500 inline-block"></span>
+                <span>Seguidores:</span>
+              </span>
+              <span class="font-mono font-black text-white text-sm">+${item.followers.toLocaleString("es-MX")}</span>
+            </div>
+          `;
+        }
+
+        if (currentStatsMetricMode !== "followers") {
+          html += `
+            <div class="flex items-center justify-between gap-4">
+              <span class="flex items-center gap-1.5 text-slate-300">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 inline-block"></span>
+                <span>Vistas/mes:</span>
+              </span>
+              <span class="font-mono font-black text-cyan-300 text-sm">+${item.views.toLocaleString("es-MX")}</span>
+            </div>
+          `;
+        }
+
+        if (item.milestone) {
+          html += `
+            <div class="mt-2.5 pt-2 border-t border-white/10 text-[11px] text-amber-200 leading-snug">
+              ⭐ ${item.milestone}
+            </div>
+          `;
+        }
+
+        html += `</div>`;
+        tooltip.innerHTML = html;
+
+        const tooltipWidth = tooltip.offsetWidth || 230;
+        let leftPx = margin.left + xPos - (tooltipWidth / 2);
+        if (leftPx < 10) leftPx = 10;
+        if (leftPx + tooltipWidth > width - 10) leftPx = width - tooltipWidth - 10;
+
+        tooltip.style.left = `${leftPx}px`;
+        tooltip.style.top = `${margin.top + 10}px`;
+        tooltip.style.opacity = "1";
+      };
+
+      const hideTooltip = () => {
+        if (!tooltip) return;
+        tooltip.style.opacity = "0";
+        cursorLine.attr("opacity", 0);
+        hoverFollowersDot.attr("opacity", 0);
+        hoverViewsDot.attr("opacity", 0);
+      };
+
+      const findNearest = (pixelX) => {
+        let bestItem = AUTHOR_STATS_DATA[0];
+        let minDiff = Infinity;
+        AUTHOR_STATS_DATA.forEach(d => {
+          const ptX = xScale(d.date);
+          const diff = Math.abs(ptX - pixelX);
+          if (diff < minDiff) {
+            minDiff = diff;
+            bestItem = d;
+          }
+        });
+        return bestItem;
+      };
+
+      g.append("rect")
+        .attr("width", innerWidth)
+        .attr("height", innerHeight)
+        .attr("fill", "transparent")
+        .attr("class", "cursor-crosshair")
+        .on("mousemove", function(event) {
+          const [mx] = d3.pointer(event);
+          const item = findNearest(mx);
+          updateTooltip(item);
+        })
+        .on("mouseleave", hideTooltip)
+        .on("touchstart", function(event) {
+          const [mx] = d3.pointer(event.touches[0], this);
+          const item = findNearest(mx);
+          updateTooltip(item);
+        }, { passive: true })
+        .on("touchmove", function(event) {
+          const [mx] = d3.pointer(event.touches[0], this);
+          const item = findNearest(mx);
+          updateTooltip(item);
+        }, { passive: true });
+    }
+
+    // Inicializar D3 al cargar el DOM y en resize
+    window.addEventListener("DOMContentLoaded", () => {
+      renderStatsChart();
+    });
+
+    // Timeout de reintento en caso de carga asíncrona de D3
+    setTimeout(() => {
+      renderStatsChart();
+    }, 400);
+
+    let resizeTimer = null;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        renderStatsChart();
+      }, 150);
+    });
   </script>
 </body>
 </html>
