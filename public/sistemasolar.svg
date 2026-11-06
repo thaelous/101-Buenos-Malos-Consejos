@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Deep Space Radial Background -->
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="45%" stop-color="#050816"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+
+    <!-- Solar Core Glow Gradient -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fde047"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="85%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <!-- Planet Gradients -->
+    <radialGradient id="mercuryGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </radialGradient>
+
+    <radialGradient id="venusGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="70%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </radialGradient>
+
+    <radialGradient id="earthGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="45%" stop-color="#0284c7"/>
+      <stop offset="80%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </radialGradient>
+
+    <radialGradient id="marsGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="65%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </radialGradient>
+
+    <radialGradient id="jupiterGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="80%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </radialGradient>
+
+    <radialGradient id="saturnGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+
+    <radialGradient id="neptuneGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="60%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+
+    <filter id="coronaGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base container with rounded corners matching applet standard -->
+  <rect width="512" height="512" rx="110" fill="url(#spaceBg)"/>
+
+  <!-- Distant Stardust & Stars -->
+  <g fill="#ffffff">
+    <circle cx="85" cy="95" r="1.5" opacity="0.8"/>
+    <circle cx="140" cy="65" r="1" opacity="0.6"/>
+    <circle cx="410" cy="90" r="2" opacity="0.9"/>
+    <circle cx="445" cy="140" r="1.2" opacity="0.7"/>
+    <circle cx="75" cy="420" r="1.8" opacity="0.85"/>
+    <circle cx="115" cy="460" r="1" opacity="0.5"/>
+    <circle cx="430" cy="430" r="1.5" opacity="0.75"/>
+    <circle cx="465" cy="380" r="1" opacity="0.6"/>
+    <circle cx="210" cy="55" r="1.2" opacity="0.8"/>
+    <circle cx="340" cy="470" r="1.4" opacity="0.8"/>
+    <circle cx="60" cy="240" r="1" opacity="0.5"/>
+    <circle cx="455" cy="260" r="1.6" opacity="0.8"/>
+  </g>
+
+  <!-- Orbital Ellipses -->
+  <g fill="none" stroke-linecap="round" opacity="0.32">
+    <!-- Orbit 1 (Mercury) -->
+    <ellipse cx="256" cy="256" rx="64" ry="48" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4" transform="rotate(-15 256 256)"/>
+    <!-- Orbit 2 (Venus) -->
+    <ellipse cx="256" cy="256" rx="98" ry="72" stroke="#fcd34d" stroke-width="1.2" stroke-dasharray="5 5" transform="rotate(-10 256 256)"/>
+    <!-- Orbit 3 (Earth) -->
+    <ellipse cx="256" cy="256" rx="138" ry="102" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="6 4" transform="rotate(-5 256 256)"/>
+    <!-- Orbit 4 (Mars) -->
+    <ellipse cx="256" cy="256" rx="178" ry="130" stroke="#f87171" stroke-width="1.2" stroke-dasharray="6 5" transform="rotate(2 256 256)"/>
+    <!-- Orbit 5 (Jupiter) -->
+    <ellipse cx="256" cy="256" rx="218" ry="160" stroke="#fb923c" stroke-width="1.4" stroke-dasharray="7 5" transform="rotate(8 256 256)"/>
+    <!-- Orbit 6 (Saturn) -->
+    <ellipse cx="256" cy="256" rx="252" ry="186" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="8 6" transform="rotate(14 256 256)"/>
+  </g>
+
+  <!-- Central Sun with Glowing Flares -->
+  <g>
+    <!-- Outer corona aura -->
+    <circle cx="256" cy="256" r="48" fill="url(#sunGlow)" filter="url(#coronaGlow)" opacity="0.95"/>
+    <!-- Solar rays / flares -->
+    <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round" opacity="0.75">
+      <line x1="256" y1="204" x2="256" y2="194"/>
+      <line x1="256" y1="308" x2="256" y2="318"/>
+      <line x1="204" y1="256" x2="194" y2="256"/>
+      <line x1="308" y1="256" x2="318" y2="256"/>
+      <line x1="219" y1="219" x2="212" y2="212"/>
+      <line x1="293" y1="293" x2="300" y2="300"/>
+      <line x1="219" y1="293" x2="212" y2="300"/>
+      <line x1="293" y1="219" x2="300" y2="212"/>
+    </g>
+    <!-- Solid core of the Sun -->
+    <circle cx="256" cy="256" r="32" fill="#fbbf24"/>
+    <circle cx="256" cy="256" r="28" fill="#f59e0b"/>
+    <circle cx="253" cy="253" r="24" fill="#fef08a" opacity="0.85"/>
+  </g>
+
+  <!-- Mercury -->
+  <circle cx="204" cy="235" r="5" fill="url(#mercuryGrad)"/>
+
+  <!-- Venus -->
+  <circle cx="330" cy="216" r="9" fill="url(#venusGrad)"/>
+
+  <!-- Earth with Moon -->
+  <g transform="translate(142, 305)">
+    <!-- Earth -->
+    <circle cx="0" cy="0" r="13" fill="url(#earthGrad)"/>
+    <!-- Atmosphere halo -->
+    <circle cx="0" cy="0" r="14.5" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0.6"/>
+    <!-- Moon orbit & Moon -->
+    <ellipse cx="0" cy="0" rx="20" ry="9" fill="none" stroke="#94a3b8" stroke-width="0.8" opacity="0.4" transform="rotate(-20)"/>
+    <circle cx="16" cy="-6" r="3" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Mars -->
+  <circle cx="395" cy="300" r="8" fill="url(#marsGrad)"/>
+
+  <!-- Jupiter with Bands & Red Spot -->
+  <g transform="translate(108, 170)">
+    <circle cx="0" cy="0" r="22" fill="url(#jupiterGrad)"/>
+    <!-- Atmospheric bands -->
+    <path d="M -21 -6 Q 0 -3 21 -6" fill="none" stroke="#7c2d12" stroke-width="2.5" opacity="0.7"/>
+    <path d="M -21 4 Q 0 7 21 4" fill="none" stroke="#9a3412" stroke-width="3" opacity="0.6"/>
+    <!-- Great Red Spot -->
+    <ellipse cx="7" cy="8" rx="4" ry="2.5" fill="#b91c1c"/>
+  </g>
+
+  <!-- Saturn with Majestic Rings -->
+  <g transform="translate(422, 185) rotate(-22)">
+    <!-- Behind Ring -->
+    <path d="M -34 0 A 34 10 0 0 1 34 0" fill="none" stroke="#fde68a" stroke-width="4.5" opacity="0.85"/>
+    <path d="M -38 0 A 38 12 0 0 1 38 0" fill="none" stroke="#d97706" stroke-width="2" opacity="0.6"/>
+    <!-- Planet body -->
+    <circle cx="0" cy="0" r="16" fill="url(#saturnGrad)"/>
+    <!-- Front Ring -->
+    <path d="M -34 0 A 34 10 0 0 0 34 0" fill="none" stroke="#fde68a" stroke-width="4.5" opacity="0.95"/>
+    <path d="M -38 0 A 38 12 0 0 0 38 0" fill="none" stroke="#d97706" stroke-width="2" opacity="0.75"/>
+  </g>
+
+  <!-- Neptune / Outer Ice Giant -->
+  <circle cx="365" cy="415" r="12" fill="url(#neptuneGrad)"/>
+  <circle cx="365" cy="415" r="13" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.7"/>
+
+  <!-- Shooting Star / Comet -->
+  <g opacity="0.85">
+    <path d="M 90 75 L 145 95" stroke="url(#sunGlow)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="145" cy="95" r="2.5" fill="#ffffff"/>
+  </g>
+</svg>

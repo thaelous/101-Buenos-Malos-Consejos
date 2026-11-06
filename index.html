@@ -1291,7 +1291,7 @@
       </div>
     </div>
 
-    <!-- Grid de Aplicaciones: 12 Web Apps Gratuitas de Robert Pacheco -->
+    <!-- Grid de Aplicaciones: 15 Web Apps Gratuitas de Robert Pacheco -->
     <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-8 max-w-7xl mx-auto items-start">
       
       <!-- 1. Tarjeta / Botón Desplegable: Calculadora Altair -->
@@ -2542,6 +2542,318 @@
         </div>
       </div>
 
+      <!-- 13. Tarjeta / Botón Desplegable: Explorador del Sistema Solar 3D -->
+      <div class="group/card bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-amber-200/90 shadow-lg shadow-slate-900/5 overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.03] hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-amber-900/25 hover:border-amber-400 relative hover:z-20">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="sistemasolar-toggle-btn"
+          onclick="toggleSistemaSolarBox()"
+          aria-expanded="false"
+          aria-controls="sistemasolar-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-amber-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-amber-600/30 shrink-0 border-2 border-amber-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-slate-950">
+              <img
+                src="sistemasolar.svg"
+                alt="Explorador del Sistema Solar 3D"
+                onerror="this.onerror=null; this.src='./sistemasolar.svg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-amber-700 transition-colors leading-tight">
+                Sistema Solar Interactivo
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-amber-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-amber-100 text-slate-600 group-hover:text-amber-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="sistemasolar-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="sistemasolar-details-box" class="hidden border-t border-amber-100 bg-gradient-to-b from-amber-50/60 to-white p-5 sm:p-6 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-amber-200/90 p-4 sm:p-5 shadow-xs mb-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-amber-200 bg-slate-950">
+                <img
+                  src="sistemasolar.svg"
+                  alt="Sistema Solar Icono"
+                  onerror="this.onerror=null; this.src='./sistemasolar.svg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-sm sm:text-base font-medium leading-relaxed">
+                  Una fascinante expedición astronómica interactiva diseñada para explorar la inmensidad de nuestro vecindario cósmico. Viaja desde el ardiente corazón del Sol hasta los confines helados de los gigantes gaseosos y cinturones de asteroides. Permite a estudiantes, familias y mentes curiosas visualizar órbitas planetarias a escala, rotaciones en tiempo real, distancias astronómicas, lunas, características atmosféricas y datos científicos de cada cuerpo celeste. La herramienta perfecta para transformar el estudio de las ciencias en una aventura espacial viva y asombrosa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col gap-3 pt-1">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 w-full">
+              <!-- Botón Compartir Sistema Solar -->
+              <button
+                type="button"
+                id="btn-share-sistemasolar"
+                onclick="shareApp('sistemasolar')"
+                class="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-3 rounded-2xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/90 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs shrink-0"
+                title="Compartir Sistema Solar Interactivo"
+              >
+                <svg class="w-4 h-4 text-amber-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="sistemasolar-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://sistemasolar.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 hover:from-amber-400 hover:via-orange-500 hover:to-yellow-400 text-white font-black text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-amber-600/30 hover:shadow-amber-600/50 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0"
+              >
+                <span>Vamos</span>
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14. Tarjeta / Botón Desplegable: Atlas de Anatomía Humana -->
+      <div class="group/card bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-rose-200/90 shadow-lg shadow-slate-900/5 overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.03] hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-rose-900/25 hover:border-rose-400 relative hover:z-20">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="anatomia-toggle-btn"
+          onclick="toggleAnatomiaBox()"
+          aria-expanded="false"
+          aria-controls="anatomia-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-rose-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-rose-600/30 shrink-0 border-2 border-rose-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-slate-950">
+              <img
+                src="anatomia.svg"
+                alt="Atlas de Anatomía Humana y Sistemas del Cuerpo"
+                onerror="this.onerror=null; this.src='./anatomia.svg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-900 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-rose-700 transition-colors leading-tight">
+                Anatomía y Sistemas del Cuerpo
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-rose-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-rose-100 text-slate-600 group-hover:text-rose-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="anatomia-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="anatomia-details-box" class="hidden border-t border-rose-100 bg-gradient-to-b from-rose-50/60 to-white p-5 sm:p-6 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-rose-200/90 p-4 sm:p-5 shadow-xs mb-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-rose-200 bg-slate-950">
+                <img
+                  src="anatomia.svg"
+                  alt="Anatomía Humana Icono"
+                  onerror="this.onerror=null; this.src='./anatomia.svg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-rose-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-sm sm:text-base font-medium leading-relaxed">
+                  Un viaje interactivo y tridimensional al interior de la máquina biológica más asombrosa de la naturaleza: el cuerpo humano. Esta plataforma educativa permite navegar y aislar capa por capa los principales sistemas vitales —cardiovascular, respiratorio, esquelético, muscular, nervioso y digestivo—. Mediante modelos dinámicos, cortes anatómicos y descripciones claras, estudiantes, docentes y familias pueden descubrir con total fidelidad cómo late el corazón, cómo se transmiten los impulsos cerebrales y cómo trabajan en sincronía perfecta nuestros órganos para mantenernos vivos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col gap-3 pt-1">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 w-full">
+              <!-- Botón Compartir Anatomía -->
+              <button
+                type="button"
+                id="btn-share-anatomia"
+                onclick="shareApp('anatomia')"
+                class="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-3 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-900 border border-rose-200/90 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs shrink-0"
+                title="Compartir Anatomía Humana"
+              >
+                <svg class="w-4 h-4 text-rose-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="anatomia-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://anatomia.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 rounded-2xl bg-gradient-to-r from-rose-600 via-red-600 to-pink-600 hover:from-rose-500 hover:via-red-500 hover:to-pink-500 text-white font-black text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-rose-600/30 hover:shadow-rose-600/50 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0"
+              >
+                <span>Vamos</span>
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15. Tarjeta / Botón Desplegable: Pizzería de Fracciones -->
+      <div class="group/card bg-white/95 backdrop-blur-xl rounded-3xl border-2 border-orange-200/90 shadow-lg shadow-slate-900/5 overflow-hidden transform transition-all duration-300 ease-out hover:scale-[1.03] hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-orange-900/25 hover:border-orange-400 relative hover:z-20">
+        <!-- Botón Desplegable / Cabecera interactiva -->
+        <button
+          type="button"
+          id="pizzeria-toggle-btn"
+          onclick="togglePizzeriaBox()"
+          aria-expanded="false"
+          aria-controls="pizzeria-details-box"
+          class="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer select-none transition-colors hover:bg-orange-50/50 group"
+        >
+          <div class="flex items-center gap-4 sm:gap-5">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg shadow-orange-600/30 shrink-0 border-2 border-orange-200 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300 bg-amber-950">
+              <img
+                src="pizzeria.svg"
+                alt="Pizzería de Fracciones: Matemática Lúdica"
+                onerror="this.onerror=null; this.src='./pizzeria.svg';"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-orange-100 text-orange-900 text-[10px] font-extrabold uppercase tracking-wider mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-ping"></span>
+                <span>Web App Gratuita</span>
+              </div>
+              <h3 class="font-serif font-black text-lg sm:text-2xl text-slate-900 group-hover:text-orange-700 transition-colors leading-tight">
+                Pizzería de Fracciones
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                <span>Haz clic para desplegar información</span>
+                <span class="text-orange-600 font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Indicador flecha / chevron desplegable -->
+          <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-orange-100 text-slate-600 group-hover:text-orange-800 flex items-center justify-center shrink-0 transition-all duration-300">
+            <svg id="pizzeria-chevron" class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- Ventana / Cuadro Desplegable con texto explicativo y botón Vamos -->
+        <div id="pizzeria-details-box" class="hidden border-t border-orange-100 bg-gradient-to-b from-orange-50/60 to-white p-5 sm:p-6 transition-all duration-300">
+          <div class="rounded-2xl bg-white border border-orange-200/90 p-4 sm:p-5 shadow-xs mb-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl overflow-hidden shadow-xs shrink-0 mt-0.5 border border-orange-200 bg-amber-950">
+                <img
+                  src="pizzeria.svg"
+                  alt="Pizzería Icono"
+                  onerror="this.onerror=null; this.src='./pizzeria.svg';"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-900 block mb-1.5 font-mono">
+                  Sobre la aplicación
+                </span>
+                <p class="text-slate-700 text-sm sm:text-base font-medium leading-relaxed">
+                  Aprender matemáticas nunca fue tan apetecible ni divertido. Convierte la cocina en un laboratorio lúdico donde cada pizza horneada es un reto para dominar mitades, cuartos, octavos y equivalencias fraccionarias sin miedo a los números. A través de simpáticos pedidos de clientes, rebanadas interactivas, ingredientes personalizables y dinámicas de reparto, los niños descubren de forma 100% visual y práctica que las fracciones no son fórmulas abstractas, sino pedacitos de pizza que se comparten, suman y comparan jugando. ¡El recurso predilecto para padres, docentes y pequeños chefs de las matemáticas!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón Vamos y Compartir que enlazan a la aplicación -->
+          <div class="flex flex-col gap-3 pt-1">
+            <span class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+              Acceso libre y sin registro
+            </span>
+            <div class="flex items-center gap-2.5 w-full">
+              <!-- Botón Compartir Pizzería -->
+              <button
+                type="button"
+                id="btn-share-pizzeria"
+                onclick="shareApp('pizzeria')"
+                class="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-3 rounded-2xl bg-orange-50 hover:bg-orange-100 text-orange-900 border border-orange-200/90 font-bold text-xs uppercase tracking-wider transition-all duration-200 hover:scale-[1.02] active:scale-95 cursor-pointer shadow-xs shrink-0"
+                title="Compartir Pizzería de Fracciones"
+              >
+                <svg class="w-4 h-4 text-orange-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+                <span id="pizzeria-share-text">Compartir</span>
+              </button>
+
+              <!-- Botón Vamos -->
+              <a
+                href="https://pizzeria.buenosmalosconsejos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 rounded-2xl bg-gradient-to-r from-orange-500 via-amber-600 to-red-500 hover:from-orange-400 hover:via-amber-500 hover:to-red-400 text-white font-black text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-orange-600/30 hover:shadow-orange-600/50 hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer whitespace-nowrap shrink-0"
+              >
+                <span>Vamos</span>
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -2832,10 +3144,10 @@
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           </div>
           <h4 class="font-serif font-bold text-base text-slate-900 mb-1.5">
-            Consolidación Global: +685K & 12 Web Apps
+            Consolidación Global: +685K & 15 Web Apps
           </h4>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Más de 9.4 millones de vistas mensuales regulares, presencia activa en más de 35 países e incorporación de la app de neurodivergencias y física avanzada.
+            Más de 9.4 millones de vistas mensuales regulares, presencia activa en más de 35 países e incorporación de apps de astronomía, anatomía, física y fracciones lúdicas.
           </p>
         </div>
 
@@ -4141,6 +4453,18 @@
       toggleAppDetails("crisis-details-box", "crisis-toggle-btn", "crisis-chevron");
     }
 
+    function toggleSistemaSolarBox() {
+      toggleAppDetails("sistemasolar-details-box", "sistemasolar-toggle-btn", "sistemasolar-chevron");
+    }
+
+    function toggleAnatomiaBox() {
+      toggleAppDetails("anatomia-details-box", "anatomia-toggle-btn", "anatomia-chevron");
+    }
+
+    function togglePizzeriaBox() {
+      toggleAppDetails("pizzeria-details-box", "pizzeria-toggle-btn", "pizzeria-chevron");
+    }
+
     // Compartir aplicaciones de la sección Mis Apps
     function shareApp(appKey) {
       const apps = {
@@ -4215,6 +4539,24 @@
           text: "¡Descubre Registro de Crisis y Eventos! Aplicación para documentar y analizar eventos en niños neurodivergentes, identificando tiempos, detonantes y patrones para su bienestar.",
           url: "http://crisisyeventos.buenosmalosconsejos.com/",
           textElemId: "crisis-share-text"
+        },
+        sistemasolar: {
+          title: "Sistema Solar Interactivo",
+          text: "¡Descubre el Sistema Solar Interactivo! Explora el Sol, órbitas a escala y cada planeta en tiempo real con datos astronómicos asombrosos.",
+          url: "https://sistemasolar.buenosmalosconsejos.com/",
+          textElemId: "sistemasolar-share-text"
+        },
+        anatomia: {
+          title: "Anatomía y Sistemas del Cuerpo Humano",
+          text: "¡Descubre Anatomía y Sistemas del Cuerpo! Explora modelos 3D del corazón, cerebro, pulmones y sistemas vitales de forma interactiva.",
+          url: "https://anatomia.buenosmalosconsejos.com/",
+          textElemId: "anatomia-share-text"
+        },
+        pizzeria: {
+          title: "Pizzería de Fracciones: Matemática Lúdica",
+          text: "¡Descubre la Pizzería de Fracciones! Aprende mitades, cuartos y equivalencias fraccionarias de forma deliciosa, visual y divertida.",
+          url: "https://pizzeria.buenosmalosconsejos.com/",
+          textElemId: "pizzeria-share-text"
         }
       };
 
@@ -4270,6 +4612,9 @@
     }
 
     window.shareApp = shareApp;
+    window.toggleSistemaSolarBox = toggleSistemaSolarBox;
+    window.toggleAnatomiaBox = toggleAnatomiaBox;
+    window.togglePizzeriaBox = togglePizzeriaBox;
 
     // ==========================================
     // SECCIÓN ESTADÍSTICAS DEL AUTOR CON D3.JS
@@ -4289,7 +4634,7 @@
       { date: "2025-07", label: "Jul 25", fullLabel: "Julio 2025", followers: 555000, views: 8300000, milestone: "Expansión de audiencia a más de 35 países en Hispanoamérica." },
       { date: "2025-11", label: "Nov 25", fullLabel: "Noviembre 2025", followers: 605000, views: 8850000, milestone: null },
       { date: "2026-03", label: "Mar 26", fullLabel: "Marzo 2026", followers: 645000, views: 9200000, milestone: "Desarrollo de herramientas de física y neurodivergencias." },
-      { date: "2026-10", label: "Oct 26", fullLabel: "Octubre 2026 (Hoy)", followers: 685000, views: 9450000, milestone: "Actualidad: +685K seguidores, +9.4M vistas/mes y 12 Web Apps." }
+      { date: "2026-10", label: "Oct 26", fullLabel: "Octubre 2026 (Hoy)", followers: 685000, views: 9450000, milestone: "Actualidad: +685K seguidores, +9.4M vistas/mes y 15 Web Apps." }
     ];
 
     let currentStatsMetricMode = "both"; // "both", "followers", "views"

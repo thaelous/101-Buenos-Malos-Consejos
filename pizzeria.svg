@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Warm Pizzeria Background Gradient (Wood oven glow & dark trattoria) -->
+    <radialGradient id="pizzBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#2a1209"/>
+      <stop offset="50%" stop-color="#180803"/>
+      <stop offset="100%" stop-color="#0a0301"/>
+    </radialGradient>
+
+    <!-- Golden Baked Crust Gradient -->
+    <radialGradient id="crustGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="#d97706"/>
+      <stop offset="90%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </radialGradient>
+
+    <!-- Tomato Sauce & Melted Mozzarella Core -->
+    <radialGradient id="cheeseGrad" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#fde047"/>
+      <stop offset="75%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </radialGradient>
+
+    <!-- Pepperoni Slice Gradient -->
+    <radialGradient id="pepGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="60%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </radialGradient>
+
+    <filter id="pizzGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Container base -->
+  <rect width="512" height="512" rx="110" fill="url(#pizzBg)"/>
+
+  <!-- Warm ambient glow -->
+  <circle cx="256" cy="256" r="210" fill="#ea580c" opacity="0.12" filter="url(#pizzGlow)"/>
+
+  <!-- Pizza Wooden Board / Peel Base -->
+  <g transform="translate(0, 0)">
+    <!-- Board handle -->
+    <path d="M 370 370 L 440 440 C 448 448 448 460 440 468 C 432 476 420 476 412 468 L 342 398 Z"
+          fill="#854d0e" stroke="#543009" stroke-width="3"/>
+    <circle cx="426" cy="454" r="5" fill="#2a1209"/>
+    <!-- Circular board -->
+    <circle cx="248" cy="248" r="185" fill="#a16207" stroke="#713f12" stroke-width="4"/>
+    <circle cx="248" cy="248" r="176" fill="#ca8a04" opacity="0.3"/>
+  </g>
+
+  <!-- THE FRACTION PIZZA (Divided into geometric fraction cuts) -->
+  <g transform="translate(244, 244)">
+    
+    <!-- Outer Golden Crust -->
+    <circle cx="0" cy="0" r="158" fill="url(#crustGrad)" stroke="#78350f" stroke-width="3"/>
+    
+    <!-- Melted Cheese & Tomato Filling -->
+    <circle cx="0" cy="0" r="138" fill="url(#cheeseGrad)"/>
+
+    <!-- Fraction Cut Lines (Dividing pizza into 1/2, 1/4, 1/8) -->
+    <!-- Horizontal diameter (1/2) -->
+    <line x1="-138" y1="0" x2="138" y2="0" stroke="#78350f" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Vertical diameter (1/4) -->
+    <line x1="0" y1="-138" x2="0" y2="138" stroke="#78350f" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Diagonal cuts (1/8) -->
+    <line x1="-97" y1="-97" x2="97" y2="97" stroke="#92400e" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <line x1="-97" y1="97" x2="97" y2="-97" stroke="#92400e" stroke-width="2.5" stroke-dasharray="6 3"/>
+
+    <!-- Pepperoni Slices Distributed in Fraction Sectors -->
+    <!-- Quadrant 1 (Top-Left) -->
+    <circle cx="-55" cy="-60" r="18" fill="url(#pepGrad)"/>
+    <circle cx="-53" cy="-58" r="17" fill="none" stroke="#fca5a5" stroke-width="1" opacity="0.6"/>
+    <!-- Quadrant 2 (Top-Right) -->
+    <circle cx="58" cy="-55" r="19" fill="url(#pepGrad)"/>
+    <circle cx="35" cy="-90" r="14" fill="url(#pepGrad)"/>
+    <!-- Quadrant 3 (Bottom-Left) -->
+    <circle cx="-65" cy="55" r="17" fill="url(#pepGrad)"/>
+    <circle cx="-30" cy="90" r="16" fill="url(#pepGrad)"/>
+    <!-- Quadrant 4 (Bottom-Right: Lifted/Served 1/4 Slice preview) -->
+    <circle cx="65" cy="65" r="19" fill="url(#pepGrad)"/>
+
+    <!-- Fresh Basil Leaves (Green Accents) -->
+    <g fill="#16a34a" stroke="#14532d" stroke-width="1.2">
+      <!-- Leaf 1 -->
+      <path d="M -20 -35 Q -32 -48 -18 -55 Q -8 -42 -20 -35 Z"/>
+      <!-- Leaf 2 -->
+      <path d="M 75 -20 Q 92 -26 88 -10 Q 72 -10 75 -20 Z"/>
+      <!-- Leaf 3 -->
+      <path d="M -40 20 Q -56 26 -50 10 Q -34 10 -40 20 Z"/>
+      <!-- Leaf 4 -->
+      <path d="M 25 45 Q 36 60 20 62 Q 15 48 25 45 Z"/>
+    </g>
+
+    <!-- Mushroom Slices (Beige/Brown) -->
+    <g fill="#f5ebe0" stroke="#78350f" stroke-width="1">
+      <path d="M -85 -20 C -85 -30 -65 -30 -65 -20 L -70 -20 L -70 -12 L -80 -12 L -80 -20 Z"/>
+      <path d="M 20 -30 C 20 -40 40 -40 40 -30 L 35 -30 L 35 -22 L 25 -22 L 25 -30 Z"/>
+      <path d="M -15 65 C -15 55 5 55 5 65 L 0 65 L 0 73 L -10 73 L -10 65 Z"/>
+    </g>
+
+    <!-- Interactive Extracted Slice (Top-Right 1/8 slice pulling outward with cheese strings) -->
+    <g transform="translate(18, -18)">
+      <!-- Melted cheese stretchy threads -->
+      <path d="M -15 15 Q -5 5 0 0 M 15 -15 Q 5 -5 0 0" stroke="#fef08a" stroke-width="2.5" opacity="0.9" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Fraction Badges with Educational Fun (1/2, 1/4, 1/8) -->
+  <!-- Badge 1: "1/2" -->
+  <g transform="translate(75, 125)">
+    <rect width="64" height="42" rx="14" fill="#0284c7" stroke="#bae6fd" stroke-width="2" filter="url(#pizzGlow)"/>
+    <text x="32" y="27" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="20" text-anchor="middle">1/2</text>
+  </g>
+
+  <!-- Badge 2: "1/4" -->
+  <g transform="translate(372, 115)">
+    <rect width="64" height="42" rx="14" fill="#f59e0b" stroke="#fef3c7" stroke-width="2" filter="url(#pizzGlow)"/>
+    <text x="32" y="27" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="20" text-anchor="middle">1/4</text>
+  </g>
+
+  <!-- Badge 3: "1/8" -->
+  <g transform="translate(85, 360)">
+    <rect width="64" height="42" rx="14" fill="#16a34a" stroke="#bbf7d0" stroke-width="2" filter="url(#pizzGlow)"/>
+    <text x="32" y="27" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="20" text-anchor="middle">1/8</text>
+  </g>
+
+  <!-- Professional Rotary Pizza Cutter (Top-Left Angle) -->
+  <g transform="translate(100, 70) rotate(-35)">
+    <!-- Wooden handle -->
+    <rect x="-8" y="-55" width="16" height="50" rx="6" fill="#92400e" stroke="#451a03" stroke-width="2"/>
+    <!-- Metallic fork -->
+    <path d="M -10 -5 L -10 12 L -4 18 M 10 -5 L 10 12 L 4 18" fill="none" stroke="#94a3b8" stroke-width="3"/>
+    <!-- Circular stainless blade -->
+    <circle cx="0" cy="22" r="22" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <circle cx="0" cy="22" r="6" fill="#94a3b8"/>
+    <!-- Blade light reflection -->
+    <path d="M -14 12 A 18 18 0 0 1 12 -4" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Chef Hat Sparkle Accent -->
+  <g transform="translate(390, 375)">
+    <path d="M 0 15 C -15 15 -18 -5 -5 -8 C -10 -22 10 -25 15 -12 C 22 -22 38 -15 32 0 C 40 8 32 15 25 15 Z"
+          fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="0" y="15" width="25" height="7" rx="2" fill="#ef4444"/>
+  </g>
+</svg>
